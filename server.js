@@ -962,6 +962,3 @@ io.on("connection", (socket) => {
 server.listen(PORT, HOST, () => {
   console.log('XyzzyModern running at http://' + HOST + ':' + PORT + '/');
 });
-}) => {
-  console.log(`XyzzyModern running at http://127.0.0.1:${PORT}/`);
-});
