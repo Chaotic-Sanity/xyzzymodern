@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XyzzyModern - Lobby</title>
+  <style>
+    :root{color-scheme:dark}
+    body{margin:0;font-family:system-ui,Segoe UI,Arial;background:#090a0f;color:#e9e9f0}
+    .wrap{max-width:980px;margin:0 auto;padding:22px}
+    .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px}
+    h1{margin:0 0 10px;font-size:22px}
+    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    input,button,select{border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;padding:10px 14px}
+    button{cursor:pointer;font-weight:800}
+    button:disabled,select:disabled{opacity:.5;cursor:not-allowed}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+    .pack{display:flex;gap:10px;align-items:flex-start;padding:12px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.18)}
+    .pack label{cursor:pointer;font-weight:800}
+    .muted{opacity:.75;font-size:12px}
+    .status{margin-top:10px;padding:10px 12px;border-radius:12px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.12)}
+    .ok{color:#67ff8a}
+    .bad{color:#ff6b6b}
+    .pill{display:flex;align-items:center;gap:8px}
+    a{color:#9bd3ff}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <h1>Lobby</h1>
+        <div class="muted">Game screen: <a href="/game.html">/game.html</a></div>
+      </div>
+
+      <div class="row">
+        <input id="nameInput" placeholder="Your name" maxlength="20" />
+        <button id="setNameBtn">Set name</button>
+
+        <input id="adminKey" type="password" placeholder="Admin key (kmadmin)" />
+        <button id="adminBtn">Unlock admin</button>
+
+        <button id="startBtn" disabled>Start Game</button>
+        <button id="goGameBtn">Go to Game</button>
+      </div>
+
+      <div class="row" style="margin-top:8px">
+        <div class="pill">
+          <span class="muted">Score to win</span>
+          <select id="scoreLimit" disabled>
+            <option value="0">No limit</option>
+            <option value="3">3</option>
+            <option value="5" selected>5</option>
+            <option value="7">7</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+
+        <button id="selectAllBtn" disabled>Select all</button>
+        <button id="selectNoneBtn" disabled>Select none</button>
+        <button id="savePacksBtn" disabled>Save packs</button>
+        <button id="refreshBtn" disabled>Refresh packs</button>
+      </div>
+
+      <div id="status" class="status">Connecting...</div>
+      <div id="packs" class="grid"></div>
+
+      <p class="muted" style="margin-top:12px">
+        Admin sets packs + settings here. When game starts, everyone is sent to /game.html.
+      </p>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/lobby.js"></script>
+</body>
+</html>

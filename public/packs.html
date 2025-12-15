@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XyzzyModern - Packs</title>
+  <link rel="stylesheet" href="/game.css" />
+</head>
+<body class="theme">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">XM</div>
+      <div class="titles">
+        <div class="h1">XyzzyModern</div>
+        <div class="h2">Pack Manager (Admin)</div>
+      </div>
+    </div>
+    <div class="right">
+      <a class="link" href="/lobby.html">Lobby</a>
+      <span class="dot">•</span>
+      <a class="link" href="/">Full UI</a>
+    </div>
+  </header>
+
+  <main class="packsWrap">
+    <section class="card">
+      <div class="cardTitle">Admin</div>
+
+      <label class="label">Admin key</label>
+      <input class="input" id="adminKeyInput" maxlength="64" placeholder="kmadmin" />
+
+      <label class="label">Score limit</label>
+      <input class="input" id="scoreLimitInput" type="number" min="1" max="50" value="7" />
+
+      <div class="cardTitle" style="margin-top:14px;">Bots</div>
+
+      <label class="label">Enable bots</label>
+      <div class="rowGap" style="align-items:center;">
+        <input type="checkbox" id="botsEnabled" style="transform:scale(1.3);" />
+        <div class="smallHint" style="margin-top:0;">Adds AI players that auto-submit and can judge.</div>
+      </div>
+
+      <label class="label">Bot count (0-12)</label>
+      <input class="input" id="botsCount" type="number" min="0" max="12" value="0" />
+
+      <div class="rowGap">
+        <button class="btn" id="saveBtn">Save Settings</button>
+        <button class="btn ghost" id="selectAllBtn">Select All</button>
+        <button class="btn ghost" id="selectNoneBtn">Select None</button>
+      </div>
+
+      <div class="smallHint" id="saveHint">Settings save to disk (settings.json). Bots save in memory.</div>
+    </section>
+
+    <section class="card">
+      <div class="cardTitle">Packs</div>
+      <div class="packsList" id="packsList"></div>
+    </section>
+
+    <section class="card">
+      <div class="cardTitle">Notes</div>
+      <div class="smallHint">
+        If enabled packs is empty, server treats it as "all packs enabled".
+      </div>
+      <div class="smallHint">
+        Pack files live in <code>.\packs\</code>.
+      </div>
+      <div class="smallHint">
+        Bots: turn ON/OFF anytime. If turned off, bots are removed.
+      </div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/packs.js"></script>
+</body>
+</html>

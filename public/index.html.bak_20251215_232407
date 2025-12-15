@@ -1,0 +1,92 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XyzzyModern</title>
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="card">
+      <div class="row space">
+        <h1>XyzzyModern</h1>
+        <div class="row">
+          <button id="startGameBtn">START</button>
+          <button id="nextRoundBtn">NEXT ROUND</button>
+        </div>
+      </div>
+
+      <div class="row wrap small">
+        <div>Phase: <span id="phaseLabel">?</span></div>
+        <div>Round: <span id="roundLabel">0</span></div>
+        <div>Judge: <span id="judgeLabel"></span></div>
+        <div>Submitted: <span id="submittedLabel">0</span>/<span id="neededLabel">0</span></div>
+        <div>Winner: <span id="winnerLabel"></span></div>
+        <div>Time: <span id="timerLabel"></span></div>
+        <div>Paused: <span id="pausedLabel">no</span></div>
+      </div>
+
+      <div class="row mt">
+        <input id="nameInput" placeholder="Set your name..." maxlength="20" />
+        <button id="setNameBtn">Set</button>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Black Card</h2>
+        <div id="blackCardBox" class="bigCard">Waiting</div>
+      </section>
+
+      <section class="card">
+        <h2>Players</h2>
+        <ul id="playersList" class="list"></ul>
+      </section>
+
+      <section class="card full">
+        <h2>Your Hand</h2>
+        <div id="handBox" class="hand">No cards yet.</div>
+        <div class="hint" id="handHint">Click START (need 2+ players).</div>
+      </section>
+
+      <section class="card full" id="judgePanel">
+        <h2>Judge Panel</h2>
+        <div class="hint" id="judgeHint">Only the judge sees this.</div>
+        <div id="judgeSubmissions" class="hand">Waiting</div>
+      </section>
+
+      <section class="card full" id="chatPanel">
+        <h2>Chat</h2>
+        <div id="chatLog" class="chatLog">Loading chat</div>
+        <div class="row mt">
+          <input id="chatInput" placeholder="Type a message..." maxlength="200" />
+          <button id="chatSendBtn">Send</button>
+        </div>
+        <div class="hint">Be cool. No doxxing, no spam.</div>
+      </section>
+
+      <section class="card full" id="adminPanel">
+        <div class="row space">
+          <h2>Admin</h2>
+          <div class="row">
+            <span class="adminBadge" id="adminBadge">not admin</span>
+          </div>
+        </div>
+
+        <div class="row wrap mt">
+          <button id="adminResetBtn">Reset Game</button>
+          <button id="adminClearChatBtn">Clear Chat</button>
+          <button id="adminPauseBtn">Pause</button>
+          <button id="adminResumeBtn">Resume</button>
+        </div>
+
+        <div class="hint mt">Kick buttons appear next to players when you are admin.</div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

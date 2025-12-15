@@ -1,0 +1,13 @@
+{
+  "enabledPacks": [
+    "dc_named_dark_crude",
+    "disney_named_dark_crude",
+    "horror_named_dark_gory",
+    "marvel_named_dark_crude"
+  ],
+  "scoreLimit": 50,
+  "playSeconds": 35,
+  "judgeSeconds": 25,
+  "resultsSeconds": 10,
+  "handSize": 10
+}

@@ -1,0 +1,554 @@
+﻿const fs = require("fs");
+const path = require("path");
+const express = require("express");
+const http = require("http");
+const { Server } = require("socket.io");
+
+const app = express();
+const server = http.createServer(app);
+const io = new Server(server);
+
+app.use(express.static(path.join(__dirname, "public")));
+
+const HOST = "127.0.0.1";
+const PORT = 3000;
+
+// -----------------------------
+// FIXED LOCAL ADMIN KEY (local-only)
+// -----------------------------
+const ADMIN_KEY = "kmadmin";
+
+// -----------------------------
+// TIMER SETTINGS (seconds)
+// -----------------------------
+const PLAY_SECONDS = 45;
+const JUDGE_SECONDS = 30;
+const RESULTS_SECONDS = 10;
+
+// -----------------------------
+// CHAT SETTINGS
+// -----------------------------
+const CHAT_MAX_MESSAGES = 200;
+const CHAT_MAX_LEN = 200;
+
+// -----------------------------
+// Load cards
+// -----------------------------
+const deckPath = path.join(__dirname, "cards.json");
+const deck = JSON.parse(fs.readFileSync(deckPath, "utf8"));
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
+
+// -----------------------------
+// Persistent identity (token -> player record)
+// -----------------------------
+const tokenToId = {};
+const idToToken = {};
+const tokenProfile = {};
+
+// -----------------------------
+// Game state
+// -----------------------------
+const game = {
+  phase: "lobby",
+  round: 0,
+  judgeId: null,
+  blackCard: null,
+  players: {},
+  hands: {},
+  submissions: {},
+  winnerId: null,
+  phaseEndsAt: null,
+
+  paused: false,
+  pausedRemainingMs: null
+};
+
+let blackDeck = [];
+let whiteDeck = [];
+
+// -----------------------------
+// Chat state
+// -----------------------------
+let chatLog = [];
+
+function clampChat() {
+  if (chatLog.length > CHAT_MAX_MESSAGES) {
+    chatLog = chatLog.slice(chatLog.length - CHAT_MAX_MESSAGES);
+  }
+}
+
+function emitChatMessage(msg) {
+  chatLog.push(msg);
+  clampChat();
+  io.emit("chat:message", msg);
+}
+
+function systemMessage(text) {
+  emitChatMessage({
+    t: Date.now(),
+    type: "system",
+    fromId: null,
+    fromName: "System",
+    text: String(text)
+  });
+}
+
+function getPlayerName(id) {
+  return game.players[id]?.name || `Player-${String(id).slice(-4)}`;
+}
+
+function playerMessage(fromId, text) {
+  emitChatMessage({
+    t: Date.now(),
+    type: "player",
+    fromId,
+    fromName: getPlayerName(fromId),
+    text: String(text)
+  });
+}
+
+function resetDecks() {
+  blackDeck = [...deck.blackCards];
+  whiteDeck = [...deck.whiteCards];
+  shuffle(blackDeck);
+  shuffle(whiteDeck);
+}
+resetDecks();
+
+function playerIds() {
+  return Object.keys(game.players);
+}
+
+function publicState() {
+  return {
+    phase: game.phase,
+    round: game.round,
+    judgeId: game.judgeId,
+    blackCard: game.blackCard,
+    players: Object.values(game.players),
+    submittedCount: Object.keys(game.submissions).length,
+    neededSubmissions: Math.max(0, playerIds().length - 1),
+    winnerId: game.winnerId,
+    phaseEndsAt: game.phaseEndsAt,
+    paused: game.paused
+  };
+}
+
+function broadcast() {
+  io.emit("state:update", publicState());
+}
+
+function sendHand(id) {
+  io.to(id).emit("hand:update", { hand: game.hands[id] || [] });
+}
+
+function chooseJudge() {
+  const ids = playerIds();
+  return ids.length ? ids[game.round % ids.length] : null;
+}
+
+function setPhase(phase, seconds) {
+  game.phase = phase;
+  game.phaseEndsAt = seconds ? Date.now() + seconds * 1000 : null;
+}
+
+function ensureDecks() {
+  if (!blackDeck.length || whiteDeck.length < 20) resetDecks();
+}
+
+function dealToSeven() {
+  playerIds().forEach(id => {
+    if (!game.hands[id]) game.hands[id] = [];
+    while (game.hands[id].length < 7 && whiteDeck.length) {
+      game.hands[id].push(whiteDeck.pop());
+    }
+    sendHand(id);
+  });
+}
+
+function startRound() {
+  if (game.paused) return;
+
+  const ids = playerIds();
+  if (ids.length < 2) {
+    systemMessage("Need at least 2 players to start.");
+    return;
+  }
+
+  ensureDecks();
+
+  game.round += 1;
+  game.submissions = {};
+  game.winnerId = null;
+
+  game.blackCard = blackDeck.pop();
+  game.judgeId = chooseJudge();
+
+  dealToSeven();
+  setPhase("playing", PLAY_SECONDS);
+
+  systemMessage(`Round ${game.round} started. Judge: ${getPlayerName(game.judgeId)}.`);
+  systemMessage(`Black card: ${game.blackCard?.text || "(missing)"}`);
+
+  broadcast();
+}
+
+function enterJudging() {
+  if (game.paused) return;
+
+  setPhase("judging", JUDGE_SECONDS);
+  systemMessage("All submissions are in. Judge is picking");
+
+  io.to(game.judgeId).emit("judge:submissions", {
+    cards: Object.entries(game.submissions).map(([playerId, card]) => ({ playerId, card }))
+  });
+
+  broadcast();
+}
+
+function enterResults(winnerId, reasonText) {
+  if (game.paused) return;
+
+  game.winnerId = winnerId;
+  setPhase("results", RESULTS_SECONDS);
+
+  const winnerName = winnerId ? getPlayerName(winnerId) : "";
+  systemMessage(reasonText ? `${reasonText} Winner: ${winnerName}.` : `Winner: ${winnerName}.`);
+
+  broadcast();
+}
+
+function submitCard(pid, cardId) {
+  if (game.paused) return;
+  if (game.phase !== "playing") return;
+  if (pid === game.judgeId) return;
+
+  const hand = game.hands[pid] || [];
+  const idx = hand.findIndex(c => c.id === cardId);
+  if (idx === -1) return;
+
+  const [card] = hand.splice(idx, 1);
+  game.submissions[pid] = card;
+
+  sendHand(pid);
+  broadcast();
+
+  const needed = playerIds().length - 1;
+  if (Object.keys(game.submissions).length >= needed) enterJudging();
+}
+
+function autoSubmitForPlayer(pid) {
+  if (pid === game.judgeId) return;
+  if (game.submissions[pid]) return;
+
+  if (!game.hands[pid]) game.hands[pid] = [];
+  while (game.hands[pid].length < 1 && whiteDeck.length) {
+    game.hands[pid].push(whiteDeck.pop());
+  }
+  if (game.hands[pid].length < 1) return;
+
+  const hand = game.hands[pid];
+  const randomIndex = Math.floor(Math.random() * hand.length);
+  const [card] = hand.splice(randomIndex, 1);
+  game.submissions[pid] = card;
+  sendHand(pid);
+
+  systemMessage(`${getPlayerName(pid)} ran out of time. Auto-submitted a card.`);
+}
+
+function autoSubmitMissingPlayers() {
+  playerIds().forEach(pid => autoSubmitForPlayer(pid));
+}
+
+function pickWinner(judgeId, winnerId) {
+  if (game.paused) return;
+  if (game.phase !== "judging") return;
+  if (judgeId !== game.judgeId) return;
+  if (!game.players[winnerId]) return;
+  if (!game.submissions[winnerId]) return;
+
+  game.players[winnerId].score += 1;
+
+  const token = idToToken[winnerId];
+  if (token) {
+    tokenProfile[token] = tokenProfile[token] || { name: game.players[winnerId].name, score: 0 };
+    tokenProfile[token].score = game.players[winnerId].score;
+  }
+
+  enterResults(winnerId, "Judge picked.");
+}
+
+function autoPickWinner() {
+  const entries = Object.keys(game.submissions);
+  if (entries.length === 0) {
+    enterResults(null, "No submissions.");
+    return;
+  }
+
+  const winnerId = entries[Math.floor(Math.random() * entries.length)];
+  if (game.players[winnerId]) {
+    game.players[winnerId].score += 1;
+    const token = idToToken[winnerId];
+    if (token) {
+      tokenProfile[token] = tokenProfile[token] || { name: game.players[winnerId].name, score: 0 };
+      tokenProfile[token].score = game.players[winnerId].score;
+    }
+  }
+  enterResults(winnerId, "Judge ran out of time. Auto-picked.");
+}
+
+// -----------------------------
+// Admin helpers
+// -----------------------------
+function isAdmin(socket) {
+  return socket.data?.adminToken === ADMIN_KEY;
+}
+
+function resetToLobby(reason) {
+  game.paused = false;
+  game.pausedRemainingMs = null;
+
+  setPhase("lobby", null);
+  game.round = 0;
+  game.judgeId = null;
+  game.blackCard = null;
+  game.submissions = {};
+  game.winnerId = null;
+
+  systemMessage(reason || "Game reset to lobby.");
+  broadcast();
+  playerIds().forEach(id => sendHand(id));
+}
+
+function clearChat(reason) {
+  chatLog = [];
+  io.emit("chat:history", { messages: chatLog });
+  systemMessage(reason || "Chat cleared.");
+}
+
+function pauseGame(reason) {
+  if (game.paused) return;
+
+  const ends = game.phaseEndsAt;
+  game.pausedRemainingMs = ends ? Math.max(0, ends - Date.now()) : null;
+  game.phaseEndsAt = null;
+  game.paused = true;
+
+  systemMessage(reason || "Game paused.");
+  broadcast();
+}
+
+function resumeGame(reason) {
+  if (!game.paused) return;
+
+  if (game.pausedRemainingMs != null && game.pausedRemainingMs > 0) {
+    game.phaseEndsAt = Date.now() + game.pausedRemainingMs;
+  } else {
+    game.phaseEndsAt = null;
+  }
+
+  game.pausedRemainingMs = null;
+  game.paused = false;
+
+  systemMessage(reason || "Game resumed.");
+  broadcast();
+}
+
+// -----------------------------
+// Timer loop
+// -----------------------------
+setInterval(() => {
+  if (game.paused) return;
+  if (!game.phaseEndsAt) return;
+
+  const remainingMs = game.phaseEndsAt - Date.now();
+  if (remainingMs > 0) return;
+
+  if (game.phase === "playing") {
+    autoSubmitMissingPlayers();
+    enterJudging();
+    return;
+  }
+
+  if (game.phase === "judging") {
+    autoPickWinner();
+    return;
+  }
+
+  if (game.phase === "results") {
+    if (playerIds().length >= 2) {
+      systemMessage("Next round starting");
+      startRound();
+    } else {
+      resetToLobby("Back to lobby. Need 2+ players.");
+    }
+  }
+}, 250);
+
+// -----------------------------
+// Identity
+// -----------------------------
+function adoptIdentity(socket, token) {
+  const safeToken = String(token || "").trim().slice(0, 80);
+  if (!safeToken) return false;
+
+  const oldId = tokenToId[safeToken];
+
+  if (oldId && oldId !== socket.id && game.players[oldId]) {
+    game.players[socket.id] = game.players[oldId];
+    game.players[socket.id].id = socket.id;
+    delete game.players[oldId];
+
+    game.hands[socket.id] = game.hands[oldId] || [];
+    delete game.hands[oldId];
+
+    if (game.submissions[oldId]) {
+      game.submissions[socket.id] = game.submissions[oldId];
+      delete game.submissions[oldId];
+    }
+
+    if (game.judgeId === oldId) game.judgeId = socket.id;
+
+    systemMessage(`${getPlayerName(socket.id)} reconnected.`);
+  }
+
+  tokenProfile[safeToken] = tokenProfile[safeToken] || null;
+
+  if (!game.players[socket.id]) {
+    const prof = tokenProfile[safeToken];
+    game.players[socket.id] = {
+      id: socket.id,
+      name: prof?.name || `Player-${socket.id.slice(-4)}`,
+      score: prof?.score || 0
+    };
+  }
+
+  if (!game.hands[socket.id]) game.hands[socket.id] = [];
+
+  const prof = tokenProfile[safeToken];
+  if (prof) {
+    game.players[socket.id].name = prof.name;
+    game.players[socket.id].score = prof.score;
+  }
+
+  tokenToId[safeToken] = socket.id;
+  idToToken[socket.id] = safeToken;
+
+  return true;
+}
+
+function removePlayerById(id, reason) {
+  const name = getPlayerName(id);
+
+  const tok = idToToken[id];
+  if (tok) {
+    tokenProfile[tok] = tokenProfile[tok] || { name: game.players[id]?.name || name, score: game.players[id]?.score || 0 };
+    delete tokenToId[tok];
+    delete idToToken[id];
+  }
+
+  delete game.players[id];
+  delete game.hands[id];
+  delete game.submissions[id];
+
+  if (game.judgeId === id) game.judgeId = null;
+
+  if (playerIds().length < 2) {
+    resetToLobby("Back to lobby. Need 2+ players.");
+    return;
+  }
+
+  broadcast();
+  systemMessage(reason || `${name} removed.`);
+}
+
+// -----------------------------
+// Socket.io
+// -----------------------------
+io.on("connection", socket => {
+  game.players[socket.id] = { id: socket.id, name: `Player-${socket.id.slice(-4)}`, score: 0 };
+  game.hands[socket.id] = game.hands[socket.id] || [];
+
+  socket.emit("chat:history", { messages: chatLog });
+  socket.emit("state:update", publicState());
+  sendHand(socket.id);
+  broadcast();
+
+  systemMessage(`${getPlayerName(socket.id)} joined.`);
+
+  socket.on("player:hello", payload => {
+    adoptIdentity(socket, payload?.token);
+    socket.emit("state:update", publicState());
+    sendHand(socket.id);
+    broadcast();
+  });
+
+  socket.on("admin:hello", payload => {
+    const tok = String(payload?.token || "");
+    socket.data.adminToken = tok;
+    socket.emit("admin:status", { isAdmin: isAdmin(socket) });
+    if (isAdmin(socket)) systemMessage("Admin connected.");
+  });
+
+  socket.on("player:setName", name => {
+    const safe = String(name || "").trim().slice(0, 20);
+    if (!safe) return;
+    if (!game.players[socket.id]) return;
+
+    const oldName = getPlayerName(socket.id);
+    game.players[socket.id].name = safe;
+
+    const token = idToToken[socket.id];
+    if (token) {
+      tokenProfile[token] = tokenProfile[token] || { name: safe, score: game.players[socket.id].score };
+      tokenProfile[token].name = safe;
+    }
+
+    broadcast();
+    systemMessage(`${oldName} is now ${safe}.`);
+  });
+
+  socket.on("game:start", () => startRound());
+  socket.on("game:nextRound", () => startRound());
+
+  socket.on("card:submit", cardId => submitCard(socket.id, Number(cardId)));
+  socket.on("judge:pick", pid => pickWinner(socket.id, String(pid)));
+
+  socket.on("chat:send", (text) => {
+    const msg = String(text || "").trim();
+    if (!msg) return;
+    if (msg.length > CHAT_MAX_LEN) return;
+    playerMessage(socket.id, msg);
+  });
+
+  // Admin actions
+  socket.on("admin:reset", () => { if (isAdmin(socket)) resetToLobby("Admin reset the game."); });
+  socket.on("admin:clearChat", () => { if (isAdmin(socket)) clearChat("Admin cleared chat."); });
+  socket.on("admin:pause", () => { if (isAdmin(socket)) pauseGame("Admin paused the game."); });
+  socket.on("admin:resume", () => { if (isAdmin(socket)) resumeGame("Admin resumed the game."); });
+
+  socket.on("admin:kick", (payload) => {
+    if (!isAdmin(socket)) return;
+    const targetId = String(payload?.id || "");
+    if (!targetId || targetId === socket.id) return;
+
+    const target = io.sockets.sockets.get(targetId);
+    if (target) target.disconnect(true);
+
+    if (game.players[targetId]) removePlayerById(targetId, "Admin kicked a player.");
+  });
+
+  socket.on("disconnect", () => {
+    if (game.players[socket.id]) removePlayerById(socket.id, `${getPlayerName(socket.id)} left.`);
+  });
+});
+
+server.listen(PORT, HOST, () => {
+  console.log(`Server running: http://${HOST}:${PORT}`);
+});

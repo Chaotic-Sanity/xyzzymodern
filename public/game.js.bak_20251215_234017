@@ -1,0 +1,95 @@
+(() => {
+  const $ = (id) => document.getElementById(id);
+
+  const phaseEl = $("phase");
+  const timerEl = $("timer");
+  const blackEl = $("black");
+  const judgeLine = $("judgeLine");
+  const playersEl = $("players");
+  const handEl = $("hand");
+
+  const socket = io();
+
+  let myHand = [];
+  let state = null;
+  let timerInt = null;
+
+  function fmt(ms) {
+    if (!ms || ms < 0) return "-";
+    const s = Math.ceil(ms / 1000);
+    return s + "s";
+  }
+
+  function renderPlayers() {
+  playersEl.innerHTML = "";
+
+  const list = (state?.players || []);
+  const maxScore = list.length ? Math.max(...list.map(p => Number(p.score || 0))) : 0;
+
+  list.forEach(p => {
+    const div = document.createElement("div");
+    div.className = "p";
+
+    const name = p.displayName || p.name;
+    const isLeader = maxScore > 0 && Number(p.score || 0) === maxScore;
+
+    div.textContent = `${isLeader ? "👑 " : ""}${name}  |  ${p.score}`;
+    playersEl.appendChild(div);
+  });
+}
+  function renderHand() {
+    handEl.innerHTML = "";
+    myHand.forEach(c => {
+      const div = document.createElement("div");
+      div.className = "w";
+      div.textContent = c.text;
+
+      div.onclick = () => {
+        if (!state) return;
+        if (state.phase !== "playing") return;
+        if (state.judgeId === socket.id) return;
+        socket.emit("card:submit", c.id);
+      };
+
+      handEl.appendChild(div);
+    });
+  }
+
+  function tick() {
+    if (!state?.phaseEndsAt) {
+      timerEl.textContent = "-";
+      return;
+    }
+    timerEl.textContent = fmt(state.phaseEndsAt - Date.now());
+  }
+
+  socket.on("connect", () => {
+    const tok = localStorage.getItem("xyzzy_token") || "";
+    socket.emit("player:hello", { token: tok });
+
+    const nm = localStorage.getItem("xyzzy_name") || "";
+    if (nm) socket.emit("player:setName", nm);
+  });
+
+  socket.on("state:update", (s) => {
+    state = s;
+    phaseEl.textContent = s.phase || "-";
+    blackEl.textContent = s.blackCard?.text || "(waiting)";
+
+    if (s.judgeId) judgeLine.textContent = "Judge: " + (s.players.find(x => x.id === s.judgeId)?.displayName || "Unknown");
+    else judgeLine.textContent = "";
+
+    renderPlayers();
+    tick();
+  });
+
+  socket.on("hand:update", (p) => {
+    myHand = p?.hand || [];
+    renderHand();
+  });
+
+  if (timerInt) clearInterval(timerInt);
+  timerInt = setInterval(tick, 250);
+})();
+
+

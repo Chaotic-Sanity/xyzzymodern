@@ -1,0 +1,1706 @@
+{
+  "whiteCards": [
+    {
+      "text": "A slap on the back too hard (somehow)",
+      "id": 1001
+    },
+    {
+      "text": "A confused backpacker",
+      "id": 1002
+    },
+    {
+      "text": "A servo bathroom mistake",
+      "id": 1003
+    },
+    {
+      "text": "A suspiciously confident bloke",
+      "id": 1004
+    },
+    {
+      "text": "A text that just says oi",
+      "id": 1005
+    },
+    {
+      "text": "A neighbour borrowing something forever",
+      "id": 1006
+    },
+    {
+      "text": "A backyard bonfire",
+      "id": 1007
+    },
+    {
+      "text": "A loud yeah the boys (somehow)",
+      "id": 1008
+    },
+    {
+      "text": "A pub quiz rivalry",
+      "id": 1009
+    },
+    {
+      "text": "A loud phone call on speaker",
+      "id": 1010
+    },
+    {
+      "text": "A pub quiz rivalry",
+      "id": 1011
+    },
+    {
+      "text": "A questionable mullet, allegedly",
+      "id": 1012
+    },
+    {
+      "text": "A Bunnings snag",
+      "id": 1013
+    },
+    {
+      "text": "A ute tray full of nonsense and no regrets",
+      "id": 1014
+    },
+    {
+      "text": "A late Centrelink payment (somehow)",
+      "id": 1015
+    },
+    {
+      "text": "A servo bathroom mistake",
+      "id": 1016
+    },
+    {
+      "text": "A neighbour borrowing something forever",
+      "id": 1017
+    },
+    {
+      "text": "A dad joke that lands",
+      "id": 1018
+    },
+    {
+      "text": "An eshay sighting",
+      "id": 1019
+    },
+    {
+      "text": "Warm beer, somehow",
+      "id": 1020
+    },
+    {
+      "text": "A comment starting with Im not racist but",
+      "id": 1021
+    },
+    {
+      "text": "A mozzie coil indoors (somehow)",
+      "id": 1022
+    },
+    {
+      "text": "A tradie ghosting the job, allegedly",
+      "id": 1023
+    },
+    {
+      "text": "A suspiciously cheap gumtree deal",
+      "id": 1024
+    },
+    {
+      "text": "A holiday that ended early",
+      "id": 1025
+    },
+    {
+      "text": "Calling everyone mate, even the dog",
+      "id": 1026
+    },
+    {
+      "text": "A bloke named Damo and no regrets",
+      "id": 1027
+    },
+    {
+      "text": "A holiday that ended early",
+      "id": 1028
+    },
+    {
+      "text": "A phrase you cant repeat in front of Nan (somehow)",
+      "id": 1029
+    },
+    {
+      "text": "A busted Hills Hoist",
+      "id": 1030
+    },
+    {
+      "text": "A bloke named Damo",
+      "id": 1031
+    },
+    {
+      "text": "A servo bathroom mistake",
+      "id": 1032
+    },
+    {
+      "text": "A busted Hills Hoist",
+      "id": 1033
+    },
+    {
+      "text": "A pub quiz rivalry, allegedly",
+      "id": 1034
+    },
+    {
+      "text": "A pie thats lava inside",
+      "id": 1035
+    },
+    {
+      "text": "A weather change in 10 minutes (somehow)",
+      "id": 1036
+    },
+    {
+      "text": "A meat raffle obsession",
+      "id": 1037
+    },
+    {
+      "text": "A ute bogged at the beach",
+      "id": 1038
+    },
+    {
+      "text": "A confused backpacker",
+      "id": 1039
+    },
+    {
+      "text": "A flat tyre in the middle of nowhere and no regrets",
+      "id": 1040
+    },
+    {
+      "text": "A road rage thumbs up",
+      "id": 1041
+    },
+    {
+      "text": "Someone bringing their own Esky",
+      "id": 1042
+    },
+    {
+      "text": "A hungover Bunnings trip (somehow)",
+      "id": 1043
+    },
+    {
+      "text": "A cracked thongs emergency",
+      "id": 1044
+    },
+    {
+      "text": "A Bali tattoo regret, allegedly",
+      "id": 1045
+    },
+    {
+      "text": "A ute tray full of nonsense",
+      "id": 1046
+    },
+    {
+      "text": "A Bali tattoo regret",
+      "id": 1047
+    },
+    {
+      "text": "A pub quiz rivalry",
+      "id": 1048
+    },
+    {
+      "text": "A group chat called The Lads",
+      "id": 1049
+    },
+    {
+      "text": "A dodgy backyard setup (somehow)",
+      "id": 1050
+    },
+    {
+      "text": "A backhanded compliment",
+      "id": 1051
+    },
+    {
+      "text": "A parma vs parmi argument",
+      "id": 1052
+    },
+    {
+      "text": "Someone yelling OI and no regrets",
+      "id": 1053
+    },
+    {
+      "text": "A bloke named Damo",
+      "id": 1054
+    },
+    {
+      "text": "Warm beer, somehow",
+      "id": 1055
+    },
+    {
+      "text": "A servo meat pie, allegedly",
+      "id": 1056
+    },
+    {
+      "text": "A schooner debate (somehow)",
+      "id": 1057
+    },
+    {
+      "text": "A bold lie at the pub",
+      "id": 1058
+    },
+    {
+      "text": "A hungover Bunnings trip",
+      "id": 1059
+    },
+    {
+      "text": "A group chat called The Lads",
+      "id": 1060
+    },
+    {
+      "text": "A loud Kookaburra at 5am",
+      "id": 1061
+    },
+    {
+      "text": "A sausage sizzle argument",
+      "id": 1062
+    },
+    {
+      "text": "A holiday that ended early",
+      "id": 1063
+    },
+    {
+      "text": "A ute tray full of nonsense (somehow)",
+      "id": 1064
+    },
+    {
+      "text": "A magpie with personal beef",
+      "id": 1065
+    },
+    {
+      "text": "A caravan reversing disaster and no regrets",
+      "id": 1066
+    },
+    {
+      "text": "A backhanded compliment, allegedly",
+      "id": 1067
+    },
+    {
+      "text": "A Bali tattoo regret",
+      "id": 1068
+    },
+    {
+      "text": "A schooner debate",
+      "id": 1069
+    },
+    {
+      "text": "A confused backpacker",
+      "id": 1070
+    },
+    {
+      "text": "A pub quiz rivalry (somehow)",
+      "id": 1071
+    },
+    {
+      "text": "A bold lie at the pub",
+      "id": 1072
+    },
+    {
+      "text": "A holiday that ended early",
+      "id": 1073
+    },
+    {
+      "text": "An Australia Day debate",
+      "id": 1074
+    },
+    {
+      "text": "A cracked thongs emergency",
+      "id": 1075
+    },
+    {
+      "text": "A bold lie at the pub",
+      "id": 1076
+    },
+    {
+      "text": "A Bali tattoo regret",
+      "id": 1077
+    },
+    {
+      "text": "A text that just says oi (somehow)",
+      "id": 1078
+    },
+    {
+      "text": "A hungover Bunnings trip and no regrets",
+      "id": 1079
+    },
+    {
+      "text": "A text that just says oi",
+      "id": 1080
+    },
+    {
+      "text": "A country town rumour",
+      "id": 1081
+    },
+    {
+      "text": "A phrase you cant repeat in front of Nan",
+      "id": 1082
+    },
+    {
+      "text": "A comment starting with Im not racist but",
+      "id": 1083
+    },
+    {
+      "text": "A tradie ghosting the job",
+      "id": 1084
+    },
+    {
+      "text": "A country town rumour (somehow)",
+      "id": 1085
+    },
+    {
+      "text": "A questionable mullet",
+      "id": 1086
+    },
+    {
+      "text": "A loud yeah the boys",
+      "id": 1087
+    },
+    {
+      "text": "A backhanded compliment",
+      "id": 1088
+    },
+    {
+      "text": "A backhanded compliment, allegedly",
+      "id": 1089
+    },
+    {
+      "text": "An unlicensed trailer",
+      "id": 1090
+    },
+    {
+      "text": "A ute tray full of nonsense",
+      "id": 1091
+    },
+    {
+      "text": "A power outage at the worst time (somehow)",
+      "id": 1092
+    },
+    {
+      "text": "A group chat called The Lads",
+      "id": 1093
+    },
+    {
+      "text": "A backhanded compliment",
+      "id": 1094
+    },
+    {
+      "text": "A barefoot trip to the shops",
+      "id": 1095
+    },
+    {
+      "text": "A meat pie judged harshly",
+      "id": 1096
+    },
+    {
+      "text": "A stubby holder collection",
+      "id": 1097
+    },
+    {
+      "text": "A dodgy accent attempt",
+      "id": 1098
+    },
+    {
+      "text": "A holiday that ended early (somehow)",
+      "id": 1099
+    },
+    {
+      "text": "A meat raffle obsession, allegedly",
+      "id": 1100
+    },
+    {
+      "text": "A fire alarm caused by toast",
+      "id": 1101
+    },
+    {
+      "text": "Someone yelling OI",
+      "id": 1102
+    },
+    {
+      "text": "A flyscreen thats never fixed",
+      "id": 1103
+    },
+    {
+      "text": "A magpie with personal beef",
+      "id": 1104
+    },
+    {
+      "text": "A bloke named Damo and no regrets",
+      "id": 1105
+    },
+    {
+      "text": "A four hour trip to Bunnings (somehow)",
+      "id": 1106
+    },
+    {
+      "text": "A sunburn that hurts to blink",
+      "id": 1107
+    },
+    {
+      "text": "Warm beer, somehow",
+      "id": 1108
+    },
+    {
+      "text": "A cracked thongs emergency",
+      "id": 1109
+    },
+    {
+      "text": "A loud phone call on speaker",
+      "id": 1110
+    },
+    {
+      "text": "Saying yeah nah, allegedly",
+      "id": 1111
+    },
+    {
+      "text": "A parma vs parmi argument",
+      "id": 1112
+    },
+    {
+      "text": "A comment starting with Im not racist but (somehow)",
+      "id": 1113
+    },
+    {
+      "text": "A ute doing something illegal",
+      "id": 1114
+    },
+    {
+      "text": "An eshay sighting",
+      "id": 1115
+    },
+    {
+      "text": "A questionable mullet",
+      "id": 1116
+    },
+    {
+      "text": "A road rage thumbs up",
+      "id": 1117
+    },
+    {
+      "text": "A loud yeah the boys and no regrets",
+      "id": 1118
+    },
+    {
+      "text": "A busted Hills Hoist",
+      "id": 1119
+    },
+    {
+      "text": "A neighbour with power tools (somehow)",
+      "id": 1120
+    },
+    {
+      "text": "A neighbour with power tools",
+      "id": 1121
+    },
+    {
+      "text": "A pub story that gets worse each time, allegedly",
+      "id": 1122
+    },
+    {
+      "text": "An Australia Day debate",
+      "id": 1123
+    },
+    {
+      "text": "A mate who knows a guy",
+      "id": 1124
+    },
+    {
+      "text": "A comment starting with Im not racist but",
+      "id": 1125
+    },
+    {
+      "text": "A four hour trip to Bunnings",
+      "id": 1126
+    },
+    {
+      "text": "A meat pie judged harshly (somehow)",
+      "id": 1127
+    },
+    {
+      "text": "A flyscreen thats never fixed",
+      "id": 1128
+    },
+    {
+      "text": "A neighbour with power tools",
+      "id": 1129
+    },
+    {
+      "text": "A fire alarm caused by toast",
+      "id": 1130
+    },
+    {
+      "text": "A fly that wont leave you alone and no regrets",
+      "id": 1131
+    },
+    {
+      "text": "A confused backpacker",
+      "id": 1132
+    },
+    {
+      "text": "A fire alarm caused by toast, allegedly",
+      "id": 1133
+    },
+    {
+      "text": "Saying yeah nah (somehow)",
+      "id": 1134
+    },
+    {
+      "text": "A group decision that failed",
+      "id": 1135
+    },
+    {
+      "text": "Forgetting sunscreen again",
+      "id": 1136
+    },
+    {
+      "text": "A parking fine at the beach",
+      "id": 1137
+    },
+    {
+      "text": "A cracked thongs emergency",
+      "id": 1138
+    },
+    {
+      "text": "Thongs in inappropriate places",
+      "id": 1139
+    },
+    {
+      "text": "A suspiciously cheap gumtree deal",
+      "id": 1140
+    },
+    {
+      "text": "A sunburn that hurts to blink (somehow)",
+      "id": 1141
+    },
+    {
+      "text": "A Bunnings snag",
+      "id": 1142
+    },
+    {
+      "text": "A group chat called The Lads",
+      "id": 1143
+    },
+    {
+      "text": "A ute doing something illegal, allegedly",
+      "id": 1144
+    },
+    {
+      "text": "A case of beers as currency",
+      "id": 1145
+    },
+    {
+      "text": "A Bunnings snag",
+      "id": 1146
+    },
+    {
+      "text": "A cracked thongs emergency",
+      "id": 1147
+    },
+    {
+      "text": "A schooner debate (somehow)",
+      "id": 1148
+    },
+    {
+      "text": "A council fine you deserved",
+      "id": 1149
+    },
+    {
+      "text": "A Bunnings snag",
+      "id": 1150
+    },
+    {
+      "text": "A dad joke that lands",
+      "id": 1151
+    },
+    {
+      "text": "A bold lie at the pub",
+      "id": 1152
+    },
+    {
+      "text": "A flyscreen thats never fixed",
+      "id": 1153
+    },
+    {
+      "text": "A group decision that failed",
+      "id": 1154
+    },
+    {
+      "text": "A four hour trip to Bunnings (somehow)",
+      "id": 1155
+    },
+    {
+      "text": "A suspiciously confident bloke",
+      "id": 1156
+    },
+    {
+      "text": "A meat pie judged harshly and no regrets",
+      "id": 1157
+    },
+    {
+      "text": "A tradie ghosting the job",
+      "id": 1158
+    },
+    {
+      "text": "A loud yeah the boys",
+      "id": 1159
+    },
+    {
+      "text": "A backyard cricket injury",
+      "id": 1160
+    },
+    {
+      "text": "A pub story that gets worse each time",
+      "id": 1161
+    },
+    {
+      "text": "A holiday that ended early (somehow)",
+      "id": 1162
+    },
+    {
+      "text": "A ute bogged at the beach",
+      "id": 1163
+    },
+    {
+      "text": "A pub story that gets worse each time",
+      "id": 1164
+    },
+    {
+      "text": "A caravan reversing disaster",
+      "id": 1165
+    },
+    {
+      "text": "A questionable mullet, allegedly",
+      "id": 1166
+    },
+    {
+      "text": "A fly that wont leave you alone",
+      "id": 1167
+    },
+    {
+      "text": "A power outage at the worst time",
+      "id": 1168
+    },
+    {
+      "text": "A meat pie judged harshly (somehow)",
+      "id": 1169
+    },
+    {
+      "text": "A loud Kookaburra at 5am and no regrets",
+      "id": 1170
+    },
+    {
+      "text": "A case of beers as currency",
+      "id": 1171
+    },
+    {
+      "text": "A group decision that failed",
+      "id": 1172
+    },
+    {
+      "text": "A mozzie bite you cant ignore",
+      "id": 1173
+    },
+    {
+      "text": "A loud conversation about nothing",
+      "id": 1174
+    },
+    {
+      "text": "A text that just says oi",
+      "id": 1175
+    },
+    {
+      "text": "A slap on the back too hard (somehow)",
+      "id": 1176
+    },
+    {
+      "text": "A bloke named Damo, allegedly",
+      "id": 1177
+    },
+    {
+      "text": "A mozzie bite you cant ignore",
+      "id": 1178
+    },
+    {
+      "text": "A neighbour borrowing something forever",
+      "id": 1179
+    },
+    {
+      "text": "Saying yeah nah",
+      "id": 1180
+    },
+    {
+      "text": "An unlicensed trailer",
+      "id": 1181
+    },
+    {
+      "text": "A barefoot trip to the shops",
+      "id": 1182
+    },
+    {
+      "text": "Someone bringing their own Esky (somehow)",
+      "id": 1183
+    },
+    {
+      "text": "A parma vs parmi argument",
+      "id": 1184
+    },
+    {
+      "text": "A case of beers as currency",
+      "id": 1185
+    },
+    {
+      "text": "A sunburn that hurts to blink",
+      "id": 1186
+    },
+    {
+      "text": "A flyscreen thats never fixed",
+      "id": 1187
+    },
+    {
+      "text": "A Bali tattoo regret, allegedly",
+      "id": 1188
+    },
+    {
+      "text": "A schooner debate",
+      "id": 1189
+    },
+    {
+      "text": "A neighbour borrowing something forever (somehow)",
+      "id": 1190
+    },
+    {
+      "text": "A backyard cricket injury",
+      "id": 1191
+    },
+    {
+      "text": "A questionable nickname",
+      "id": 1192
+    },
+    {
+      "text": "A loud yeah the boys",
+      "id": 1193
+    },
+    {
+      "text": "A slap on the back too hard",
+      "id": 1194
+    },
+    {
+      "text": "A dad joke that lands",
+      "id": 1195
+    },
+    {
+      "text": "A last minute Maccas run and no regrets",
+      "id": 1196
+    },
+    {
+      "text": "A loud yeah the boys (somehow)",
+      "id": 1197
+    },
+    {
+      "text": "A pub story that gets worse each time",
+      "id": 1198
+    },
+    {
+      "text": "A bold lie at the pub, allegedly",
+      "id": 1199
+    },
+    {
+      "text": "A neighbour borrowing something forever",
+      "id": 1200
+    },
+    {
+      "text": "Someone yelling OI",
+      "id": 1201
+    },
+    {
+      "text": "A group chat called The Lads",
+      "id": 1202
+    },
+    {
+      "text": "A questionable nickname",
+      "id": 1203
+    },
+    {
+      "text": "A mate who wont shout back (somehow)",
+      "id": 1204
+    },
+    {
+      "text": "A loud conversation about nothing",
+      "id": 1205
+    },
+    {
+      "text": "A slap on the back too hard",
+      "id": 1206
+    },
+    {
+      "text": "Saying yeah nah",
+      "id": 1207
+    },
+    {
+      "text": "A completely cooked idea",
+      "id": 1208
+    },
+    {
+      "text": "A cracked thongs emergency and no regrets",
+      "id": 1209
+    },
+    {
+      "text": "A suspiciously confident bloke, allegedly",
+      "id": 1210
+    },
+    {
+      "text": "Forgetting sunscreen again (somehow)",
+      "id": 1211
+    },
+    {
+      "text": "A loud phone call on speaker",
+      "id": 1212
+    },
+    {
+      "text": "A sunburn that hurts to blink",
+      "id": 1213
+    },
+    {
+      "text": "A weather change in 10 minutes",
+      "id": 1214
+    },
+    {
+      "text": "A busted Hills Hoist",
+      "id": 1215
+    },
+    {
+      "text": "A neighbour borrowing something forever",
+      "id": 1216
+    },
+    {
+      "text": "A questionable mullet",
+      "id": 1217
+    },
+    {
+      "text": "A Bunnings snag (somehow)",
+      "id": 1218
+    },
+    {
+      "text": "A group chat called The Lads",
+      "id": 1219
+    },
+    {
+      "text": "A questionable nickname",
+      "id": 1220
+    },
+    {
+      "text": "A council fine you deserved, allegedly",
+      "id": 1221
+    },
+    {
+      "text": "A Bunnings snag and no regrets",
+      "id": 1222
+    },
+    {
+      "text": "A fly that wont leave you alone",
+      "id": 1223
+    },
+    {
+      "text": "A servo bathroom mistake",
+      "id": 1224
+    },
+    {
+      "text": "A flat tyre in the middle of nowhere (somehow)",
+      "id": 1225
+    },
+    {
+      "text": "A suspiciously confident bloke",
+      "id": 1226
+    },
+    {
+      "text": "A magpie with personal beef",
+      "id": 1227
+    },
+    {
+      "text": "A council fine you deserved",
+      "id": 1228
+    },
+    {
+      "text": "A holiday that ended early",
+      "id": 1229
+    },
+    {
+      "text": "A holiday that ended early",
+      "id": 1230
+    },
+    {
+      "text": "A pie thats lava inside",
+      "id": 1231
+    },
+    {
+      "text": "A neighbour borrowing something forever (somehow)",
+      "id": 1232
+    },
+    {
+      "text": "A magpie with personal beef",
+      "id": 1233
+    },
+    {
+      "text": "A ute tray full of nonsense",
+      "id": 1234
+    },
+    {
+      "text": "An Australia Day debate and no regrets",
+      "id": 1235
+    },
+    {
+      "text": "Arguing about footy codes",
+      "id": 1236
+    },
+    {
+      "text": "A dodgy accent attempt",
+      "id": 1237
+    },
+    {
+      "text": "A servo bathroom mistake",
+      "id": 1238
+    },
+    {
+      "text": "Someone yelling OI (somehow)",
+      "id": 1239
+    },
+    {
+      "text": "A fly that wont leave you alone",
+      "id": 1240
+    },
+    {
+      "text": "A confused backpacker",
+      "id": 1241
+    },
+    {
+      "text": "Someone bringing their own Esky",
+      "id": 1242
+    },
+    {
+      "text": "A meat pie judged harshly, allegedly",
+      "id": 1243
+    },
+    {
+      "text": "A power outage at the worst time",
+      "id": 1244
+    },
+    {
+      "text": "Thongs in inappropriate places",
+      "id": 1245
+    },
+    {
+      "text": "A sunburn that hurts to blink (somehow)",
+      "id": 1246
+    },
+    {
+      "text": "An Australia Day debate",
+      "id": 1247
+    },
+    {
+      "text": "A mate who wont shout back and no regrets",
+      "id": 1248
+    },
+    {
+      "text": "A ute tray full of nonsense",
+      "id": 1249
+    },
+    {
+      "text": "A neighbour with power tools",
+      "id": 1250
+    },
+    {
+      "text": "A sunburn that hurts to blink",
+      "id": 1251
+    },
+    {
+      "text": "A half finished reno",
+      "id": 1252
+    },
+    {
+      "text": "A neighbour borrowing something forever (somehow)",
+      "id": 1253
+    },
+    {
+      "text": "A mate who knows a guy, allegedly",
+      "id": 1254
+    },
+    {
+      "text": "A questionable nickname",
+      "id": 1255
+    },
+    {
+      "text": "An Australia Day debate",
+      "id": 1256
+    },
+    {
+      "text": "Saying yeah nah",
+      "id": 1257
+    },
+    {
+      "text": "A bold lie at the pub",
+      "id": 1258
+    },
+    {
+      "text": "Warm beer, somehow",
+      "id": 1259
+    },
+    {
+      "text": "A loud Kookaburra at 5am (somehow)",
+      "id": 1260
+    },
+    {
+      "text": "A suspiciously confident bloke and no regrets",
+      "id": 1261
+    },
+    {
+      "text": "A slap on the back too hard",
+      "id": 1262
+    },
+    {
+      "text": "Calling everyone mate, even the dog",
+      "id": 1263
+    },
+    {
+      "text": "A tradie starting at 6am",
+      "id": 1264
+    },
+    {
+      "text": "A flat tyre in the middle of nowhere, allegedly",
+      "id": 1265
+    },
+    {
+      "text": "A questionable mullet",
+      "id": 1266
+    },
+    {
+      "text": "A flyscreen thats never fixed (somehow)",
+      "id": 1267
+    },
+    {
+      "text": "A meat raffle obsession",
+      "id": 1268
+    },
+    {
+      "text": "A camping trip gone wrong",
+      "id": 1269
+    },
+    {
+      "text": "A confused backpacker",
+      "id": 1270
+    },
+    {
+      "text": "An eshay sighting",
+      "id": 1271
+    },
+    {
+      "text": "A ute doing something illegal",
+      "id": 1272
+    },
+    {
+      "text": "A ute doing something illegal",
+      "id": 1273
+    },
+    {
+      "text": "A council fine you deserved (somehow)",
+      "id": 1274
+    },
+    {
+      "text": "A dad joke that lands",
+      "id": 1275
+    },
+    {
+      "text": "Someone bringing their own Esky, allegedly",
+      "id": 1276
+    },
+    {
+      "text": "A schooner debate",
+      "id": 1277
+    },
+    {
+      "text": "A four hour trip to Bunnings",
+      "id": 1278
+    },
+    {
+      "text": "A country town rumour",
+      "id": 1279
+    },
+    {
+      "text": "Forgetting sunscreen again",
+      "id": 1280
+    },
+    {
+      "text": "A late Centrelink payment (somehow)",
+      "id": 1281
+    },
+    {
+      "text": "A council fine you deserved",
+      "id": 1282
+    },
+    {
+      "text": "A slap on the back too hard",
+      "id": 1283
+    },
+    {
+      "text": "A tradie starting at 6am",
+      "id": 1284
+    },
+    {
+      "text": "Saying yeah nah",
+      "id": 1285
+    },
+    {
+      "text": "Arguing about footy codes",
+      "id": 1286
+    },
+    {
+      "text": "A council fine you deserved, allegedly",
+      "id": 1287
+    },
+    {
+      "text": "A meat raffle obsession (somehow)",
+      "id": 1288
+    },
+    {
+      "text": "A half finished reno",
+      "id": 1289
+    },
+    {
+      "text": "A slap on the back too hard",
+      "id": 1290
+    },
+    {
+      "text": "A bold lie at the pub",
+      "id": 1291
+    },
+    {
+      "text": "A schooner debate",
+      "id": 1292
+    },
+    {
+      "text": "A half finished reno",
+      "id": 1293
+    },
+    {
+      "text": "A suspiciously confident bloke",
+      "id": 1294
+    },
+    {
+      "text": "A comment starting with Im not racist but (somehow)",
+      "id": 1295
+    },
+    {
+      "text": "A parma vs parmi argument",
+      "id": 1296
+    },
+    {
+      "text": "Saying yeah nah",
+      "id": 1297
+    },
+    {
+      "text": "A slap on the back too hard, allegedly",
+      "id": 1298
+    },
+    {
+      "text": "A busted Hills Hoist",
+      "id": 1299
+    },
+    {
+      "text": "A neighbour with power tools and no regrets",
+      "id": 1300
+    }
+  ],
+  "blackCards": [
+    {
+      "text": "The worst road trip moment involved Forgetting sunscreen again.",
+      "id": 1,
+      "pick": 1
+    },
+    {
+      "text": "The group chat hasnt recovered from A fire alarm caused by toast.",
+      "id": 2,
+      "pick": 1
+    },
+    {
+      "text": "Thats not illegal, its just A case of beers as currency.",
+      "id": 3,
+      "pick": 1
+    },
+    {
+      "text": "The barbecue was going great until A road rage thumbs up.",
+      "id": 4,
+      "pick": 1
+    },
+    {
+      "text": "Only in Australia would A text that just says oi be considered normal.",
+      "id": 5,
+      "pick": 1
+    },
+    {
+      "text": "The worst road trip moment involved A drunk karaoke choice.",
+      "id": 6,
+      "pick": 1
+    },
+    {
+      "text": "The neighbour complained about A fly that wont leave you alone.",
+      "id": 7,
+      "pick": 1
+    },
+    {
+      "text": "It was meant to be a quiet one until A drunk karaoke choice.",
+      "id": 8,
+      "pick": 1
+    },
+    {
+      "text": "The only explanation is A flyscreen thats never fixed.",
+      "id": 9,
+      "pick": 1
+    },
+    {
+      "text": "Everyone agreed it was fine until A dodgy accent attempt.",
+      "id": 10,
+      "pick": 1
+    },
+    {
+      "text": "That was the moment it went full bogan: A servo meat pie.",
+      "id": 11,
+      "pick": 1
+    },
+    {
+      "text": "Thats not illegal, its just A tradie ghosting the job.",
+      "id": 12,
+      "pick": 1
+    },
+    {
+      "text": "That was the moment it went full bogan: A four hour trip to Bunnings.",
+      "id": 13,
+      "pick": 1
+    },
+    {
+      "text": "Somehow, A camping trip gone wrong became the solution.",
+      "id": 14,
+      "pick": 1
+    },
+    {
+      "text": "The neighbour complained about A power outage at the worst time.",
+      "id": 15,
+      "pick": 1
+    },
+    {
+      "text": "The group chat hasnt recovered from A holiday that ended early.",
+      "id": 16,
+      "pick": 1
+    },
+    {
+      "text": "The barbecue was going great until A footy tipping meltdown.",
+      "id": 17,
+      "pick": 1
+    },
+    {
+      "text": "The group chat hasnt recovered from A ute tray full of nonsense.",
+      "id": 18,
+      "pick": 1
+    },
+    {
+      "text": "The neighbour complained about A servo meat pie.",
+      "id": 19,
+      "pick": 1
+    },
+    {
+      "text": "That was the moment it went full bogan: An unlicensed trailer.",
+      "id": 20,
+      "pick": 1
+    },
+    {
+      "text": "Somehow, A power outage at the worst time became the solution.",
+      "id": 21,
+      "pick": 1
+    },
+    {
+      "text": "Everyone agreed it was fine until A snake sighting panic.",
+      "id": 22,
+      "pick": 1
+    },
+    {
+      "text": "The only explanation is A snake sighting panic.",
+      "id": 23,
+      "pick": 1
+    },
+    {
+      "text": "The real reason the cops showed up was A pub quiz rivalry.",
+      "id": 24,
+      "pick": 1
+    },
+    {
+      "text": "Nothing says Straya like A comment starting with Im not racist but.",
+      "id": 25,
+      "pick": 1
+    },
+    {
+      "text": "This is why we cant have nice things in Australia: An eshay sighting.",
+      "id": 26,
+      "pick": 1
+    },
+    {
+      "text": "Every Aussie argument eventually turns into A camping trip gone wrong.",
+      "id": 27,
+      "pick": 1
+    },
+    {
+      "text": "I knew it was cooked when Saying yeah nah happened.",
+      "id": 28,
+      "pick": 1
+    },
+    {
+      "text": "Only in Australia would A pub quiz rivalry be considered normal.",
+      "id": 29,
+      "pick": 1
+    },
+    {
+      "text": "The group chat hasnt recovered from A ute tray full of nonsense.",
+      "id": 30,
+      "pick": 1
+    },
+    {
+      "text": "Every Aussie argument eventually turns into A ute tray full of nonsense.",
+      "id": 31,
+      "pick": 1
+    },
+    {
+      "text": "That was the moment it went full bogan: A mate who knows a guy.",
+      "id": 32,
+      "pick": 1
+    },
+    {
+      "text": "It was meant to be a quiet one until A camping trip gone wrong.",
+      "id": 33,
+      "pick": 1
+    },
+    {
+      "text": "The neighbour complained about An eshay sighting.",
+      "id": 34,
+      "pick": 1
+    },
+    {
+      "text": "The family gathering fell apart because of A flyscreen thats never fixed.",
+      "id": 35,
+      "pick": 1
+    },
+    {
+      "text": "The only explanation is A snake sighting panic.",
+      "id": 36,
+      "pick": 1
+    },
+    {
+      "text": "The family gathering fell apart because of A case of beers as currency.",
+      "id": 37,
+      "pick": 1
+    },
+    {
+      "text": "The family gathering fell apart because of A backyard cricket injury.",
+      "id": 38,
+      "pick": 1
+    },
+    {
+      "text": "The worst road trip moment involved A backyard bonfire.",
+      "id": 39,
+      "pick": 1
+    },
+    {
+      "text": "Somehow, A meat raffle obsession became the solution.",
+      "id": 40,
+      "pick": 1
+    },
+    {
+      "text": "That was the moment it went full bogan: An Australia Day debate.",
+      "id": 41,
+      "pick": 1
+    },
+    {
+      "text": "The family gathering fell apart because of A country town rumour.",
+      "id": 42,
+      "pick": 1
+    },
+    {
+      "text": "The real reason the cops showed up was A sunburn that hurts to blink.",
+      "id": 43,
+      "pick": 1
+    },
+    {
+      "text": "The pub went quiet after A questionable nickname.",
+      "id": 44,
+      "pick": 1
+    },
+    {
+      "text": "The real reason the cops showed up was A suspiciously confident bloke.",
+      "id": 45,
+      "pick": 1
+    },
+    {
+      "text": "Thats not illegal, its just A case of beers as currency.",
+      "id": 46,
+      "pick": 1
+    },
+    {
+      "text": "Somehow, A dodgy accent attempt became the solution.",
+      "id": 47,
+      "pick": 1
+    },
+    {
+      "text": "The pub went quiet after A dodgy accent attempt.",
+      "id": 48,
+      "pick": 1
+    },
+    {
+      "text": "Nothing says Straya like Calling everyone mate, even the dog.",
+      "id": 49,
+      "pick": 1
+    },
+    {
+      "text": "Thats not illegal, its just A tradie ghosting the job.",
+      "id": 50,
+      "pick": 1
+    },
+    {
+      "text": "The pub went quiet after Forgetting sunscreen again.",
+      "id": 51,
+      "pick": 1
+    },
+    {
+      "text": "The barbecue was going great until A Bali tattoo regret.",
+      "id": 52,
+      "pick": 1
+    },
+    {
+      "text": "The pub went quiet after A group chat called The Lads.",
+      "id": 53,
+      "pick": 1
+    },
+    {
+      "text": "This is why Mum said dont mention A suspiciously confident bloke.",
+      "id": 54,
+      "pick": 1
+    },
+    {
+      "text": "The neighbour complained about Arguing about footy codes.",
+      "id": 55,
+      "pick": 1
+    },
+    {
+      "text": "The group chat hasnt recovered from A group chat called The Lads.",
+      "id": 56,
+      "pick": 1
+    },
+    {
+      "text": "The neighbour complained about A caravan reversing disaster.",
+      "id": 57,
+      "pick": 1
+    },
+    {
+      "text": "It was meant to be a quiet one until A slippery dip made from tarp.",
+      "id": 58,
+      "pick": 1
+    },
+    {
+      "text": "It was meant to be a quiet one until A comment starting with Im not racist but.",
+      "id": 59,
+      "pick": 1
+    },
+    {
+      "text": "This is why we cant have nice things in Australia: A mate who knows a guy.",
+      "id": 60,
+      "pick": 1
+    },
+    {
+      "text": "Everyone agreed it was fine until A caravan reversing disaster.",
+      "id": 61,
+      "pick": 1
+    },
+    {
+      "text": "Thats not illegal, its just A bloke named Damo.",
+      "id": 62,
+      "pick": 1
+    },
+    {
+      "text": "The worst road trip moment involved A questionable mullet.",
+      "id": 63,
+      "pick": 1
+    },
+    {
+      "text": "It was meant to be a quiet one until A loud phone call on speaker.",
+      "id": 64,
+      "pick": 1
+    },
+    {
+      "text": "The family gathering fell apart because of A fly that wont leave you alone.",
+      "id": 65,
+      "pick": 1
+    },
+    {
+      "text": "That was the moment it went full bogan: A barefoot pub visit.",
+      "id": 66,
+      "pick": 1
+    },
+    {
+      "text": "The neighbour complained about A Bali tattoo regret.",
+      "id": 67,
+      "pick": 1
+    },
+    {
+      "text": "The group chat hasnt recovered from A slap on the back too hard.",
+      "id": 68,
+      "pick": 1
+    },
+    {
+      "text": "This is why Mum said dont mention A suspiciously confident bloke.",
+      "id": 69,
+      "pick": 1
+    },
+    {
+      "text": "The pub went quiet after A slap on the back too hard.",
+      "id": 70,
+      "pick": 1
+    },
+    {
+      "text": "The neighbour complained about A Bali tattoo regret.",
+      "id": 71,
+      "pick": 1
+    },
+    {
+      "text": "The family gathering fell apart because of A late Centrelink payment.",
+      "id": 72,
+      "pick": 1
+    },
+    {
+      "text": "The worst road trip moment involved A loud yeah the boys.",
+      "id": 73,
+      "pick": 1
+    },
+    {
+      "text": "Only in Australia would A mate who knows a guy be considered normal.",
+      "id": 74,
+      "pick": 1
+    },
+    {
+      "text": "Only in Australia would Arguing about footy codes be considered normal.",
+      "id": 75,
+      "pick": 1
+    },
+    {
+      "text": "Everyone agreed it was fine until A slippery dip made from tarp.",
+      "id": 76,
+      "pick": 1
+    },
+    {
+      "text": "The barbecue was going great until A meat pie judged harshly.",
+      "id": 77,
+      "pick": 1
+    },
+    {
+      "text": "The barbecue was going great until A magpie with personal beef.",
+      "id": 78,
+      "pick": 1
+    },
+    {
+      "text": "Every Aussie argument eventually turns into A meat pie judged harshly.",
+      "id": 79,
+      "pick": 1
+    },
+    {
+      "text": "The real reason the cops showed up was A meat pie judged harshly.",
+      "id": 80,
+      "pick": 1
+    },
+    {
+      "text": "The family gathering fell apart because of A pub quiz rivalry.",
+      "id": 81,
+      "pick": 1
+    },
+    {
+      "text": "The real reason the cops showed up was A suspiciously cheap gumtree deal.",
+      "id": 82,
+      "pick": 1
+    },
+    {
+      "text": "The pub went quiet after A barefoot pub visit.",
+      "id": 83,
+      "pick": 1
+    },
+    {
+      "text": "The pub went quiet after A meat pie judged harshly.",
+      "id": 84,
+      "pick": 1
+    },
+    {
+      "text": "Only in Australia would A meat pie judged harshly be considered normal.",
+      "id": 85,
+      "pick": 1
+    },
+    {
+      "text": "Somehow, A suspiciously confident bloke became the solution.",
+      "id": 86,
+      "pick": 1
+    },
+    {
+      "text": "I knew it was cooked when A weather change in 10 minutes happened.",
+      "id": 87,
+      "pick": 1
+    },
+    {
+      "text": "I knew it was cooked when A dad joke that lands happened.",
+      "id": 88,
+      "pick": 1
+    },
+    {
+      "text": "It was meant to be a quiet one until A neighbour with power tools.",
+      "id": 89,
+      "pick": 1
+    },
+    {
+      "text": "Nothing says Straya like A ute doing something illegal.",
+      "id": 90,
+      "pick": 1
+    },
+    {
+      "text": "The real reason the cops showed up was A loud conversation about nothing.",
+      "id": 91,
+      "pick": 1
+    },
+    {
+      "text": "Nothing says Straya like A suspiciously confident bloke.",
+      "id": 92,
+      "pick": 1
+    },
+    {
+      "text": "Only in Australia would A dad joke that lands be considered normal.",
+      "id": 93,
+      "pick": 1
+    },
+    {
+      "text": "That was the moment it went full bogan: A backyard bonfire.",
+      "id": 94,
+      "pick": 1
+    },
+    {
+      "text": "The neighbour complained about A sausage sizzle argument.",
+      "id": 95,
+      "pick": 1
+    },
+    {
+      "text": "That was the moment it went full bogan: A flyscreen thats never fixed.",
+      "id": 96,
+      "pick": 1
+    },
+    {
+      "text": "This is why Mum said dont mention A mozzie bite you cant ignore.",
+      "id": 97,
+      "pick": 1
+    },
+    {
+      "text": "Thats not illegal, its just A camping trip gone wrong.",
+      "id": 98,
+      "pick": 1
+    },
+    {
+      "text": "Nothing says Straya like A servo bathroom mistake.",
+      "id": 99,
+      "pick": 1
+    },
+    {
+      "text": "The neighbour complained about A holiday that ended early.",
+      "id": 100,
+      "pick": 1
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XyzzyModern - Game</title>
+  <style>
+    :root{color-scheme:dark}
+    body{margin:0;font-family:system-ui,Segoe UI,Arial;background:#090a0f;color:#e9e9f0}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+    .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px}
+    h1{margin:0;font-size:18px}
+    .muted{opacity:.75;font-size:12px}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    button{border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;padding:10px 14px;cursor:pointer;font-weight:800}
+    #hand{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:12px}
+    .w{padding:12px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.2);cursor:pointer}
+    .w:hover{outline:1px solid rgba(255,255,255,.25)}
+    #players{margin-top:10px}
+    .p{padding:6px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    #black{font-size:18px;font-weight:900}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="card" style="flex:1">
+        <h1>Game</h1>
+        <div class="muted"><a href="/lobby.html" style="color:#9bd3ff">Back to lobby</a></div>
+      </div>
+      <div class="card">
+        <div class="muted">Phase</div>
+        <div id="phase">-</div>
+      </div>
+      <div class="card">
+        <div class="muted">Timer</div>
+        <div id="timer">-</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <div class="muted">Black card</div>
+      <div id="black">(waiting)</div>
+      <div class="muted" id="judgeLine" style="margin-top:6px"></div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <div class="muted">Players</div>
+      <div id="players"></div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <div class="muted">Your hand (click to submit)</div>
+      <div id="hand"></div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/game.js"></script>
+</body>
+</html>

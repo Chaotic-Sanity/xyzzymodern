@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XyzzyModern - Minimal</title>
+  <link rel="stylesheet" href="/game.css" />
+</head>
+<body class="theme minimal">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">XM</div>
+      <div class="titles">
+        <div class="h1">XyzzyModern</div>
+        <div class="h2" id="phaseLabel">Connecting…</div>
+      </div>
+    </div>
+
+    <div class="right">
+      <a class="link" href="/lobby.html">Lobby</a>
+      <span class="dot">•</span>
+      <span class="pill" id="timerPill">--:--</span>
+    </div>
+  </header>
+
+  <main class="grid minimalGrid">
+    <section class="card center">
+      <div class="cardHead">
+        <div class="cardTitle">Black Card</div>
+        <div class="cardMeta" id="roundMeta">Round 0</div>
+      </div>
+      <div class="blackCard" id="blackCard">Waiting…</div>
+
+      <div class="submissionsWrap" id="submissionsWrap" style="display:none;">
+        <div class="subHead">
+          <div class="cardTitle">Submissions</div>
+          <div class="cardMeta" id="subMeta">0</div>
+        </div>
+        <div id="submissionsList" class="subList"></div>
+      </div>
+
+      <div class="handWrap">
+        <div class="handHead">
+          <div class="cardTitle">Your Hand</div>
+          <div class="cardMeta" id="handMeta">0</div>
+        </div>
+        <div id="handList" class="handList"></div>
+      </div>
+    </section>
+
+    <section class="card players">
+      <div class="cardHead">
+        <div class="cardTitle">Players</div>
+        <div class="cardMeta" id="playersMeta">0</div>
+      </div>
+      <div id="playersList" class="playersList"></div>
+    </section>
+
+    <section class="card chat">
+      <div class="cardHead">
+        <div class="cardTitle">Chat</div>
+        <div class="cardMeta" id="chatMeta">history</div>
+      </div>
+      <div id="chatLog" class="chatLog"></div>
+      <div class="chatSend">
+        <input class="input" id="chatInput" maxlength="220" placeholder="Type message…" />
+        <button class="btn" id="chatSendBtn">Send</button>
+      </div>
+      <div class="identityBox">
+        <div class="rowGap">
+          <input class="input" id="nameInput" maxlength="24" placeholder="Your name" />
+          <input class="input" id="adminKeyInput" maxlength="64" placeholder="Admin key (optional)" />
+          <button class="btn ghost" id="saveIdentityBtn">Save</button>
+        </div>
+        <div class="smallHint" id="identityHint">CZAR badge = judge. Crown = leader.</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/game.js"></script>
+</body>
+</html>

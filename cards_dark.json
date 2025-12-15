@@ -1,0 +1,1706 @@
+{
+  "whiteCards": [
+    {
+      "text": "That joke everyone remembers (too soon)",
+      "id": 1001
+    },
+    {
+      "text": "Uncomfortable agreement",
+      "id": 1002
+    },
+    {
+      "text": "Poorly timed honesty",
+      "id": 1003
+    },
+    {
+      "text": "Too much honesty",
+      "id": 1004
+    },
+    {
+      "text": "A thought better left unsaid",
+      "id": 1005
+    },
+    {
+      "text": "An unexpected punchline",
+      "id": 1006
+    },
+    {
+      "text": "Oversharing in public",
+      "id": 1007
+    },
+    {
+      "text": "Poorly timed honesty (too soon)",
+      "id": 1008
+    },
+    {
+      "text": "An uncomfortable truth",
+      "id": 1009
+    },
+    {
+      "text": "A dark spiral",
+      "id": 1010
+    },
+    {
+      "text": "A laugh you cant take back",
+      "id": 1011
+    },
+    {
+      "text": "An uncomfortable truth, apparently",
+      "id": 1012
+    },
+    {
+      "text": "Regret setting in instantly",
+      "id": 1013
+    },
+    {
+      "text": "Morbid curiosity and immediate regret",
+      "id": 1014
+    },
+    {
+      "text": "A cursed memory (too soon)",
+      "id": 1015
+    },
+    {
+      "text": "An uncomfortable truth",
+      "id": 1016
+    },
+    {
+      "text": "An uncomfortable truth",
+      "id": 1017
+    },
+    {
+      "text": "The silence afterward",
+      "id": 1018
+    },
+    {
+      "text": "A comment taken too far",
+      "id": 1019
+    },
+    {
+      "text": "Uncomfortable agreement",
+      "id": 1020
+    },
+    {
+      "text": "A sudden existential crisis",
+      "id": 1021
+    },
+    {
+      "text": "An uncomfortable truth (too soon)",
+      "id": 1022
+    },
+    {
+      "text": "A laugh you cant take back, apparently",
+      "id": 1023
+    },
+    {
+      "text": "Poorly timed honesty",
+      "id": 1024
+    },
+    {
+      "text": "Laughing at the wrong moment",
+      "id": 1025
+    },
+    {
+      "text": "An inappropriate coping mechanism",
+      "id": 1026
+    },
+    {
+      "text": "A joke that landed too hard and immediate regret",
+      "id": 1027
+    },
+    {
+      "text": "Awkward eye contact",
+      "id": 1028
+    },
+    {
+      "text": "Too much honesty (too soon)",
+      "id": 1029
+    },
+    {
+      "text": "A shared look of concern",
+      "id": 1030
+    },
+    {
+      "text": "Morbid curiosity",
+      "id": 1031
+    },
+    {
+      "text": "The wrong audience",
+      "id": 1032
+    },
+    {
+      "text": "A humor-based deflection",
+      "id": 1033
+    },
+    {
+      "text": "An accidental confession, apparently",
+      "id": 1034
+    },
+    {
+      "text": "An awkward pause",
+      "id": 1035
+    },
+    {
+      "text": "A sudden existential crisis (too soon)",
+      "id": 1036
+    },
+    {
+      "text": "An awkward pause",
+      "id": 1037
+    },
+    {
+      "text": "A moment of regret",
+      "id": 1038
+    },
+    {
+      "text": "Secondhand embarrassment",
+      "id": 1039
+    },
+    {
+      "text": "A humor-based deflection and immediate regret",
+      "id": 1040
+    },
+    {
+      "text": "Uncomfortable agreement",
+      "id": 1041
+    },
+    {
+      "text": "Too much honesty",
+      "id": 1042
+    },
+    {
+      "text": "An inside joke gone public (too soon)",
+      "id": 1043
+    },
+    {
+      "text": "An accidental confession",
+      "id": 1044
+    },
+    {
+      "text": "A humor-based deflection, apparently",
+      "id": 1045
+    },
+    {
+      "text": "An unexpected punchline",
+      "id": 1046
+    },
+    {
+      "text": "That one dark thought",
+      "id": 1047
+    },
+    {
+      "text": "An uncomfortable truth",
+      "id": 1048
+    },
+    {
+      "text": "A thought better left unsaid",
+      "id": 1049
+    },
+    {
+      "text": "Laughing at the wrong moment (too soon)",
+      "id": 1050
+    },
+    {
+      "text": "An uncomfortable truth",
+      "id": 1051
+    },
+    {
+      "text": "A comment taken too far",
+      "id": 1052
+    },
+    {
+      "text": "A thought better left unsaid and immediate regret",
+      "id": 1053
+    },
+    {
+      "text": "A comment taken too far",
+      "id": 1054
+    },
+    {
+      "text": "Oversharing in public",
+      "id": 1055
+    },
+    {
+      "text": "A joke that aged badly, apparently",
+      "id": 1056
+    },
+    {
+      "text": "A nervous apology (too soon)",
+      "id": 1057
+    },
+    {
+      "text": "Awkward eye contact",
+      "id": 1058
+    },
+    {
+      "text": "An inside joke gone public",
+      "id": 1059
+    },
+    {
+      "text": "That joke everyone remembers",
+      "id": 1060
+    },
+    {
+      "text": "Trauma bonding immediately",
+      "id": 1061
+    },
+    {
+      "text": "A nervous apology",
+      "id": 1062
+    },
+    {
+      "text": "Awkward eye contact",
+      "id": 1063
+    },
+    {
+      "text": "That joke everyone remembers (too soon)",
+      "id": 1064
+    },
+    {
+      "text": "A sudden existential crisis",
+      "id": 1065
+    },
+    {
+      "text": "A coping laugh and immediate regret",
+      "id": 1066
+    },
+    {
+      "text": "An accidental confession, apparently",
+      "id": 1067
+    },
+    {
+      "text": "A badly timed chuckle",
+      "id": 1068
+    },
+    {
+      "text": "A comment taken too far",
+      "id": 1069
+    },
+    {
+      "text": "The wrong audience",
+      "id": 1070
+    },
+    {
+      "text": "Regret setting in instantly (too soon)",
+      "id": 1071
+    },
+    {
+      "text": "The wrong audience",
+      "id": 1072
+    },
+    {
+      "text": "A moment of regret",
+      "id": 1073
+    },
+    {
+      "text": "That one dark thought",
+      "id": 1074
+    },
+    {
+      "text": "Poorly timed honesty",
+      "id": 1075
+    },
+    {
+      "text": "Awkward eye contact",
+      "id": 1076
+    },
+    {
+      "text": "A nervous apology",
+      "id": 1077
+    },
+    {
+      "text": "A humor-based deflection (too soon)",
+      "id": 1078
+    },
+    {
+      "text": "Poorly timed honesty and immediate regret",
+      "id": 1079
+    },
+    {
+      "text": "Poorly timed honesty",
+      "id": 1080
+    },
+    {
+      "text": "Morbid curiosity",
+      "id": 1081
+    },
+    {
+      "text": "A thought better left unsaid",
+      "id": 1082
+    },
+    {
+      "text": "Poorly timed honesty",
+      "id": 1083
+    },
+    {
+      "text": "A morally questionable joke",
+      "id": 1084
+    },
+    {
+      "text": "The wrong audience (too soon)",
+      "id": 1085
+    },
+    {
+      "text": "An unexpected punchline",
+      "id": 1086
+    },
+    {
+      "text": "A sudden existential crisis",
+      "id": 1087
+    },
+    {
+      "text": "An awkward pause",
+      "id": 1088
+    },
+    {
+      "text": "That joke everyone remembers, apparently",
+      "id": 1089
+    },
+    {
+      "text": "A comment taken too far",
+      "id": 1090
+    },
+    {
+      "text": "An inside joke gone public",
+      "id": 1091
+    },
+    {
+      "text": "A laugh you cant take back (too soon)",
+      "id": 1092
+    },
+    {
+      "text": "A shared look of concern",
+      "id": 1093
+    },
+    {
+      "text": "Morbid curiosity",
+      "id": 1094
+    },
+    {
+      "text": "That joke everyone remembers",
+      "id": 1095
+    },
+    {
+      "text": "An awkward pause",
+      "id": 1096
+    },
+    {
+      "text": "A thought better left unsaid",
+      "id": 1097
+    },
+    {
+      "text": "A thought better left unsaid",
+      "id": 1098
+    },
+    {
+      "text": "Regret setting in instantly (too soon)",
+      "id": 1099
+    },
+    {
+      "text": "An intrusive thought winning, apparently",
+      "id": 1100
+    },
+    {
+      "text": "A humor-based deflection",
+      "id": 1101
+    },
+    {
+      "text": "A joke that aged badly",
+      "id": 1102
+    },
+    {
+      "text": "Oversharing in public",
+      "id": 1103
+    },
+    {
+      "text": "A thought better left unsaid",
+      "id": 1104
+    },
+    {
+      "text": "A badly timed chuckle and immediate regret",
+      "id": 1105
+    },
+    {
+      "text": "A comment taken too far (too soon)",
+      "id": 1106
+    },
+    {
+      "text": "The silence afterward",
+      "id": 1107
+    },
+    {
+      "text": "A joke that aged badly",
+      "id": 1108
+    },
+    {
+      "text": "A dark spiral",
+      "id": 1109
+    },
+    {
+      "text": "That one dark thought",
+      "id": 1110
+    },
+    {
+      "text": "A nervous apology, apparently",
+      "id": 1111
+    },
+    {
+      "text": "A humor-based deflection",
+      "id": 1112
+    },
+    {
+      "text": "A sudden existential crisis (too soon)",
+      "id": 1113
+    },
+    {
+      "text": "Trauma bonding immediately",
+      "id": 1114
+    },
+    {
+      "text": "Laughing at the wrong moment",
+      "id": 1115
+    },
+    {
+      "text": "Laughing at the wrong moment",
+      "id": 1116
+    },
+    {
+      "text": "A coping laugh",
+      "id": 1117
+    },
+    {
+      "text": "A shared look of concern and immediate regret",
+      "id": 1118
+    },
+    {
+      "text": "A coping laugh",
+      "id": 1119
+    },
+    {
+      "text": "An intrusive thought winning (too soon)",
+      "id": 1120
+    },
+    {
+      "text": "A comment taken too far",
+      "id": 1121
+    },
+    {
+      "text": "An inappropriate coping mechanism, apparently",
+      "id": 1122
+    },
+    {
+      "text": "A humor-based deflection",
+      "id": 1123
+    },
+    {
+      "text": "A nervous apology",
+      "id": 1124
+    },
+    {
+      "text": "A coping laugh",
+      "id": 1125
+    },
+    {
+      "text": "A nervous apology",
+      "id": 1126
+    },
+    {
+      "text": "A moment of regret (too soon)",
+      "id": 1127
+    },
+    {
+      "text": "Trauma bonding immediately",
+      "id": 1128
+    },
+    {
+      "text": "A sudden existential crisis",
+      "id": 1129
+    },
+    {
+      "text": "An inside joke gone public",
+      "id": 1130
+    },
+    {
+      "text": "A humor-based deflection and immediate regret",
+      "id": 1131
+    },
+    {
+      "text": "A comment taken too far",
+      "id": 1132
+    },
+    {
+      "text": "A nervous laugh, apparently",
+      "id": 1133
+    },
+    {
+      "text": "Uncomfortable agreement (too soon)",
+      "id": 1134
+    },
+    {
+      "text": "That one dark thought",
+      "id": 1135
+    },
+    {
+      "text": "Regret setting in instantly",
+      "id": 1136
+    },
+    {
+      "text": "The room going quiet",
+      "id": 1137
+    },
+    {
+      "text": "A dark spiral",
+      "id": 1138
+    },
+    {
+      "text": "A shared look of concern",
+      "id": 1139
+    },
+    {
+      "text": "A joke that landed too hard",
+      "id": 1140
+    },
+    {
+      "text": "An unexpected punchline (too soon)",
+      "id": 1141
+    },
+    {
+      "text": "An inappropriate coping mechanism",
+      "id": 1142
+    },
+    {
+      "text": "A joke that aged badly",
+      "id": 1143
+    },
+    {
+      "text": "A sudden existential crisis, apparently",
+      "id": 1144
+    },
+    {
+      "text": "An awkward pause",
+      "id": 1145
+    },
+    {
+      "text": "The wrong audience",
+      "id": 1146
+    },
+    {
+      "text": "A shared look of concern",
+      "id": 1147
+    },
+    {
+      "text": "Trauma bonding immediately (too soon)",
+      "id": 1148
+    },
+    {
+      "text": "A shared look of concern",
+      "id": 1149
+    },
+    {
+      "text": "A coping laugh",
+      "id": 1150
+    },
+    {
+      "text": "That one dark thought",
+      "id": 1151
+    },
+    {
+      "text": "A nervous apology",
+      "id": 1152
+    },
+    {
+      "text": "A dark spiral",
+      "id": 1153
+    },
+    {
+      "text": "A nervous apology",
+      "id": 1154
+    },
+    {
+      "text": "Secondhand embarrassment (too soon)",
+      "id": 1155
+    },
+    {
+      "text": "A cursed memory",
+      "id": 1156
+    },
+    {
+      "text": "A joke nobody claimed and immediate regret",
+      "id": 1157
+    },
+    {
+      "text": "A joke that aged badly",
+      "id": 1158
+    },
+    {
+      "text": "A joke that aged badly",
+      "id": 1159
+    },
+    {
+      "text": "Uncomfortable agreement",
+      "id": 1160
+    },
+    {
+      "text": "A morally questionable joke",
+      "id": 1161
+    },
+    {
+      "text": "A joke nobody claimed (too soon)",
+      "id": 1162
+    },
+    {
+      "text": "The wrong audience",
+      "id": 1163
+    },
+    {
+      "text": "A joke that landed too hard",
+      "id": 1164
+    },
+    {
+      "text": "An accidental confession",
+      "id": 1165
+    },
+    {
+      "text": "A morally questionable joke, apparently",
+      "id": 1166
+    },
+    {
+      "text": "An intrusive thought winning",
+      "id": 1167
+    },
+    {
+      "text": "Regret setting in instantly",
+      "id": 1168
+    },
+    {
+      "text": "A dark spiral (too soon)",
+      "id": 1169
+    },
+    {
+      "text": "A cursed memory and immediate regret",
+      "id": 1170
+    },
+    {
+      "text": "Secondhand embarrassment",
+      "id": 1171
+    },
+    {
+      "text": "A humor-based deflection",
+      "id": 1172
+    },
+    {
+      "text": "An awkward pause",
+      "id": 1173
+    },
+    {
+      "text": "An uncomfortable truth",
+      "id": 1174
+    },
+    {
+      "text": "A joke nobody claimed",
+      "id": 1175
+    },
+    {
+      "text": "A thought better left unsaid (too soon)",
+      "id": 1176
+    },
+    {
+      "text": "A sudden existential crisis, apparently",
+      "id": 1177
+    },
+    {
+      "text": "A comment taken too far",
+      "id": 1178
+    },
+    {
+      "text": "An uncomfortable truth",
+      "id": 1179
+    },
+    {
+      "text": "A moment of regret",
+      "id": 1180
+    },
+    {
+      "text": "An inappropriate coping mechanism",
+      "id": 1181
+    },
+    {
+      "text": "A laugh you cant take back",
+      "id": 1182
+    },
+    {
+      "text": "A badly timed chuckle (too soon)",
+      "id": 1183
+    },
+    {
+      "text": "A nervous apology",
+      "id": 1184
+    },
+    {
+      "text": "A cursed memory",
+      "id": 1185
+    },
+    {
+      "text": "Too much honesty",
+      "id": 1186
+    },
+    {
+      "text": "Secondhand embarrassment",
+      "id": 1187
+    },
+    {
+      "text": "An accidental confession, apparently",
+      "id": 1188
+    },
+    {
+      "text": "A sudden existential crisis",
+      "id": 1189
+    },
+    {
+      "text": "Uncomfortable agreement (too soon)",
+      "id": 1190
+    },
+    {
+      "text": "A nervous laugh",
+      "id": 1191
+    },
+    {
+      "text": "A morally questionable joke",
+      "id": 1192
+    },
+    {
+      "text": "Poorly timed honesty",
+      "id": 1193
+    },
+    {
+      "text": "A moment of regret",
+      "id": 1194
+    },
+    {
+      "text": "A coping laugh",
+      "id": 1195
+    },
+    {
+      "text": "A joke that aged badly and immediate regret",
+      "id": 1196
+    },
+    {
+      "text": "Trauma bonding immediately (too soon)",
+      "id": 1197
+    },
+    {
+      "text": "An intrusive thought winning",
+      "id": 1198
+    },
+    {
+      "text": "A thought better left unsaid, apparently",
+      "id": 1199
+    },
+    {
+      "text": "An intrusive thought winning",
+      "id": 1200
+    },
+    {
+      "text": "Laughing at the wrong moment",
+      "id": 1201
+    },
+    {
+      "text": "That one dark thought",
+      "id": 1202
+    },
+    {
+      "text": "A shared look of concern",
+      "id": 1203
+    },
+    {
+      "text": "A humor-based deflection (too soon)",
+      "id": 1204
+    },
+    {
+      "text": "A moment of regret",
+      "id": 1205
+    },
+    {
+      "text": "Regret setting in instantly",
+      "id": 1206
+    },
+    {
+      "text": "An uncomfortable truth",
+      "id": 1207
+    },
+    {
+      "text": "Awkward eye contact",
+      "id": 1208
+    },
+    {
+      "text": "Regret setting in instantly and immediate regret",
+      "id": 1209
+    },
+    {
+      "text": "Laughing at the wrong moment, apparently",
+      "id": 1210
+    },
+    {
+      "text": "A cursed memory (too soon)",
+      "id": 1211
+    },
+    {
+      "text": "A morally questionable joke",
+      "id": 1212
+    },
+    {
+      "text": "A thought better left unsaid",
+      "id": 1213
+    },
+    {
+      "text": "An uncomfortable truth",
+      "id": 1214
+    },
+    {
+      "text": "Morbid curiosity",
+      "id": 1215
+    },
+    {
+      "text": "An uncomfortable truth",
+      "id": 1216
+    },
+    {
+      "text": "A badly timed chuckle",
+      "id": 1217
+    },
+    {
+      "text": "An awkward pause (too soon)",
+      "id": 1218
+    },
+    {
+      "text": "A laugh you cant take back",
+      "id": 1219
+    },
+    {
+      "text": "A laugh you cant take back",
+      "id": 1220
+    },
+    {
+      "text": "Too much honesty, apparently",
+      "id": 1221
+    },
+    {
+      "text": "An awkward pause and immediate regret",
+      "id": 1222
+    },
+    {
+      "text": "A sudden existential crisis",
+      "id": 1223
+    },
+    {
+      "text": "A badly timed chuckle",
+      "id": 1224
+    },
+    {
+      "text": "Humor as a defense mechanism (too soon)",
+      "id": 1225
+    },
+    {
+      "text": "A shared look of concern",
+      "id": 1226
+    },
+    {
+      "text": "A moment of regret",
+      "id": 1227
+    },
+    {
+      "text": "A nervous laugh",
+      "id": 1228
+    },
+    {
+      "text": "An intrusive thought winning",
+      "id": 1229
+    },
+    {
+      "text": "Trauma bonding immediately",
+      "id": 1230
+    },
+    {
+      "text": "A sudden existential crisis",
+      "id": 1231
+    },
+    {
+      "text": "A badly timed chuckle (too soon)",
+      "id": 1232
+    },
+    {
+      "text": "An accidental confession",
+      "id": 1233
+    },
+    {
+      "text": "Uncomfortable agreement",
+      "id": 1234
+    },
+    {
+      "text": "Oversharing in public and immediate regret",
+      "id": 1235
+    },
+    {
+      "text": "A nervous laugh",
+      "id": 1236
+    },
+    {
+      "text": "Humor as a defense mechanism",
+      "id": 1237
+    },
+    {
+      "text": "Too much honesty",
+      "id": 1238
+    },
+    {
+      "text": "Trauma bonding immediately (too soon)",
+      "id": 1239
+    },
+    {
+      "text": "Awkward eye contact",
+      "id": 1240
+    },
+    {
+      "text": "An intrusive thought winning",
+      "id": 1241
+    },
+    {
+      "text": "The room going quiet",
+      "id": 1242
+    },
+    {
+      "text": "A moment of regret, apparently",
+      "id": 1243
+    },
+    {
+      "text": "A joke that aged badly",
+      "id": 1244
+    },
+    {
+      "text": "A dark spiral",
+      "id": 1245
+    },
+    {
+      "text": "Oversharing in public (too soon)",
+      "id": 1246
+    },
+    {
+      "text": "An intrusive thought winning",
+      "id": 1247
+    },
+    {
+      "text": "Regret setting in instantly and immediate regret",
+      "id": 1248
+    },
+    {
+      "text": "A joke nobody claimed",
+      "id": 1249
+    },
+    {
+      "text": "A nervous laugh",
+      "id": 1250
+    },
+    {
+      "text": "The silence afterward",
+      "id": 1251
+    },
+    {
+      "text": "A moment of regret",
+      "id": 1252
+    },
+    {
+      "text": "Laughing at the wrong moment (too soon)",
+      "id": 1253
+    },
+    {
+      "text": "A comment taken too far, apparently",
+      "id": 1254
+    },
+    {
+      "text": "Secondhand embarrassment",
+      "id": 1255
+    },
+    {
+      "text": "A humor-based deflection",
+      "id": 1256
+    },
+    {
+      "text": "An inside joke gone public",
+      "id": 1257
+    },
+    {
+      "text": "A thought better left unsaid",
+      "id": 1258
+    },
+    {
+      "text": "A humor-based deflection",
+      "id": 1259
+    },
+    {
+      "text": "An awkward pause (too soon)",
+      "id": 1260
+    },
+    {
+      "text": "An uncomfortable truth and immediate regret",
+      "id": 1261
+    },
+    {
+      "text": "A laugh you cant take back",
+      "id": 1262
+    },
+    {
+      "text": "An accidental confession",
+      "id": 1263
+    },
+    {
+      "text": "Trauma bonding immediately",
+      "id": 1264
+    },
+    {
+      "text": "A thought better left unsaid, apparently",
+      "id": 1265
+    },
+    {
+      "text": "The wrong audience",
+      "id": 1266
+    },
+    {
+      "text": "That joke everyone remembers (too soon)",
+      "id": 1267
+    },
+    {
+      "text": "Trauma bonding immediately",
+      "id": 1268
+    },
+    {
+      "text": "Morbid curiosity",
+      "id": 1269
+    },
+    {
+      "text": "An inside joke gone public",
+      "id": 1270
+    },
+    {
+      "text": "A joke nobody claimed",
+      "id": 1271
+    },
+    {
+      "text": "A joke nobody claimed",
+      "id": 1272
+    },
+    {
+      "text": "A joke that landed too hard",
+      "id": 1273
+    },
+    {
+      "text": "Awkward eye contact (too soon)",
+      "id": 1274
+    },
+    {
+      "text": "An awkward pause",
+      "id": 1275
+    },
+    {
+      "text": "An inappropriate coping mechanism, apparently",
+      "id": 1276
+    },
+    {
+      "text": "A dark spiral",
+      "id": 1277
+    },
+    {
+      "text": "A moment of regret",
+      "id": 1278
+    },
+    {
+      "text": "That one dark thought",
+      "id": 1279
+    },
+    {
+      "text": "A humor-based deflection",
+      "id": 1280
+    },
+    {
+      "text": "A joke that aged badly (too soon)",
+      "id": 1281
+    },
+    {
+      "text": "That one dark thought",
+      "id": 1282
+    },
+    {
+      "text": "A moment of regret",
+      "id": 1283
+    },
+    {
+      "text": "A comment taken too far",
+      "id": 1284
+    },
+    {
+      "text": "A humor-based deflection",
+      "id": 1285
+    },
+    {
+      "text": "Oversharing in public",
+      "id": 1286
+    },
+    {
+      "text": "Regret setting in instantly, apparently",
+      "id": 1287
+    },
+    {
+      "text": "A morally questionable joke (too soon)",
+      "id": 1288
+    },
+    {
+      "text": "Poorly timed honesty",
+      "id": 1289
+    },
+    {
+      "text": "Uncomfortable agreement",
+      "id": 1290
+    },
+    {
+      "text": "Morbid curiosity",
+      "id": 1291
+    },
+    {
+      "text": "Laughing at the wrong moment",
+      "id": 1292
+    },
+    {
+      "text": "Trauma bonding immediately",
+      "id": 1293
+    },
+    {
+      "text": "Oversharing in public",
+      "id": 1294
+    },
+    {
+      "text": "A humor-based deflection (too soon)",
+      "id": 1295
+    },
+    {
+      "text": "An intrusive thought winning",
+      "id": 1296
+    },
+    {
+      "text": "An accidental confession",
+      "id": 1297
+    },
+    {
+      "text": "A humor-based deflection, apparently",
+      "id": 1298
+    },
+    {
+      "text": "Uncomfortable agreement",
+      "id": 1299
+    },
+    {
+      "text": "A thought better left unsaid and immediate regret",
+      "id": 1300
+    }
+  ],
+  "blackCards": [
+    {
+      "text": "The joke crossed the line at Too much honesty.",
+      "id": 1,
+      "pick": 1
+    },
+    {
+      "text": "The darkest part of the story is Humor as a defense mechanism.",
+      "id": 2,
+      "pick": 1
+    },
+    {
+      "text": "The joke crossed the line at A humor-based deflection.",
+      "id": 3,
+      "pick": 1
+    },
+    {
+      "text": "My therapist wasnt ready for A cursed memory.",
+      "id": 4,
+      "pick": 1
+    },
+    {
+      "text": "I regret asking about An uncomfortable truth.",
+      "id": 5,
+      "pick": 1
+    },
+    {
+      "text": "Morbid curiosity led to A cursed memory.",
+      "id": 6,
+      "pick": 1
+    },
+    {
+      "text": "This is why we cant have nice things: An inappropriate coping mechanism.",
+      "id": 7,
+      "pick": 1
+    },
+    {
+      "text": "Everyone laughed, then remembered A badly timed chuckle.",
+      "id": 8,
+      "pick": 1
+    },
+    {
+      "text": "We all agreed never to mention Humor as a defense mechanism again.",
+      "id": 9,
+      "pick": 1
+    },
+    {
+      "text": "Morbid curiosity led to An accidental confession.",
+      "id": 10,
+      "pick": 1
+    },
+    {
+      "text": "That escalated quickly because of A dark spiral.",
+      "id": 11,
+      "pick": 1
+    },
+    {
+      "text": "Everyone laughed, then remembered A dark spiral.",
+      "id": 12,
+      "pick": 1
+    },
+    {
+      "text": "Morbid curiosity led to A joke that aged badly.",
+      "id": 13,
+      "pick": 1
+    },
+    {
+      "text": "This is why we cant have nice things: A thought better left unsaid.",
+      "id": 14,
+      "pick": 1
+    },
+    {
+      "text": "The joke crossed the line at A joke that landed too hard.",
+      "id": 15,
+      "pick": 1
+    },
+    {
+      "text": "That escalated quickly because of A joke nobody claimed.",
+      "id": 16,
+      "pick": 1
+    },
+    {
+      "text": "Everyone laughed, then remembered Humor as a defense mechanism.",
+      "id": 17,
+      "pick": 1
+    },
+    {
+      "text": "The disclaimer should have mentioned Poorly timed honesty.",
+      "id": 18,
+      "pick": 1
+    },
+    {
+      "text": "Everyone laughed, then remembered The room going quiet.",
+      "id": 19,
+      "pick": 1
+    },
+    {
+      "text": "The vibe was ruined by The silence afterward.",
+      "id": 20,
+      "pick": 1
+    },
+    {
+      "text": "My therapist wasnt ready for A comment taken too far.",
+      "id": 21,
+      "pick": 1
+    },
+    {
+      "text": "The awkward silence was caused by A comment taken too far.",
+      "id": 22,
+      "pick": 1
+    },
+    {
+      "text": "That escalated quickly because of An awkward pause.",
+      "id": 23,
+      "pick": 1
+    },
+    {
+      "text": "It was supposed to be serious until A joke that aged badly.",
+      "id": 24,
+      "pick": 1
+    },
+    {
+      "text": "The joke crossed the line at A joke that aged badly.",
+      "id": 25,
+      "pick": 1
+    },
+    {
+      "text": "That escalated quickly because of A moment of regret.",
+      "id": 26,
+      "pick": 1
+    },
+    {
+      "text": "The funeral got weird after A nervous laugh.",
+      "id": 27,
+      "pick": 1
+    },
+    {
+      "text": "Morbid curiosity led to A nervous laugh.",
+      "id": 28,
+      "pick": 1
+    },
+    {
+      "text": "This is why we cant have nice things: A morally questionable joke.",
+      "id": 29,
+      "pick": 1
+    },
+    {
+      "text": "I knew it was bad when Secondhand embarrassment felt relatable.",
+      "id": 30,
+      "pick": 1
+    },
+    {
+      "text": "Nothing prepares you for An inside joke gone public.",
+      "id": 31,
+      "pick": 1
+    },
+    {
+      "text": "It stopped being funny after A joke nobody claimed.",
+      "id": 32,
+      "pick": 1
+    },
+    {
+      "text": "The awkward silence was caused by An unexpected punchline.",
+      "id": 33,
+      "pick": 1
+    },
+    {
+      "text": "The joke crossed the line at A coping laugh.",
+      "id": 34,
+      "pick": 1
+    },
+    {
+      "text": "The disclaimer should have mentioned An inside joke gone public.",
+      "id": 35,
+      "pick": 1
+    },
+    {
+      "text": "The vibe was ruined by Laughing at the wrong moment.",
+      "id": 36,
+      "pick": 1
+    },
+    {
+      "text": "The disclaimer should have mentioned A sudden existential crisis.",
+      "id": 37,
+      "pick": 1
+    },
+    {
+      "text": "This is why we dont joke about An inappropriate coping mechanism.",
+      "id": 38,
+      "pick": 1
+    },
+    {
+      "text": "I regret asking about A dark spiral.",
+      "id": 39,
+      "pick": 1
+    },
+    {
+      "text": "The awkward silence was caused by That one dark thought.",
+      "id": 40,
+      "pick": 1
+    },
+    {
+      "text": "I shouldnt laugh, but A shared look of concern did it.",
+      "id": 41,
+      "pick": 1
+    },
+    {
+      "text": "Everyone laughed, then remembered A joke nobody claimed.",
+      "id": 42,
+      "pick": 1
+    },
+    {
+      "text": "It was supposed to be serious until Poorly timed honesty.",
+      "id": 43,
+      "pick": 1
+    },
+    {
+      "text": "This is why we cant have nice things: A joke nobody claimed.",
+      "id": 44,
+      "pick": 1
+    },
+    {
+      "text": "I knew it was bad when Secondhand embarrassment felt relatable.",
+      "id": 45,
+      "pick": 1
+    },
+    {
+      "text": "This is how the conversation died: Laughing at the wrong moment.",
+      "id": 46,
+      "pick": 1
+    },
+    {
+      "text": "That escalated quickly because of That one dark thought.",
+      "id": 47,
+      "pick": 1
+    },
+    {
+      "text": "It was supposed to be serious until A joke that landed too hard.",
+      "id": 48,
+      "pick": 1
+    },
+    {
+      "text": "This is how the conversation died: That joke everyone remembers.",
+      "id": 49,
+      "pick": 1
+    },
+    {
+      "text": "This is why we cant have nice things: An awkward pause.",
+      "id": 50,
+      "pick": 1
+    },
+    {
+      "text": "I shouldnt laugh, but An inappropriate coping mechanism did it.",
+      "id": 51,
+      "pick": 1
+    },
+    {
+      "text": "Everyone laughed, then remembered Regret setting in instantly.",
+      "id": 52,
+      "pick": 1
+    },
+    {
+      "text": "This is why we dont joke about A nervous laugh.",
+      "id": 53,
+      "pick": 1
+    },
+    {
+      "text": "We all agreed never to mention A comment taken too far again.",
+      "id": 54,
+      "pick": 1
+    },
+    {
+      "text": "That escalated quickly because of That joke everyone remembers.",
+      "id": 55,
+      "pick": 1
+    },
+    {
+      "text": "The darkest part of the story is Trauma bonding immediately.",
+      "id": 56,
+      "pick": 1
+    },
+    {
+      "text": "The vibe was ruined by The wrong audience.",
+      "id": 57,
+      "pick": 1
+    },
+    {
+      "text": "That escalated quickly because of An inside joke gone public.",
+      "id": 58,
+      "pick": 1
+    },
+    {
+      "text": "We all agreed never to mention An unexpected punchline again.",
+      "id": 59,
+      "pick": 1
+    },
+    {
+      "text": "I regret asking about A comment taken too far.",
+      "id": 60,
+      "pick": 1
+    },
+    {
+      "text": "Everyone laughed, then remembered Secondhand embarrassment.",
+      "id": 61,
+      "pick": 1
+    },
+    {
+      "text": "That escalated quickly because of Morbid curiosity.",
+      "id": 62,
+      "pick": 1
+    },
+    {
+      "text": "The darkest part of the story is Regret setting in instantly.",
+      "id": 63,
+      "pick": 1
+    },
+    {
+      "text": "The darkest part of the story is The silence afterward.",
+      "id": 64,
+      "pick": 1
+    },
+    {
+      "text": "The vibe was ruined by An unexpected punchline.",
+      "id": 65,
+      "pick": 1
+    },
+    {
+      "text": "I shouldnt laugh, but Awkward eye contact did it.",
+      "id": 66,
+      "pick": 1
+    },
+    {
+      "text": "The joke crossed the line at Uncomfortable agreement.",
+      "id": 67,
+      "pick": 1
+    },
+    {
+      "text": "This is how the conversation died: A moment of regret.",
+      "id": 68,
+      "pick": 1
+    },
+    {
+      "text": "I knew it was bad when A humor-based deflection felt relatable.",
+      "id": 69,
+      "pick": 1
+    },
+    {
+      "text": "Nothing prepares you for A humor-based deflection.",
+      "id": 70,
+      "pick": 1
+    },
+    {
+      "text": "Morbid curiosity led to A nervous laugh.",
+      "id": 71,
+      "pick": 1
+    },
+    {
+      "text": "It stopped being funny after That one dark thought.",
+      "id": 72,
+      "pick": 1
+    },
+    {
+      "text": "Nothing prepares you for Too much honesty.",
+      "id": 73,
+      "pick": 1
+    },
+    {
+      "text": "The funeral got weird after An unexpected punchline.",
+      "id": 74,
+      "pick": 1
+    },
+    {
+      "text": "Everyone laughed, then remembered A morally questionable joke.",
+      "id": 75,
+      "pick": 1
+    },
+    {
+      "text": "The awkward silence was caused by Laughing at the wrong moment.",
+      "id": 76,
+      "pick": 1
+    },
+    {
+      "text": "It stopped being funny after A laugh you cant take back.",
+      "id": 77,
+      "pick": 1
+    },
+    {
+      "text": "I knew it was bad when A shared look of concern felt relatable.",
+      "id": 78,
+      "pick": 1
+    },
+    {
+      "text": "It stopped being funny after A dark spiral.",
+      "id": 79,
+      "pick": 1
+    },
+    {
+      "text": "The funeral got weird after Poorly timed honesty.",
+      "id": 80,
+      "pick": 1
+    },
+    {
+      "text": "The awkward silence was caused by A laugh you cant take back.",
+      "id": 81,
+      "pick": 1
+    },
+    {
+      "text": "My therapist wasnt ready for That one dark thought.",
+      "id": 82,
+      "pick": 1
+    },
+    {
+      "text": "This is how the conversation died: An intrusive thought winning.",
+      "id": 83,
+      "pick": 1
+    },
+    {
+      "text": "The awkward silence was caused by The silence afterward.",
+      "id": 84,
+      "pick": 1
+    },
+    {
+      "text": "The funeral got weird after A laugh you cant take back.",
+      "id": 85,
+      "pick": 1
+    },
+    {
+      "text": "The darkest part of the story is An accidental confession.",
+      "id": 86,
+      "pick": 1
+    },
+    {
+      "text": "We all agreed never to mention A laugh you cant take back again.",
+      "id": 87,
+      "pick": 1
+    },
+    {
+      "text": "Everyone laughed, then remembered A laugh you cant take back.",
+      "id": 88,
+      "pick": 1
+    },
+    {
+      "text": "That escalated quickly because of Too much honesty.",
+      "id": 89,
+      "pick": 1
+    },
+    {
+      "text": "The vibe was ruined by That joke everyone remembers.",
+      "id": 90,
+      "pick": 1
+    },
+    {
+      "text": "The awkward silence was caused by A morally questionable joke.",
+      "id": 91,
+      "pick": 1
+    },
+    {
+      "text": "Everyone laughed, then remembered Awkward eye contact.",
+      "id": 92,
+      "pick": 1
+    },
+    {
+      "text": "We all agreed never to mention An inside joke gone public again.",
+      "id": 93,
+      "pick": 1
+    },
+    {
+      "text": "I regret asking about A joke that aged badly.",
+      "id": 94,
+      "pick": 1
+    },
+    {
+      "text": "The darkest part of the story is Regret setting in instantly.",
+      "id": 95,
+      "pick": 1
+    },
+    {
+      "text": "That escalated quickly because of A badly timed chuckle.",
+      "id": 96,
+      "pick": 1
+    },
+    {
+      "text": "We all agreed never to mention Trauma bonding immediately again.",
+      "id": 97,
+      "pick": 1
+    },
+    {
+      "text": "Nothing prepares you for Laughing at the wrong moment.",
+      "id": 98,
+      "pick": 1
+    },
+    {
+      "text": "It was supposed to be serious until A badly timed chuckle.",
+      "id": 99,
+      "pick": 1
+    },
+    {
+      "text": "We all agreed never to mention A morally questionable joke again.",
+      "id": 100,
+      "pick": 1
+    }
+  ]
+}

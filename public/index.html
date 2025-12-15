@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XyzzyModern</title>
+  <link rel="stylesheet" href="/game.css" />
+</head>
+<body class="theme">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">XM</div>
+      <div class="titles">
+        <div class="h1">XyzzyModern</div>
+        <div class="h2" id="phaseLabel">Connecting…</div>
+      </div>
+    </div>
+
+    <div class="right">
+      <a class="link" href="/lobby.html">Lobby</a>
+      <span class="dot">•</span>
+      <a class="link" href="/packs.html">Packs</a>
+      <span class="dot">•</span>
+      <span class="pill" id="timerPill">--:--</span>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card players">
+      <div class="cardHead">
+        <div class="cardTitle">Players</div>
+        <div class="cardMeta" id="playersMeta">0</div>
+      </div>
+      <div id="playersList" class="playersList"></div>
+
+      <div class="adminBox" id="adminBox" style="display:none;">
+        <div class="adminTitle">Admin</div>
+        <div class="adminRow">
+          <button class="btn" id="btnStart">Start</button>
+          <button class="btn ghost" id="btnNext">Next Round</button>
+        </div>
+        <div class="adminRow">
+          <button class="btn ghost" id="btnPause">Pause/Resume</button>
+          <button class="btn ghost" id="btnReset">Reset</button>
+        </div>
+        <div class="adminRow">
+          <button class="btn danger ghost" id="btnClearChat">Clear Chat</button>
+        </div>
+        <div class="smallHint" id="adminHint">Admin controls are local-only.</div>
+      </div>
+    </section>
+
+    <section class="card center">
+      <div class="cardHead">
+        <div class="cardTitle">Black Card</div>
+        <div class="cardMeta" id="roundMeta">Round 0</div>
+      </div>
+
+      <div class="blackCard" id="blackCard">Waiting for round…</div>
+
+      <div class="submissionsWrap" id="submissionsWrap" style="display:none;">
+        <div class="subHead">
+          <div class="cardTitle">Submissions</div>
+          <div class="cardMeta" id="subMeta">0</div>
+        </div>
+        <div id="submissionsList" class="subList"></div>
+      </div>
+
+      <div class="handWrap">
+        <div class="handHead">
+          <div class="cardTitle">Your Hand</div>
+          <div class="cardMeta" id="handMeta">0</div>
+        </div>
+        <div id="handList" class="handList"></div>
+      </div>
+    </section>
+
+    <section class="card chat">
+      <div class="cardHead">
+        <div class="cardTitle">Chat</div>
+        <div class="cardMeta" id="chatMeta">history</div>
+      </div>
+
+      <div id="chatLog" class="chatLog"></div>
+
+      <div class="chatSend">
+        <input class="input" id="chatInput" maxlength="220" placeholder="Type message…" />
+        <button class="btn" id="chatSendBtn">Send</button>
+      </div>
+
+      <div class="identityBox">
+        <div class="smallHint">Identity</div>
+        <div class="rowGap">
+          <input class="input" id="nameInput" maxlength="24" placeholder="Your name" />
+          <input class="input" id="adminKeyInput" maxlength="64" placeholder="Admin key (optional)" />
+          <button class="btn ghost" id="saveIdentityBtn">Save</button>
+        </div>
+        <div class="smallHint" id="identityHint">Refresh keeps name & score (rejoin).</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/game.js"></script>
+</body>
+</html>

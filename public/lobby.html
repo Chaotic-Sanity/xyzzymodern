@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XyzzyModern - Lobby</title>
+  <link rel="stylesheet" href="/game.css" />
+</head>
+<body class="theme">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">XM</div>
+      <div class="titles">
+        <div class="h1">XyzzyModern</div>
+        <div class="h2">Lobby</div>
+      </div>
+    </div>
+    <div class="right">
+      <a class="link" href="/">Full UI</a>
+      <span class="dot">•</span>
+      <a class="link" href="/game.html">Minimal UI</a>
+      <span class="dot">•</span>
+      <a class="link" href="/packs.html">Packs</a>
+    </div>
+  </header>
+
+  <main class="lobbyWrap">
+    <section class="card">
+      <div class="cardTitle">Join Game</div>
+
+      <label class="label">Name</label>
+      <input class="input" id="nameInput" maxlength="24" placeholder="e.g., Kyle" />
+
+      <label class="label">Admin key (optional)</label>
+      <input class="input" id="adminKeyInput" maxlength="64" placeholder="kmadmin" />
+
+      <div class="rowGap">
+        <button class="btn" id="joinFullBtn">Join Full UI</button>
+        <button class="btn ghost" id="joinMinBtn">Join Minimal UI</button>
+      </div>
+
+      <div class="smallHint" id="hint">Tip: the Card CZAR is the judge (CZAR badge). Leader gets the crown.</div>
+    </section>
+  </main>
+
+  <script>
+    (function(){
+      const nameInput = document.getElementById("nameInput");
+      const adminKeyInput = document.getElementById("adminKeyInput");
+
+      const savedName = localStorage.getItem("xm_name") || "";
+      const savedKey = localStorage.getItem("xm_admin_key") || "";
+      nameInput.value = savedName;
+      adminKeyInput.value = savedKey;
+
+      function save(){
+        localStorage.setItem("xm_name", (nameInput.value || "").trim().slice(0,24));
+        localStorage.setItem("xm_admin_key", (adminKeyInput.value || "").trim().slice(0,64));
+      }
+
+      document.getElementById("joinFullBtn").addEventListener("click", () => {
+        save();
+        location.href = "/";
+      });
+
+      document.getElementById("joinMinBtn").addEventListener("click", () => {
+        save();
+        location.href = "/game.html";
+      });
+    })();
+  </script>
+</body>
+</html>
