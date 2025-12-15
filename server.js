@@ -959,6 +959,9 @@ io.on("connection", (socket) => {
 // =====================================================
 // START
 // =====================================================
-server.listen(PORT, HOST, () => { console.log(Server listening on System.Management.Automation.Internal.Host.InternalHost:); }) => {
+server.listen(PORT, HOST, () => {
+  console.log('XyzzyModern running at http://' + HOST + ':' + PORT + '/');
+});
+}) => {
   console.log(`XyzzyModern running at http://127.0.0.1:${PORT}/`);
 });
