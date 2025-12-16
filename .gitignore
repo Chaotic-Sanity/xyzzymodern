@@ -1,5 +1,7 @@
 ﻿node_modules/
 android/
-capacitor.config.json
+ios/
+dist/
+www/
+.env
 .DS_Store
-npm-debug.log*
