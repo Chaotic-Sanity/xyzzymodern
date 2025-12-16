@@ -9,8 +9,8 @@ const { Server } = require("socket.io");
 // =====================================================
 // CONFIG
 // =====================================================
-const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
-const HOST = process.env.HOST || "0.0.0.0";
+const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || '0.0.0.0';
 const ADMIN_KEY = "kmadmin";
 
 const SETTINGS_PATH = path.join(__dirname, "settings.json");
@@ -605,7 +605,7 @@ const app = express();
 
 app.get('/health', (req, res) => res.status(200).send('ok'));
 const server = http.createServer(app);
-const io = new Server(server);
+const io = new Server(httpServer);
 
 rebuildDecks();
 
@@ -960,9 +960,10 @@ io.on("connection", (socket) => {
 // =====================================================
 // START
 // =====================================================
-server.listen(PORT, HOST, () => {
-  console.log('XyzzyModern running at http://' + HOST + ':' + PORT + '/');
 });
 
 // deploy bump: 2025-12-16 14:41:17
 
+httpServer.listen(PORT, HOST, () => {
+  console.log('XyzzyModern listening on ' + HOST + ':' + PORT);
+});
