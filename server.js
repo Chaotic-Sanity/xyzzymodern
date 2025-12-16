@@ -601,10 +601,8 @@ function onPhaseTimeout(whichPhase) {
 // =====================================================
 // SERVER
 // =====================================================
- httpServer = http.createServer(app);
-app.get('/health', (req, res) => res.status(200).send('ok'));
-const server = http.createServer(app);
-const io = new Server(httpServer);
+
+
 
 rebuildDecks();
 
@@ -963,6 +961,6 @@ io.on("connection", (socket) => {
 // deploy bump: 2025-12-16 14:41:17
 
 
-httpServer.listen(PORT, HOST, () => {
+server.listen(PORT, HOST, () => {
   console.log('XyzzyModern running at http://' + HOST + ':' + PORT + '/');
 });
