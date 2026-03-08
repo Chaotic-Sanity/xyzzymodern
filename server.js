@@ -630,6 +630,8 @@ function currentSettingsPublic() {
 // =====================================================
 // SOCKETS
 // =====================================================
+const server = http.createServer(app);
+const io = new Server(server);
 io.on("connection", (socket) => {
   socket.emit("server_hello", {
     phase,
@@ -957,16 +959,6 @@ io.on("connection", (socket) => {
 // =====================================================
 // START
 // =====================================================
-
-// deploy bump: 2025-12-16 14:41:17
-
-
 server.listen(PORT, HOST, () => {
   console.log('XyzzyModern running at http://' + HOST + ':' + PORT + '/');
 });
-
-// deploy bump: 2025-12-16 21:19:38
-
-
-// deploy bump: 2025-12-16 21:25:15
-

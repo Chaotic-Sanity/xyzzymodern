@@ -1,0 +1,10 @@
+{
+    "appId":  "au.com.chaoticsanity.xyzzymodern",
+    "webDir":  "public",
+    "appName":  "XyzzyModern",
+    "server":  {
+                   "cleartext":  false,
+                   "url":  "https://xyzzymodern-production.up.railway.app"
+               },
+    "bundledWebRuntime":  false
+}
