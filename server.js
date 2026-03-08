@@ -627,6 +627,8 @@ function currentSettingsPublic() {
   };
 }
 
+const app = express();
+app.use(express.static(path.join(__dirname, "public")));
 // =====================================================
 // SOCKETS
 // =====================================================
@@ -962,3 +964,4 @@ io.on("connection", (socket) => {
 server.listen(PORT, HOST, () => {
   console.log('XyzzyModern running at http://' + HOST + ':' + PORT + '/');
 });
+
