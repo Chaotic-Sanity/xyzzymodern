@@ -81,6 +81,7 @@
       function join(path){
         if (!saveIdentity()) { hint.textContent = "Enter a name first."; return; }
         localStorage.setItem("xm_game_id", selectedGame());
+        sessionStorage.setItem("tp_allow_game_entry", "1");
         window.location.href = path;
       }
 
@@ -145,6 +146,7 @@
           newGameInput.value = gameId;
           hint.textContent = `Created game: ${gameId}. You are the host for this room.`;
           if (quickJoinGameId && gameId === quickJoinGameId) {
+            sessionStorage.setItem("tp_allow_game_entry", "1");
             window.location.href = "/index.html";
           }
         }
