@@ -758,7 +758,7 @@ io.on("connection", (socket) => {
 // START
 // =====================================================
 server.listen(PORT, "127.0.0.1", () => {
-  console.log(`XyzzyModern running at http://127.0.0.1:${PORT}/`);
+  console.log(`terrible-people running at http://127.0.0.1:${PORT}/`);
 });
 "@
 Write-Utf8NoBom -Path (Join-Path $root "server.js") -Content $serverJs
@@ -799,9 +799,9 @@ $gameCss = @"
 Write-Utf8NoBom -Path (Join-Path $publicDir "game.css") -Content $gameCss
 
 $indexHtml = @"
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>XyzzyModern</title><link rel="stylesheet" href="/game.css"/></head>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>terrible-people</title><link rel="stylesheet" href="/game.css"/></head>
 <body>
-<header class="topbar"><div class="brand"><div class="logo">XM</div><div class="titles"><div class="h1">XyzzyModern</div><div class="h2">Full Game UI</div></div></div>
+<header class="topbar"><div class="brand"><div class="logo">XM</div><div class="titles"><div class="h1">terrible-people</div><div class="h2">Full Game UI</div></div></div>
 <div class="right"><div class="pill" id="phasePill">Phase: --</div><div class="pill" id="timerPill">Timer: --</div><div id="adminControls"><button class="btn ghost" id="pauseBtn">Pause</button><button class="btn ghost" id="resetBtn">Reset</button><button class="btn" id="startGameBtn">Start</button><button class="btn" id="nextRoundBtn">Next Round</button></div></div></header>
 <main class="grid">
 <section class="card"><div class="cardTitle">Black Card</div><div class="blackCard" id="blackCard">Waiting…</div><div class="playerMeta" id="judgeLine">Judge: --</div><div class="playerMeta" id="roundLine">Round: 0</div></section>
@@ -816,9 +816,9 @@ $indexHtml = @"
 Write-Utf8NoBom -Path (Join-Path $publicDir "index.html") -Content $indexHtml
 
 $gameHtml = @"
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>XyzzyModern - Minimal</title><link rel="stylesheet" href="/game.css"/></head>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>terrible-people - Minimal</title><link rel="stylesheet" href="/game.css"/></head>
 <body>
-<header class="topbar"><div class="brand"><div class="logo">XM</div><div class="titles"><div class="h1">XyzzyModern</div><div class="h2">Minimal UI</div></div></div>
+<header class="topbar"><div class="brand"><div class="logo">XM</div><div class="titles"><div class="h1">terrible-people</div><div class="h2">Minimal UI</div></div></div>
 <div class="right"><div class="pill" id="phasePill">Phase: --</div><div class="pill" id="timerPill">Timer: --</div><div id="adminControls"><button class="btn" id="startGameBtn">Start</button><button class="btn" id="nextRoundBtn">Next</button></div></div></header>
 <main class="grid" style="grid-template-columns:1fr"><section class="card"><div class="cardTitle">Black Card</div><div class="blackCard" id="blackCard">Waiting…</div><div class="playerMeta" id="judgeLine">Judge: --</div><div class="playerMeta" id="roundLine">Round: 0</div></section>
 <section class="card"><div class="cardTitle">Hand</div><div class="hand" id="hand"></div></section>
@@ -829,9 +829,9 @@ $gameHtml = @"
 Write-Utf8NoBom -Path (Join-Path $publicDir "game.html") -Content $gameHtml
 
 $lobbyHtml = @"
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>XyzzyModern - Lobby</title><link rel="stylesheet" href="/game.css"/></head>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>terrible-people - Lobby</title><link rel="stylesheet" href="/game.css"/></head>
 <body>
-<header class="topbar"><div class="brand"><div class="logo">XM</div><div class="titles"><div class="h1">XyzzyModern</div><div class="h2">Lobby</div></div></div>
+<header class="topbar"><div class="brand"><div class="logo">XM</div><div class="titles"><div class="h1">terrible-people</div><div class="h2">Lobby</div></div></div>
 <div class="right"><a href="/">Full</a> • <a href="/game.html">Minimal</a> • <a href="/packs.html">Packs</a></div></header>
 <main class="grid" style="grid-template-columns:1fr 1fr;max-width:1100px">
 <section class="card"><div class="cardTitle">Join</div><div class="playerMeta">Player name</div><input class="input" id="nameInput" maxlength="24" placeholder="Joker92"/>
@@ -846,9 +846,9 @@ $lobbyHtml = @"
 Write-Utf8NoBom -Path (Join-Path $publicDir "lobby.html") -Content $lobbyHtml
 
 $packsHtml = @"
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>XyzzyModern - Packs</title><link rel="stylesheet" href="/game.css"/></head>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>terrible-people - Packs</title><link rel="stylesheet" href="/game.css"/></head>
 <body>
-<header class="topbar"><div class="brand"><div class="logo">XM</div><div class="titles"><div class="h1">XyzzyModern</div><div class="h2">Packs (Admin)</div></div></div>
+<header class="topbar"><div class="brand"><div class="logo">XM</div><div class="titles"><div class="h1">terrible-people</div><div class="h2">Packs (Admin)</div></div></div>
 <div class="right"><a href="/lobby.html">Lobby</a> • <a href="/">Full</a></div></header>
 <main class="grid" style="grid-template-columns:360px 1fr;max-width:1200px">
 <section class="card"><div class="cardTitle">Admin</div><div class="playerMeta">Admin key</div><input class="input" id="adminKeyInput" maxlength="64" placeholder="kmadmin"/>
@@ -1351,7 +1351,7 @@ Write-Utf8NoBom -Path (Join-Path $root "settings.json") -Content $settingsJson
 
 $packageJson = @"
 {
-  "name": "xyzzymodern",
+  "name": "terrible-people",
   "version": "1.0.0",
   "private": true,
   "main": "server.js",

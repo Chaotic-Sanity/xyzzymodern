@@ -19,8 +19,11 @@ const state = { playerId:null, players:[], leaders:[], phase:"lobby", roundNum:0
 
 function getOrCreatePlayerId(){
   const k="xm_player_id";
-  let v=localStorage.getItem(k);
-  if(!v){ v="p_"+Math.random().toString(16).slice(2)+"_"+Date.now().toString(16); localStorage.setItem(k,v); }
+  let v=sessionStorage.getItem(k);
+  if(!v){
+    v="p_"+Math.random().toString(16).slice(2)+"_"+Date.now().toString(16);
+    sessionStorage.setItem(k,v);
+  }
   return v;
 }
 
@@ -66,6 +69,13 @@ function appendChat(entry){
 
 socket.on("connect", () => { els.statusPill.textContent="Connected"; });
 socket.on("disconnect", () => { els.statusPill.textContent="Disconnected"; });
+socket.on("identity_assigned", ({ playerId }) => {
+  if (!playerId) return;
+  sessionStorage.setItem("xm_player_id", playerId);
+  state.playerId = playerId;
+  if (els.statusPill) els.statusPill.textContent = "Joined with fresh session";
+});
+
 
 socket.on("state", (payload) => {
   state.phase = payload.phase;
@@ -82,9 +92,10 @@ socket.on("chat_history", ({ log }) => {
 socket.on("chat_update", ({ entry }) => appendChat(entry));
 
 els.joinBtn.addEventListener("click", join);
-els.goFullBtn.addEventListener("click", () => window.location.href="/");
+els.goFullBtn.addEventListener("click", () => window.location.href="/index.html");
 els.nameInput.addEventListener("keydown", (e) => { if(e.key==="Enter") join(); });
 els.adminKeyInput.addEventListener("keydown", (e) => { if(e.key==="Enter") join(); });
 
 loadSaved();
 renderStatus();
+

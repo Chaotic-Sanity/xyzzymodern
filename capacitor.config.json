@@ -1,10 +1,10 @@
 {
-    "appId":  "au.com.chaoticsanity.xyzzymodern",
+    "appId":  "au.com.chaoticsanity.terriblepeople",
     "webDir":  "public",
-    "appName":  "XyzzyModern",
+    "appName": "Terrible People",
     "server":  {
                    "cleartext":  false,
-                   "url":  "https://xyzzymodern-production.up.railway.app"
+                   "url":  "https://terriblepeople-production.up.railway.app"
                },
     "bundledWebRuntime":  false
 }

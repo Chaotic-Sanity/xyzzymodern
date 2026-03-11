@@ -1,0 +1,377 @@
+{
+  "name": "Internet Brainrot",
+  "blackCards": [
+    {
+      "text": "At the the For You page, someone blamed ___."
+    },
+    {
+      "text": "At the the comment section, someone blamed ___."
+    },
+    {
+      "text": "At the the livestream, someone blamed ___."
+    },
+    {
+      "text": "At the the influencer apology video, someone blamed ___."
+    },
+    {
+      "text": "At the the group DM, someone blamed ___."
+    },
+    {
+      "text": "At the the doomscroll session, someone blamed ___."
+    },
+    {
+      "text": "At the the viral trend, someone blamed ___."
+    },
+    {
+      "text": "At the the fandom war, someone blamed ___."
+    },
+    {
+      "text": "At the the reaction thread, someone blamed ___."
+    },
+    {
+      "text": "At the the parasocial meltdown, someone blamed ___."
+    },
+    {
+      "text": "During the For You page, the group chat demanded ___."
+    },
+    {
+      "text": "During the comment section, the group chat demanded ___."
+    },
+    {
+      "text": "During the livestream, the group chat demanded ___."
+    },
+    {
+      "text": "During the influencer apology video, the group chat demanded ___."
+    },
+    {
+      "text": "During the group DM, the group chat demanded ___."
+    },
+    {
+      "text": "During the doomscroll session, the group chat demanded ___."
+    },
+    {
+      "text": "During the viral trend, the group chat demanded ___."
+    },
+    {
+      "text": "During the fandom war, the group chat demanded ___."
+    },
+    {
+      "text": "During the reaction thread, the group chat demanded ___."
+    },
+    {
+      "text": "During the parasocial meltdown, the group chat demanded ___."
+    },
+    {
+      "text": "Right after the For You page, management quietly approved ___."
+    },
+    {
+      "text": "Right after the comment section, management quietly approved ___."
+    },
+    {
+      "text": "Right after the livestream, management quietly approved ___."
+    },
+    {
+      "text": "Right after the influencer apology video, management quietly approved ___."
+    },
+    {
+      "text": "Right after the group DM, management quietly approved ___."
+    },
+    {
+      "text": "Right after the doomscroll session, management quietly approved ___."
+    },
+    {
+      "text": "Right after the viral trend, management quietly approved ___."
+    },
+    {
+      "text": "Right after the fandom war, management quietly approved ___."
+    },
+    {
+      "text": "Right after the reaction thread, management quietly approved ___."
+    },
+    {
+      "text": "Right after the parasocial meltdown, management quietly approved ___."
+    },
+    {
+      "text": "Minutes before the For You page, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the comment section, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the livestream, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the influencer apology video, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the group DM, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the doomscroll session, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the viral trend, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the fandom war, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the reaction thread, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the parasocial meltdown, security had to confiscate ___."
+    },
+    {
+      "text": "The only thing that saved the For You page, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the comment section, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the livestream, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the influencer apology video, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the group DM, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the doomscroll session, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the viral trend, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the fandom war, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the reaction thread, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the parasocial meltdown, my only defense was ___."
+    },
+    {
+      "text": "The first sign of trouble at the For You page, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the comment section, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the livestream, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the influencer apology video, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the group DM, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the doomscroll session, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the viral trend, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the fandom war, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the reaction thread, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the parasocial meltdown, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the For You page, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the comment section, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the livestream, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the influencer apology video, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the group DM, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the doomscroll session, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the viral trend, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the fandom war, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the reaction thread, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the parasocial meltdown, the loudest person brought ___."
+    },
+    {
+      "text": "The official excuse at the For You page, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the comment section, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the livestream, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the influencer apology video, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the group DM, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the doomscroll session, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the viral trend, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the fandom war, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the reaction thread, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the parasocial meltdown, the apology somehow included ___."
+    },
+    {
+      "text": "The rumor spreading through the For You page, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the comment section, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the livestream, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the influencer apology video, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the group DM, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the doomscroll session, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the viral trend, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the fandom war, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the reaction thread, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the parasocial meltdown, the winner celebrated with ___."
+    },
+    {
+      "text": "The final straw at the For You page, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the comment section, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the livestream, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the influencer apology video, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the group DM, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the doomscroll session, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the viral trend, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the fandom war, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the reaction thread, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the parasocial meltdown, the disaster was traced back to ___."
+    }
+  ],
+  "whiteCards": [
+    "terminally online doomscroll loop in the For You page",
+    "your fake-deep mutual doing rage posting with a blue check screenshot",
+    "an emergency stash of a fake apology notes app post",
+    "a screenshot of the unverified expert at a late-night rabbit hole",
+    "comment-section warfare and a suspicious amount of a sponsored detox tea",
+    "a fake smile hiding doomscroll loop",
+    "your fake-deep mutual blaming \"source: trust me\"",
+    "a midnight decision powered by a fake apology notes app post",
+    "a cursed trend featuring influencer cringe",
+    "attention-starved voice notes from the trending feed",
+    "a deeply unserious plan involving an affiliate link",
+    "your fake-deep mutual pretending this is normal",
+    "depressed algorithm worship in the replies tab",
+    "the unverified expert doing content theft with a ring light shrine",
+    "an emergency stash of a sponsored detox tea",
+    "a screenshot of a clout goblin at the For You page",
+    "parasocial breakdown and a suspicious amount of a blue check screenshot",
+    "a fake smile hiding algorithm worship",
+    "the unverified expert blaming \"it's satire\"",
+    "a midnight decision powered by a sponsored detox tea",
+    "a cursed trend featuring doomscroll loop",
+    "smug voice notes from a cursed livestream",
+    "a deeply unserious plan involving a fake apology notes app post",
+    "the unverified expert pretending this is normal",
+    "attention-starved comment-section warfare in the trending feed",
+    "a clout goblin doing engagement farming with an affiliate link",
+    "an emergency stash of a blue check screenshot",
+    "a screenshot of a micro-influencer guru at the replies tab",
+    "influencer cringe and a suspicious amount of a ring light shrine",
+    "a fake smile hiding comment-section warfare",
+    "a clout goblin blaming \"touch grass\"",
+    "a midnight decision powered by a blue check screenshot",
+    "a cursed trend featuring algorithm worship",
+    "performative voice notes from a late-night rabbit hole",
+    "a deeply unserious plan involving a sponsored detox tea",
+    "a clout goblin pretending this is normal",
+    "smug parasocial breakdown in a cursed livestream",
+    "a micro-influencer guru doing ratio chasing with a fake apology notes app post",
+    "an emergency stash of a ring light shrine",
+    "a screenshot of a serial quote-tweeter at the trending feed",
+    "doomscroll loop and a suspicious amount of an affiliate link",
+    "a fake smile hiding parasocial breakdown",
+    "a micro-influencer guru blaming \"this aged badly\"",
+    "a midnight decision powered by a ring light shrine",
+    "a cursed trend featuring comment-section warfare",
+    "terminally online voice notes from the For You page",
+    "a deeply unserious plan involving a blue check screenshot",
+    "a micro-influencer guru pretending this is normal",
+    "performative influencer cringe in a late-night rabbit hole",
+    "a serial quote-tweeter doing identity cosplay with a sponsored detox tea",
+    "an emergency stash of an affiliate link",
+    "a screenshot of your fake-deep mutual at a cursed livestream",
+    "algorithm worship and a suspicious amount of a fake apology notes app post",
+    "a fake smile hiding influencer cringe",
+    "a serial quote-tweeter blaming \"just mute me\"",
+    "a midnight decision powered by an affiliate link",
+    "a cursed trend featuring parasocial breakdown",
+    "depressed voice notes from the replies tab",
+    "a deeply unserious plan involving a ring light shrine",
+    "a serial quote-tweeter pretending this is normal",
+    "a drunk text drafted in Notes",
+    "a \"totally fine\" emotional spiral",
+    "a voice note nobody asked for",
+    "an apology with no accountability",
+    "a soft launch gone violently wrong",
+    "a situationship exit interview",
+    "a cursed meme at the worst time",
+    "a panic delete that made it worse",
+    "a mirror selfie and false confidence",
+    "a dramatic unfollow campaign"
+  ]
+}

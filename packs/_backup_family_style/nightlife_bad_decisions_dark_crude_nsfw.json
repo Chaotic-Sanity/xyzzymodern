@@ -1,0 +1,377 @@
+{
+  "name": "Nightlife & Bad Decisions",
+  "blackCards": [
+    {
+      "text": "At the the club line, someone blamed ___."
+    },
+    {
+      "text": "At the the dance floor, someone blamed ___."
+    },
+    {
+      "text": "At the the afterparty, someone blamed ___."
+    },
+    {
+      "text": "At the the 3am kebab stop, someone blamed ___."
+    },
+    {
+      "text": "At the the rideshare home, someone blamed ___."
+    },
+    {
+      "text": "At the the bar tab review, someone blamed ___."
+    },
+    {
+      "text": "At the the bathroom mirror pep talk, someone blamed ___."
+    },
+    {
+      "text": "At the the karaoke stage, someone blamed ___."
+    },
+    {
+      "text": "At the the rooftop bar, someone blamed ___."
+    },
+    {
+      "text": "At the the hangover morning, someone blamed ___."
+    },
+    {
+      "text": "During the club line, the group chat demanded ___."
+    },
+    {
+      "text": "During the dance floor, the group chat demanded ___."
+    },
+    {
+      "text": "During the afterparty, the group chat demanded ___."
+    },
+    {
+      "text": "During the 3am kebab stop, the group chat demanded ___."
+    },
+    {
+      "text": "During the rideshare home, the group chat demanded ___."
+    },
+    {
+      "text": "During the bar tab review, the group chat demanded ___."
+    },
+    {
+      "text": "During the bathroom mirror pep talk, the group chat demanded ___."
+    },
+    {
+      "text": "During the karaoke stage, the group chat demanded ___."
+    },
+    {
+      "text": "During the rooftop bar, the group chat demanded ___."
+    },
+    {
+      "text": "During the hangover morning, the group chat demanded ___."
+    },
+    {
+      "text": "Right after the club line, management quietly approved ___."
+    },
+    {
+      "text": "Right after the dance floor, management quietly approved ___."
+    },
+    {
+      "text": "Right after the afterparty, management quietly approved ___."
+    },
+    {
+      "text": "Right after the 3am kebab stop, management quietly approved ___."
+    },
+    {
+      "text": "Right after the rideshare home, management quietly approved ___."
+    },
+    {
+      "text": "Right after the bar tab review, management quietly approved ___."
+    },
+    {
+      "text": "Right after the bathroom mirror pep talk, management quietly approved ___."
+    },
+    {
+      "text": "Right after the karaoke stage, management quietly approved ___."
+    },
+    {
+      "text": "Right after the rooftop bar, management quietly approved ___."
+    },
+    {
+      "text": "Right after the hangover morning, management quietly approved ___."
+    },
+    {
+      "text": "Minutes before the club line, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the dance floor, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the afterparty, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the 3am kebab stop, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the rideshare home, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the bar tab review, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the bathroom mirror pep talk, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the karaoke stage, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the rooftop bar, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the hangover morning, security had to confiscate ___."
+    },
+    {
+      "text": "The only thing that saved the club line, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the dance floor, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the afterparty, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the 3am kebab stop, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the rideshare home, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the bar tab review, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the bathroom mirror pep talk, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the karaoke stage, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the rooftop bar, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the hangover morning, my only defense was ___."
+    },
+    {
+      "text": "The first sign of trouble at the club line, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the dance floor, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the afterparty, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the 3am kebab stop, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the rideshare home, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the bar tab review, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the bathroom mirror pep talk, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the karaoke stage, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the rooftop bar, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the hangover morning, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the club line, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the dance floor, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the afterparty, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the 3am kebab stop, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the rideshare home, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the bar tab review, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the bathroom mirror pep talk, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the karaoke stage, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the rooftop bar, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the hangover morning, the loudest person brought ___."
+    },
+    {
+      "text": "The official excuse at the club line, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the dance floor, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the afterparty, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the 3am kebab stop, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the rideshare home, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the bar tab review, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the bathroom mirror pep talk, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the karaoke stage, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the rooftop bar, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the hangover morning, the apology somehow included ___."
+    },
+    {
+      "text": "The rumor spreading through the club line, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the dance floor, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the afterparty, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the 3am kebab stop, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the rideshare home, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the bar tab review, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the bathroom mirror pep talk, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the karaoke stage, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the rooftop bar, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the hangover morning, the winner celebrated with ___."
+    },
+    {
+      "text": "The final straw at the club line, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the dance floor, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the afterparty, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the 3am kebab stop, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the rideshare home, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the bar tab review, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the bathroom mirror pep talk, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the karaoke stage, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the rooftop bar, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the hangover morning, the disaster was traced back to ___."
+    }
+  ],
+  "whiteCards": [
+    "sweaty hangover shame in the smokers area",
+    "your chaotic bestie doing dramatic confessions with lost fake lashes",
+    "an emergency stash of a cracked phone screen",
+    "a screenshot of the shirtless DJ at a neon-lit alley",
+    "dancefloor regret and a suspicious amount of a glitter-covered shoe",
+    "a fake smile hiding hangover shame",
+    "your chaotic bestie blaming \"I'm fine\"",
+    "a midnight decision powered by a cracked phone screen",
+    "a cursed trend featuring bar-tab panic",
+    "nauseous voice notes from the afterparty kitchen",
+    "a deeply unserious plan involving a flat energy drink",
+    "your chaotic bestie pretending this is normal",
+    "messy 3am identity crisis in the rideshare queue",
+    "the shirtless DJ doing questionable flirting with one remaining cigarette",
+    "an emergency stash of a glitter-covered shoe",
+    "a screenshot of a blackout poet at the smokers area",
+    "club bathroom speech and a suspicious amount of lost fake lashes",
+    "a fake smile hiding 3am identity crisis",
+    "the shirtless DJ blaming \"this is character development\"",
+    "a midnight decision powered by a glitter-covered shoe",
+    "a cursed trend featuring hangover shame",
+    "euphoric voice notes from the sticky dancefloor",
+    "a deeply unserious plan involving a cracked phone screen",
+    "the shirtless DJ pretending this is normal",
+    "nauseous dancefloor regret in the afterparty kitchen",
+    "a blackout poet doing impulse texting with a flat energy drink",
+    "an emergency stash of lost fake lashes",
+    "a screenshot of a random promoter at the rideshare queue",
+    "bar-tab panic and a suspicious amount of one remaining cigarette",
+    "a fake smile hiding dancefloor regret",
+    "a blackout poet blaming \"one more drink\"",
+    "a midnight decision powered by lost fake lashes",
+    "a cursed trend featuring 3am identity crisis",
+    "overconfident voice notes from a neon-lit alley",
+    "a deeply unserious plan involving a glitter-covered shoe",
+    "a blackout poet pretending this is normal",
+    "euphoric club bathroom speech in the sticky dancefloor",
+    "a random promoter doing wallet destruction with a cracked phone screen",
+    "an emergency stash of one remaining cigarette",
+    "a screenshot of the bouncer with lore at the afterparty kitchen",
+    "hangover shame and a suspicious amount of a flat energy drink",
+    "a fake smile hiding club bathroom speech",
+    "a random promoter blaming \"we're only young once\"",
+    "a midnight decision powered by one remaining cigarette",
+    "a cursed trend featuring dancefloor regret",
+    "sweaty voice notes from the smokers area",
+    "a deeply unserious plan involving lost fake lashes",
+    "a random promoter pretending this is normal",
+    "overconfident bar-tab panic in a neon-lit alley",
+    "the bouncer with lore doing reckless karaoke with a glitter-covered shoe",
+    "an emergency stash of a flat energy drink",
+    "a screenshot of your chaotic bestie at the sticky dancefloor",
+    "3am identity crisis and a suspicious amount of a cracked phone screen",
+    "a fake smile hiding bar-tab panic",
+    "the bouncer with lore blaming \"it seemed funny\"",
+    "a midnight decision powered by a flat energy drink",
+    "a cursed trend featuring club bathroom speech",
+    "messy voice notes from the rideshare queue",
+    "a deeply unserious plan involving one remaining cigarette",
+    "the bouncer with lore pretending this is normal",
+    "a drunk text drafted in Notes",
+    "a \"totally fine\" emotional spiral",
+    "a voice note nobody asked for",
+    "an apology with no accountability",
+    "a soft launch gone violently wrong",
+    "a situationship exit interview",
+    "a cursed meme at the worst time",
+    "a panic delete that made it worse",
+    "a mirror selfie and false confidence",
+    "a dramatic unfollow campaign"
+  ]
+}

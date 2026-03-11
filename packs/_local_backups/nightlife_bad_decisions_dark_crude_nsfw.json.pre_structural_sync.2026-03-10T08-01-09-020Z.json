@@ -1,0 +1,365 @@
+{
+  "name": "Nightlife & Bad Decisions",
+  "blackCards": [
+    {
+      "text": "What ruined The club line? _____"
+    },
+    {
+      "text": "What ruined The dance floor? _____"
+    },
+    {
+      "text": "What ruined The afterparty? _____"
+    },
+    {
+      "text": "What ruined The 3am kebab stop? _____"
+    },
+    {
+      "text": "What ruined The rideshare home? _____"
+    },
+    {
+      "text": "What ruined The bar tab review? _____"
+    },
+    {
+      "text": "What ruined The bathroom mirror pep talk? _____"
+    },
+    {
+      "text": "What ruined The karaoke stage? _____"
+    },
+    {
+      "text": "What ruined The rooftop bar? _____"
+    },
+    {
+      "text": "What ruined The hangover morning? _____"
+    },
+    {
+      "text": "Who brought _____ to The club line?"
+    },
+    {
+      "text": "Who brought _____ to The dance floor?"
+    },
+    {
+      "text": "Who brought _____ to The afterparty?"
+    },
+    {
+      "text": "Who brought _____ to The 3am kebab stop?"
+    },
+    {
+      "text": "Who brought _____ to The rideshare home?"
+    },
+    {
+      "text": "Who brought _____ to The bar tab review?"
+    },
+    {
+      "text": "Who brought _____ to The bathroom mirror pep talk?"
+    },
+    {
+      "text": "Who brought _____ to The karaoke stage?"
+    },
+    {
+      "text": "Who brought _____ to The rooftop bar?"
+    },
+    {
+      "text": "Who brought _____ to The hangover morning?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The club line?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The dance floor?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The afterparty?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The 3am kebab stop?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The rideshare home?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The bar tab review?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The bathroom mirror pep talk?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The karaoke stage?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The rooftop bar?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The hangover morning?"
+    },
+    {
+      "text": "The worst part of The club line was _____."
+    },
+    {
+      "text": "The worst part of The dance floor was _____."
+    },
+    {
+      "text": "The worst part of The afterparty was _____."
+    },
+    {
+      "text": "The worst part of The 3am kebab stop was _____."
+    },
+    {
+      "text": "The worst part of The rideshare home was _____."
+    },
+    {
+      "text": "The worst part of The bar tab review was _____."
+    },
+    {
+      "text": "The worst part of The bathroom mirror pep talk was _____."
+    },
+    {
+      "text": "The worst part of The karaoke stage was _____."
+    },
+    {
+      "text": "The worst part of The rooftop bar was _____."
+    },
+    {
+      "text": "The worst part of The hangover morning was _____."
+    },
+    {
+      "text": "No one was ready for _____ at The club line."
+    },
+    {
+      "text": "No one was ready for _____ at The dance floor."
+    },
+    {
+      "text": "No one was ready for _____ at The afterparty."
+    },
+    {
+      "text": "No one was ready for _____ at The 3am kebab stop."
+    },
+    {
+      "text": "No one was ready for _____ at The rideshare home."
+    },
+    {
+      "text": "No one was ready for _____ at The bar tab review."
+    },
+    {
+      "text": "No one was ready for _____ at The bathroom mirror pep talk."
+    },
+    {
+      "text": "No one was ready for _____ at The karaoke stage."
+    },
+    {
+      "text": "No one was ready for _____ at The rooftop bar."
+    },
+    {
+      "text": "No one was ready for _____ at The hangover morning."
+    },
+    {
+      "text": "The club line got weird because of _____."
+    },
+    {
+      "text": "The dance floor got weird because of _____."
+    },
+    {
+      "text": "The afterparty got weird because of _____."
+    },
+    {
+      "text": "The 3am kebab stop got weird because of _____."
+    },
+    {
+      "text": "The rideshare home got weird because of _____."
+    },
+    {
+      "text": "The bar tab review got weird because of _____."
+    },
+    {
+      "text": "The bathroom mirror pep talk got weird because of _____."
+    },
+    {
+      "text": "The karaoke stage got weird because of _____."
+    },
+    {
+      "text": "The rooftop bar got weird because of _____."
+    },
+    {
+      "text": "The hangover morning got weird because of _____."
+    },
+    {
+      "text": "The big surprise at The club line? _____"
+    },
+    {
+      "text": "The big surprise at The dance floor? _____"
+    },
+    {
+      "text": "The big surprise at The afterparty? _____"
+    },
+    {
+      "text": "The big surprise at The 3am kebab stop? _____"
+    },
+    {
+      "text": "The big surprise at The rideshare home? _____"
+    },
+    {
+      "text": "The big surprise at The bar tab review? _____"
+    },
+    {
+      "text": "The big surprise at The bathroom mirror pep talk? _____"
+    },
+    {
+      "text": "The big surprise at The karaoke stage? _____"
+    },
+    {
+      "text": "The big surprise at The rooftop bar? _____"
+    },
+    {
+      "text": "The big surprise at The hangover morning? _____"
+    },
+    {
+      "text": "The club line could only be explained by _____."
+    },
+    {
+      "text": "The dance floor could only be explained by _____."
+    },
+    {
+      "text": "The afterparty could only be explained by _____."
+    },
+    {
+      "text": "The 3am kebab stop could only be explained by _____."
+    },
+    {
+      "text": "The rideshare home could only be explained by _____."
+    },
+    {
+      "text": "The bar tab review could only be explained by _____."
+    },
+    {
+      "text": "The bathroom mirror pep talk could only be explained by _____."
+    },
+    {
+      "text": "The karaoke stage could only be explained by _____."
+    },
+    {
+      "text": "The rooftop bar could only be explained by _____."
+    },
+    {
+      "text": "The hangover morning could only be explained by _____."
+    },
+    {
+      "text": "What made The club line such a disaster? _____"
+    },
+    {
+      "text": "What made The dance floor such a disaster? _____"
+    },
+    {
+      "text": "What made The afterparty such a disaster? _____"
+    },
+    {
+      "text": "What made The 3am kebab stop such a disaster? _____"
+    },
+    {
+      "text": "What made The rideshare home such a disaster? _____"
+    },
+    {
+      "text": "What made The bar tab review such a disaster? _____"
+    },
+    {
+      "text": "What made The bathroom mirror pep talk such a disaster? _____"
+    },
+    {
+      "text": "What made The karaoke stage such a disaster? _____"
+    },
+    {
+      "text": "What made The rooftop bar such a disaster? _____"
+    },
+    {
+      "text": "What made The hangover morning such a disaster? _____"
+    },
+    {
+      "text": "The one thing The club line needed was _____."
+    },
+    {
+      "text": "The one thing The dance floor needed was _____."
+    },
+    {
+      "text": "The one thing The afterparty needed was _____."
+    },
+    {
+      "text": "The one thing The 3am kebab stop needed was _____."
+    },
+    {
+      "text": "The one thing The rideshare home needed was _____."
+    },
+    {
+      "text": "The one thing The bar tab review needed was _____."
+    },
+    {
+      "text": "The one thing The bathroom mirror pep talk needed was _____."
+    },
+    {
+      "text": "The one thing The karaoke stage needed was _____."
+    },
+    {
+      "text": "The one thing The rooftop bar needed was _____."
+    },
+    {
+      "text": "The one thing The hangover morning needed was _____."
+    }
+  ],
+  "whiteCards": [
+    "Sweaty hangover shame in the smokers area",
+    "Your chaotic bestie doing dramatic confessions",
+    "A cracked phone screen",
+    "A screenshot of the shirtless DJ",
+    "Dancefloor regret",
+    "Hangover shame",
+    "Your chaotic bestie blaming",
+    "A cursed trend featuring bar-tab panic",
+    "Nauseous voice notes from the afterparty kitchen",
+    "A deeply unserious plan involving a flat energy drink",
+    "Your chaotic bestie pretending this is normal",
+    "Messy 3am identity crisis in the rideshare queue",
+    "The shirtless DJ doing questionable flirting",
+    "A glitter-covered shoe",
+    "A screenshot of a blackout poet",
+    "Club bathroom speech",
+    "3am identity crisis",
+    "The shirtless DJ",
+    "A cursed trend featuring hangover shame",
+    "Euphoric voice notes from the sticky dancefloor",
+    "A deeply unserious plan involving a cracked phone screen",
+    "The shirtless DJ pretending this is normal",
+    "Nauseous dancefloor regret in the afterparty kitchen",
+    "A blackout poet doing impulse texting",
+    "Lost fake lashes",
+    "A screenshot of a random promoter",
+    "Bar-tab panic",
+    "A blackout poet",
+    "A cursed trend featuring 3am identity crisis",
+    "Overconfident voice notes from a neon-lit alley",
+    "A deeply unserious plan involving a glitter-covered shoe",
+    "A blackout poet pretending this is normal",
+    "Euphoric club bathroom speech in the sticky dancefloor",
+    "A random promoter doing wallet destruction",
+    "One remaining cigarette",
+    "A screenshot of the bouncer",
+    "A random promoter",
+    "A cursed trend featuring dancefloor regret",
+    "Sweaty voice notes from the smokers area",
+    "A deeply unserious plan involving lost fake lashes",
+    "A random promoter pretending this is normal",
+    "Overconfident bar-tab panic in a neon-lit alley",
+    "The bouncer",
+    "A flat energy drink",
+    "A screenshot of your chaotic bestie",
+    "A cursed trend featuring club bathroom speech",
+    "Messy voice notes from the rideshare queue",
+    "A deeply unserious plan involving one remaining cigarette",
+    "A drunk text drafted in Notes",
+    "A \"totally fine\" emotional spiral",
+    "A voice note nobody asked for",
+    "An apology with no accountability",
+    "A soft launch gone violently wrong",
+    "A situationship exit interview",
+    "A cursed meme",
+    "A panic delete that made it worse",
+    "A mirror selfie and false confidence",
+    "A dramatic unfollow campaign"
+  ]
+}

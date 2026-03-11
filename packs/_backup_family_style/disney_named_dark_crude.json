@@ -1,0 +1,377 @@
+{
+  "name": "Disney (Dark & Crude, Named Characters)",
+  "blackCards": [
+    {
+      "text": "At the the royal ball, someone blamed ___."
+    },
+    {
+      "text": "At the the enchanted forest, someone blamed ___."
+    },
+    {
+      "text": "At the the villain rehearsal, someone blamed ___."
+    },
+    {
+      "text": "At the the kingdom council, someone blamed ___."
+    },
+    {
+      "text": "At the the happily-ever-after scene, someone blamed ___."
+    },
+    {
+      "text": "At the the magic castle, someone blamed ___."
+    },
+    {
+      "text": "At the the talking-animal union, someone blamed ___."
+    },
+    {
+      "text": "At the the carriage ride, someone blamed ___."
+    },
+    {
+      "text": "At the the dramatic song break, someone blamed ___."
+    },
+    {
+      "text": "At the the prophecy meeting, someone blamed ___."
+    },
+    {
+      "text": "During the royal ball, the group chat demanded ___."
+    },
+    {
+      "text": "During the enchanted forest, the group chat demanded ___."
+    },
+    {
+      "text": "During the villain rehearsal, the group chat demanded ___."
+    },
+    {
+      "text": "During the kingdom council, the group chat demanded ___."
+    },
+    {
+      "text": "During the happily-ever-after scene, the group chat demanded ___."
+    },
+    {
+      "text": "During the magic castle, the group chat demanded ___."
+    },
+    {
+      "text": "During the talking-animal union, the group chat demanded ___."
+    },
+    {
+      "text": "During the carriage ride, the group chat demanded ___."
+    },
+    {
+      "text": "During the dramatic song break, the group chat demanded ___."
+    },
+    {
+      "text": "During the prophecy meeting, the group chat demanded ___."
+    },
+    {
+      "text": "Right after the royal ball, management quietly approved ___."
+    },
+    {
+      "text": "Right after the enchanted forest, management quietly approved ___."
+    },
+    {
+      "text": "Right after the villain rehearsal, management quietly approved ___."
+    },
+    {
+      "text": "Right after the kingdom council, management quietly approved ___."
+    },
+    {
+      "text": "Right after the happily-ever-after scene, management quietly approved ___."
+    },
+    {
+      "text": "Right after the magic castle, management quietly approved ___."
+    },
+    {
+      "text": "Right after the talking-animal union, management quietly approved ___."
+    },
+    {
+      "text": "Right after the carriage ride, management quietly approved ___."
+    },
+    {
+      "text": "Right after the dramatic song break, management quietly approved ___."
+    },
+    {
+      "text": "Right after the prophecy meeting, management quietly approved ___."
+    },
+    {
+      "text": "Minutes before the royal ball, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the enchanted forest, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the villain rehearsal, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the kingdom council, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the happily-ever-after scene, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the magic castle, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the talking-animal union, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the carriage ride, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the dramatic song break, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the prophecy meeting, security had to confiscate ___."
+    },
+    {
+      "text": "The only thing that saved the royal ball, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the enchanted forest, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the villain rehearsal, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the kingdom council, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the happily-ever-after scene, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the magic castle, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the talking-animal union, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the carriage ride, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the dramatic song break, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the prophecy meeting, my only defense was ___."
+    },
+    {
+      "text": "The first sign of trouble at the royal ball, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the enchanted forest, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the villain rehearsal, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the kingdom council, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the happily-ever-after scene, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the magic castle, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the talking-animal union, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the carriage ride, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the dramatic song break, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the prophecy meeting, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the royal ball, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the enchanted forest, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the villain rehearsal, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the kingdom council, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the happily-ever-after scene, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the magic castle, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the talking-animal union, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the carriage ride, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the dramatic song break, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the prophecy meeting, the loudest person brought ___."
+    },
+    {
+      "text": "The official excuse at the royal ball, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the enchanted forest, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the villain rehearsal, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the kingdom council, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the happily-ever-after scene, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the magic castle, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the talking-animal union, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the carriage ride, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the dramatic song break, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the prophecy meeting, the apology somehow included ___."
+    },
+    {
+      "text": "The rumor spreading through the royal ball, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the enchanted forest, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the villain rehearsal, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the kingdom council, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the happily-ever-after scene, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the magic castle, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the talking-animal union, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the carriage ride, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the dramatic song break, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the prophecy meeting, the winner celebrated with ___."
+    },
+    {
+      "text": "The final straw at the royal ball, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the enchanted forest, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the villain rehearsal, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the kingdom council, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the happily-ever-after scene, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the magic castle, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the talking-animal union, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the carriage ride, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the dramatic song break, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the prophecy meeting, the disaster was traced back to ___."
+    }
+  ],
+  "whiteCards": [
+    "a cursed churro that whispers your name",
+    "Mickey's 'friendly' legal team",
+    "Donald Duck's rage-quack meltdown",
+    "a pixie-dust overdose and a hard landing",
+    "a magic wand that only casts 'mild inconvenience'",
+    "Elsa's emotional frostbite",
+    "Ursula's contract written in squid ink and bad vibes",
+    "a crown that screams at night",
+    "a talking teacup with anger issues",
+    "Goofy falling down the stairs in slow motion",
+    "a haunted castle with excellent customer service",
+    "Maleficent's 'HR-approved' curse",
+    "a swarm of judgmental birds",
+    "an enchanted mirror that roasts you",
+    "a royal ball that turns into a riot",
+    "a pumpkin carriage with a suspicious heartbeat",
+    "a glass slipper filled with sand and regret",
+    "Captain Hook's moisturiser addiction",
+    "Tinker Bell's tiny knife collection",
+    "Peter Pan refusing to pay rent",
+    "Genie granting wishes like a petty genie would",
+    "Jafar's bargain-bin evil plan",
+    "Hades running the Underworld like a call centre",
+    "Hercules discovering leg day is a myth",
+    "Stitch committing adorable crimes",
+    "Mulan's 'this will absolutely work' confidence",
+    "Buzz Lightyear stuck in demo mode",
+    "Woody's existential crisis in a toy box",
+    "Scar's dramatic villain podcast",
+    "Simba's crippling responsibility hangover",
+    "Ariel's weird fork collection",
+    "a singing crab with unsolicited advice",
+    "a forest that claps back",
+    "a singing montage you can't escape",
+    "a princess with combat boots",
+    "a sidekick who knows too much",
+    "a villain laugh that shakes the walls",
+    "a moat full of something that is definitely not water",
+    "a castle built on lies and termites",
+    "an enchanted rose that smells like thunder",
+    "a polite ghost with strict table manners",
+    "a kingdom ruled by passive aggression",
+    "an apple that looks way too shiny",
+    "a dwarf union meeting",
+    "a cursed spinning wheel with hobbies",
+    "a firework show that turns into a horror show",
+    "a musical number that ends in screaming",
+    "a talking animal snitching to the authorities",
+    "a magic carpet with road rage",
+    "the phrase 'happily ever after' spoken like a threat",
+    "a villain's monologue interrupted by a goose",
+    "a heroic pose that causes back pain",
+    "a dramatic entrance that trips on its own smoke",
+    "a family-friendly story with unhinged subtext",
+    "a crowd chanting 'one more verse!'",
+    "a potion labelled 'DO NOT'",
+    "a fairy godmother who is done with everyone's nonsense",
+    "the sound of Disney music… in a locked basement",
+    "a theme park mascot with dead eyes",
+    "feral brand-safe disaster in the comments section",
+    "a chaos gremlin doing doomscrolling with a broken vape",
+    "an emergency stash of a stolen Wi-Fi password",
+    "a screenshot of an overconfident stranger at a family group chat",
+    "questionable life choice and a suspicious amount of an unread red flag",
+    "a fake smile hiding brand-safe disaster",
+    "a chaos gremlin blaming \"new phone who dis\"",
+    "a midnight decision powered by a stolen Wi-Fi password",
+    "a cursed trend featuring petty revenge",
+    "delusional voice notes from the afterparty",
+    "a deeply unserious plan involving a cursed selfie"
+  ]
+}

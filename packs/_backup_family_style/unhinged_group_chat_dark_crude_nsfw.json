@@ -1,0 +1,377 @@
+{
+  "name": "Unhinged Group Chat",
+  "blackCards": [
+    {
+      "text": "At the the group chat, someone blamed ___."
+    },
+    {
+      "text": "At the the meme thread, someone blamed ___."
+    },
+    {
+      "text": "At the the 2am voice notes, someone blamed ___."
+    },
+    {
+      "text": "At the the friendship group, someone blamed ___."
+    },
+    {
+      "text": "At the the drunk text spiral, someone blamed ___."
+    },
+    {
+      "text": "At the the birthday chat, someone blamed ___."
+    },
+    {
+      "text": "At the the class chat, someone blamed ___."
+    },
+    {
+      "text": "At the the work chat, someone blamed ___."
+    },
+    {
+      "text": "At the the family chat, someone blamed ___."
+    },
+    {
+      "text": "At the the leaked screenshots, someone blamed ___."
+    },
+    {
+      "text": "During the group chat, the group chat demanded ___."
+    },
+    {
+      "text": "During the meme thread, the group chat demanded ___."
+    },
+    {
+      "text": "During the 2am voice notes, the group chat demanded ___."
+    },
+    {
+      "text": "During the friendship group, the group chat demanded ___."
+    },
+    {
+      "text": "During the drunk text spiral, the group chat demanded ___."
+    },
+    {
+      "text": "During the birthday chat, the group chat demanded ___."
+    },
+    {
+      "text": "During the class chat, the group chat demanded ___."
+    },
+    {
+      "text": "During the work chat, the group chat demanded ___."
+    },
+    {
+      "text": "During the family chat, the group chat demanded ___."
+    },
+    {
+      "text": "During the leaked screenshots, the group chat demanded ___."
+    },
+    {
+      "text": "Right after the group chat, management quietly approved ___."
+    },
+    {
+      "text": "Right after the meme thread, management quietly approved ___."
+    },
+    {
+      "text": "Right after the 2am voice notes, management quietly approved ___."
+    },
+    {
+      "text": "Right after the friendship group, management quietly approved ___."
+    },
+    {
+      "text": "Right after the drunk text spiral, management quietly approved ___."
+    },
+    {
+      "text": "Right after the birthday chat, management quietly approved ___."
+    },
+    {
+      "text": "Right after the class chat, management quietly approved ___."
+    },
+    {
+      "text": "Right after the work chat, management quietly approved ___."
+    },
+    {
+      "text": "Right after the family chat, management quietly approved ___."
+    },
+    {
+      "text": "Right after the leaked screenshots, management quietly approved ___."
+    },
+    {
+      "text": "Minutes before the group chat, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the meme thread, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the 2am voice notes, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the friendship group, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the drunk text spiral, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the birthday chat, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the class chat, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the work chat, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the family chat, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the leaked screenshots, security had to confiscate ___."
+    },
+    {
+      "text": "The only thing that saved the group chat, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the meme thread, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the 2am voice notes, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the friendship group, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the drunk text spiral, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the birthday chat, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the class chat, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the work chat, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the family chat, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the leaked screenshots, my only defense was ___."
+    },
+    {
+      "text": "The first sign of trouble at the group chat, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the meme thread, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the 2am voice notes, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the friendship group, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the drunk text spiral, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the birthday chat, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the class chat, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the work chat, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the family chat, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the leaked screenshots, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the group chat, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the meme thread, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the 2am voice notes, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the friendship group, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the drunk text spiral, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the birthday chat, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the class chat, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the work chat, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the family chat, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the leaked screenshots, the loudest person brought ___."
+    },
+    {
+      "text": "The official excuse at the group chat, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the meme thread, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the 2am voice notes, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the friendship group, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the drunk text spiral, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the birthday chat, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the class chat, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the work chat, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the family chat, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the leaked screenshots, the apology somehow included ___."
+    },
+    {
+      "text": "The rumor spreading through the group chat, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the meme thread, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the 2am voice notes, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the friendship group, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the drunk text spiral, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the birthday chat, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the class chat, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the work chat, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the family chat, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the leaked screenshots, the winner celebrated with ___."
+    },
+    {
+      "text": "The final straw at the group chat, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the meme thread, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the 2am voice notes, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the friendship group, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the drunk text spiral, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the birthday chat, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the class chat, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the work chat, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the family chat, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the leaked screenshots, the disaster was traced back to ___."
+    }
+  ],
+  "whiteCards": [
+    "feral meme warfare in the group chat",
+    "the lurker who suddenly speaks doing reply-all disaster with a cursed gif",
+    "an emergency stash of an accidental selfie",
+    "a screenshot of the reaction emoji tyrant at a typo-ridden DM",
+    "petty screenshot drop and a suspicious amount of a passive-aggressive sticker",
+    "a fake smile hiding meme warfare",
+    "the lurker who suddenly speaks blaming \"I was hacked\"",
+    "a midnight decision powered by an accidental selfie",
+    "a cursed trend featuring drunk text avalanche",
+    "paranoid voice notes from the muted notifications tab",
+    "a deeply unserious plan involving a blurry screenshot",
+    "the lurker who suddenly speaks pretending this is normal",
+    "sleepy friendship civil war in the side chat",
+    "the reaction emoji tyrant doing message deletion with a 4-minute voice note",
+    "an emergency stash of a passive-aggressive sticker",
+    "a screenshot of the chaos friend at the group chat",
+    "voice-note overshare and a suspicious amount of a cursed gif",
+    "a fake smile hiding friendship civil war",
+    "the reaction emoji tyrant blaming \"autocorrect did it\"",
+    "a midnight decision powered by a passive-aggressive sticker",
+    "a cursed trend featuring meme warfare",
+    "petty voice notes from the archived thread",
+    "a deeply unserious plan involving an accidental selfie",
+    "the reaction emoji tyrant pretending this is normal",
+    "paranoid petty screenshot drop in the muted notifications tab",
+    "the chaos friend doing oversharing with a blurry screenshot",
+    "an emergency stash of a cursed gif",
+    "a screenshot of the typo king at the side chat",
+    "drunk text avalanche and a suspicious amount of a 4-minute voice note",
+    "a fake smile hiding petty screenshot drop",
+    "the chaos friend blaming \"wrong chat\"",
+    "a midnight decision powered by a cursed gif",
+    "a cursed trend featuring friendship civil war",
+    "dramatic voice notes from a typo-ridden DM",
+    "a deeply unserious plan involving a passive-aggressive sticker",
+    "the chaos friend pretending this is normal",
+    "petty voice-note overshare in the archived thread",
+    "the typo king doing subtweeting with an accidental selfie",
+    "an emergency stash of a 4-minute voice note",
+    "a screenshot of the midnight texter at the muted notifications tab",
+    "meme warfare and a suspicious amount of a blurry screenshot",
+    "a fake smile hiding voice-note overshare",
+    "the typo king blaming \"that was my cousin\"",
+    "a midnight decision powered by a 4-minute voice note",
+    "a cursed trend featuring petty screenshot drop",
+    "feral voice notes from the group chat",
+    "a deeply unserious plan involving a cursed gif",
+    "the typo king pretending this is normal",
+    "dramatic drunk text avalanche in a typo-ridden DM",
+    "the midnight texter doing social self-sabotage with a passive-aggressive sticker",
+    "an emergency stash of a blurry screenshot",
+    "a screenshot of the lurker who suddenly speaks at the archived thread",
+    "friendship civil war and a suspicious amount of an accidental selfie",
+    "a fake smile hiding drunk text avalanche",
+    "the midnight texter blaming \"I was joking\"",
+    "a midnight decision powered by a blurry screenshot",
+    "a cursed trend featuring voice-note overshare",
+    "sleepy voice notes from the side chat",
+    "a deeply unserious plan involving a 4-minute voice note",
+    "the midnight texter pretending this is normal",
+    "a drunk text drafted in Notes",
+    "a \"totally fine\" emotional spiral",
+    "a voice note nobody asked for",
+    "an apology with no accountability",
+    "a soft launch gone violently wrong",
+    "a situationship exit interview",
+    "a cursed meme at the worst time",
+    "a panic delete that made it worse",
+    "a mirror selfie and false confidence",
+    "a dramatic unfollow campaign"
+  ]
+}

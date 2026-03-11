@@ -1,0 +1,376 @@
+{
+  "name": "Disney (Dark & Crude, Named Characters)",
+  "blackCards": [
+    {
+      "text": "What ruined The royal ball? _____"
+    },
+    {
+      "text": "What ruined The enchanted forest? _____"
+    },
+    {
+      "text": "What ruined The villain rehearsal? _____"
+    },
+    {
+      "text": "What ruined The kingdom council? _____"
+    },
+    {
+      "text": "What ruined The happily-ever-after scene? _____"
+    },
+    {
+      "text": "What ruined The magic castle? _____"
+    },
+    {
+      "text": "What ruined The talking-animal union? _____"
+    },
+    {
+      "text": "What ruined The carriage ride? _____"
+    },
+    {
+      "text": "What ruined The dramatic song break? _____"
+    },
+    {
+      "text": "What ruined The prophecy meeting? _____"
+    },
+    {
+      "text": "Who brought _____ to The royal ball?"
+    },
+    {
+      "text": "Who brought _____ to The enchanted forest?"
+    },
+    {
+      "text": "Who brought _____ to The villain rehearsal?"
+    },
+    {
+      "text": "Who brought _____ to The kingdom council?"
+    },
+    {
+      "text": "Who brought _____ to The happily-ever-after scene?"
+    },
+    {
+      "text": "Who brought _____ to The magic castle?"
+    },
+    {
+      "text": "Who brought _____ to The talking-animal union?"
+    },
+    {
+      "text": "Who brought _____ to The carriage ride?"
+    },
+    {
+      "text": "Who brought _____ to The dramatic song break?"
+    },
+    {
+      "text": "Who brought _____ to The prophecy meeting?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The royal ball?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The enchanted forest?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The villain rehearsal?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The kingdom council?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The happily-ever-after scene?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The magic castle?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The talking-animal union?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The carriage ride?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The dramatic song break?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The prophecy meeting?"
+    },
+    {
+      "text": "The worst part of The royal ball was _____."
+    },
+    {
+      "text": "The worst part of The enchanted forest was _____."
+    },
+    {
+      "text": "The worst part of The villain rehearsal was _____."
+    },
+    {
+      "text": "The worst part of The kingdom council was _____."
+    },
+    {
+      "text": "The worst part of The happily-ever-after scene was _____."
+    },
+    {
+      "text": "The worst part of The magic castle was _____."
+    },
+    {
+      "text": "The worst part of The talking-animal union was _____."
+    },
+    {
+      "text": "The worst part of The carriage ride was _____."
+    },
+    {
+      "text": "The worst part of The dramatic song break was _____."
+    },
+    {
+      "text": "The worst part of The prophecy meeting was _____."
+    },
+    {
+      "text": "No one was ready for _____ at The royal ball."
+    },
+    {
+      "text": "No one was ready for _____ at The enchanted forest."
+    },
+    {
+      "text": "No one was ready for _____ at The villain rehearsal."
+    },
+    {
+      "text": "No one was ready for _____ at The kingdom council."
+    },
+    {
+      "text": "No one was ready for _____ at The happily-ever-after scene."
+    },
+    {
+      "text": "No one was ready for _____ at The magic castle."
+    },
+    {
+      "text": "No one was ready for _____ at The talking-animal union."
+    },
+    {
+      "text": "No one was ready for _____ at The carriage ride."
+    },
+    {
+      "text": "No one was ready for _____ at The dramatic song break."
+    },
+    {
+      "text": "No one was ready for _____ at The prophecy meeting."
+    },
+    {
+      "text": "The royal ball got weird because of _____."
+    },
+    {
+      "text": "The enchanted forest got weird because of _____."
+    },
+    {
+      "text": "The villain rehearsal got weird because of _____."
+    },
+    {
+      "text": "The kingdom council got weird because of _____."
+    },
+    {
+      "text": "The happily-ever-after scene got weird because of _____."
+    },
+    {
+      "text": "The magic castle got weird because of _____."
+    },
+    {
+      "text": "The talking-animal union got weird because of _____."
+    },
+    {
+      "text": "The carriage ride got weird because of _____."
+    },
+    {
+      "text": "The dramatic song break got weird because of _____."
+    },
+    {
+      "text": "The prophecy meeting got weird because of _____."
+    },
+    {
+      "text": "The big surprise at The royal ball? _____"
+    },
+    {
+      "text": "The big surprise at The enchanted forest? _____"
+    },
+    {
+      "text": "The big surprise at The villain rehearsal? _____"
+    },
+    {
+      "text": "The big surprise at The kingdom council? _____"
+    },
+    {
+      "text": "The big surprise at The happily-ever-after scene? _____"
+    },
+    {
+      "text": "The big surprise at The magic castle? _____"
+    },
+    {
+      "text": "The big surprise at The talking-animal union? _____"
+    },
+    {
+      "text": "The big surprise at The carriage ride? _____"
+    },
+    {
+      "text": "The big surprise at The dramatic song break? _____"
+    },
+    {
+      "text": "The big surprise at The prophecy meeting? _____"
+    },
+    {
+      "text": "The royal ball could only be explained by _____."
+    },
+    {
+      "text": "The enchanted forest could only be explained by _____."
+    },
+    {
+      "text": "The villain rehearsal could only be explained by _____."
+    },
+    {
+      "text": "The kingdom council could only be explained by _____."
+    },
+    {
+      "text": "The happily-ever-after scene could only be explained by _____."
+    },
+    {
+      "text": "The magic castle could only be explained by _____."
+    },
+    {
+      "text": "The talking-animal union could only be explained by _____."
+    },
+    {
+      "text": "The carriage ride could only be explained by _____."
+    },
+    {
+      "text": "The dramatic song break could only be explained by _____."
+    },
+    {
+      "text": "The prophecy meeting could only be explained by _____."
+    },
+    {
+      "text": "What made The royal ball such a disaster? _____"
+    },
+    {
+      "text": "What made The enchanted forest such a disaster? _____"
+    },
+    {
+      "text": "What made The villain rehearsal such a disaster? _____"
+    },
+    {
+      "text": "What made The kingdom council such a disaster? _____"
+    },
+    {
+      "text": "What made The happily-ever-after scene such a disaster? _____"
+    },
+    {
+      "text": "What made The magic castle such a disaster? _____"
+    },
+    {
+      "text": "What made The talking-animal union such a disaster? _____"
+    },
+    {
+      "text": "What made The carriage ride such a disaster? _____"
+    },
+    {
+      "text": "What made The dramatic song break such a disaster? _____"
+    },
+    {
+      "text": "What made The prophecy meeting such a disaster? _____"
+    },
+    {
+      "text": "The one thing The royal ball needed was _____."
+    },
+    {
+      "text": "The one thing The enchanted forest needed was _____."
+    },
+    {
+      "text": "The one thing The villain rehearsal needed was _____."
+    },
+    {
+      "text": "The one thing The kingdom council needed was _____."
+    },
+    {
+      "text": "The one thing The happily-ever-after scene needed was _____."
+    },
+    {
+      "text": "The one thing The magic castle needed was _____."
+    },
+    {
+      "text": "The one thing The talking-animal union needed was _____."
+    },
+    {
+      "text": "The one thing The carriage ride needed was _____."
+    },
+    {
+      "text": "The one thing The dramatic song break needed was _____."
+    },
+    {
+      "text": "The one thing The prophecy meeting needed was _____."
+    }
+  ],
+  "whiteCards": [
+    "A cursed churro that whispers your name",
+    "Mickey's 'friendly' legal team",
+    "Donald Duck's rage-quack meltdown",
+    "A pixie-dust overdose and a hard landing",
+    "A magic wand that only casts 'mild inconvenience'",
+    "Elsa's emotional frostbite",
+    "Ursula's contract written in squid ink and bad vibes",
+    "A crown that screams at night",
+    "A talking teacup with anger issues",
+    "Goofy falling down the stairs in slow motion",
+    "A haunted castle",
+    "Maleficent's 'HR-approved' curse",
+    "A swarm of judgmental birds",
+    "An enchanted mirror that roasts you",
+    "A royal ball that turns into a riot",
+    "A pumpkin carriage",
+    "A glass slipper filled",
+    "Captain Hook's moisturiser addiction",
+    "Tinker Bell's tiny knife collection",
+    "Peter Pan refusing to pay rent",
+    "Genie granting wishes like a petty genie would",
+    "Jafar's bargain-bin evil plan",
+    "Hades running the Underworld like a call centre",
+    "Hercules discovering leg day is a myth",
+    "Stitch committing adorable crimes",
+    "Mulan's 'this will absolutely work' confidence",
+    "Buzz Lightyear stuck in demo mode",
+    "Woody's existential crisis in a toy box",
+    "Scar's dramatic villain podcast",
+    "Simba's crippling responsibility hangover",
+    "Ariel's weird fork collection",
+    "A singing crab with unsolicited advice",
+    "A forest that claps back",
+    "A singing montage you can't escape",
+    "A princess with combat boots",
+    "A sidekick who knows too much",
+    "A villain laugh that shakes the walls",
+    "A moat full of something that is definitely not water",
+    "A castle built on lies and termites",
+    "An enchanted rose that smells like thunder",
+    "A polite ghost",
+    "A kingdom ruled by passive aggression",
+    "An apple that looks way too shiny",
+    "A dwarf union meeting",
+    "A cursed spinning wheel with hobbies",
+    "A firework show that turns into a horror show",
+    "A musical number that ends in screaming",
+    "A talking animal snitching to the authorities",
+    "A magic carpet with road rage",
+    "The phrase 'happily ever after' spoken like a threat",
+    "A villain's monologue interrupted by a goose",
+    "A heroic pose that causes back pain",
+    "A dramatic entrance that trips on its own smoke",
+    "A family-friendly story",
+    "A crowd chanting 'one more verse!'",
+    "A potion labelled 'DO NOT'",
+    "A fairy godmother who is done",
+    "The sound of Disney music… in a locked basement",
+    "A theme park mascot",
+    "Feral brand-safe disaster in the comments section",
+    "A chaos gremlin doing doomscrolling",
+    "A stolen Wi-Fi password",
+    "A screenshot of an overconfident stranger",
+    "Questionable life choice",
+    "Brand-safe disaster",
+    "A chaos gremlin",
+    "A cursed trend featuring petty revenge",
+    "Delusional voice notes from the afterparty",
+    "A deeply unserious plan involving a cursed selfie"
+  ]
+}

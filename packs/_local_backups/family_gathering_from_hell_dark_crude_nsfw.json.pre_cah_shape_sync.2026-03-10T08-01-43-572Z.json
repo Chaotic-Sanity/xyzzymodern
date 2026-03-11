@@ -1,0 +1,367 @@
+{
+  "name": "Family Gathering From Hell",
+  "blackCards": [
+    {
+      "text": "What ruined The family dinner? _____"
+    },
+    {
+      "text": "What ruined The holiday lunch? _____"
+    },
+    {
+      "text": "What ruined The reunion? _____"
+    },
+    {
+      "text": "What ruined The kids table? _____"
+    },
+    {
+      "text": "What ruined The inheritance talk? _____"
+    },
+    {
+      "text": "What ruined The backyard BBQ? _____"
+    },
+    {
+      "text": "What ruined The wedding reception? _____"
+    },
+    {
+      "text": "What ruined The living room debate? _____"
+    },
+    {
+      "text": "What ruined The prayer circle? _____"
+    },
+    {
+      "text": "What ruined The after-dessert argument? _____"
+    },
+    {
+      "text": "Who brought _____ to The family dinner?"
+    },
+    {
+      "text": "Who brought _____ to The holiday lunch?"
+    },
+    {
+      "text": "Who brought _____ to The reunion?"
+    },
+    {
+      "text": "Who brought _____ to The kids table?"
+    },
+    {
+      "text": "Who brought _____ to The inheritance talk?"
+    },
+    {
+      "text": "Who brought _____ to The backyard BBQ?"
+    },
+    {
+      "text": "Who brought _____ to The wedding reception?"
+    },
+    {
+      "text": "Who brought _____ to The living room debate?"
+    },
+    {
+      "text": "Who brought _____ to The prayer circle?"
+    },
+    {
+      "text": "Who brought _____ to The after-dessert argument?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The family dinner?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The holiday lunch?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The reunion?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The kids table?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The inheritance talk?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The backyard BBQ?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The wedding reception?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The living room debate?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The prayer circle?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The after-dessert argument?"
+    },
+    {
+      "text": "The worst part of The family dinner was _____."
+    },
+    {
+      "text": "The worst part of The holiday lunch was _____."
+    },
+    {
+      "text": "The worst part of The reunion was _____."
+    },
+    {
+      "text": "The worst part of The kids table was _____."
+    },
+    {
+      "text": "The worst part of The inheritance talk was _____."
+    },
+    {
+      "text": "The worst part of The backyard BBQ was _____."
+    },
+    {
+      "text": "The worst part of The wedding reception was _____."
+    },
+    {
+      "text": "The worst part of The living room debate was _____."
+    },
+    {
+      "text": "The worst part of The prayer circle was _____."
+    },
+    {
+      "text": "The worst part of The after-dessert argument was _____."
+    },
+    {
+      "text": "No one was ready for _____ at The family dinner."
+    },
+    {
+      "text": "No one was ready for _____ at The holiday lunch."
+    },
+    {
+      "text": "No one was ready for _____ at The reunion."
+    },
+    {
+      "text": "No one was ready for _____ at The kids table."
+    },
+    {
+      "text": "No one was ready for _____ at The inheritance talk."
+    },
+    {
+      "text": "No one was ready for _____ at The backyard BBQ."
+    },
+    {
+      "text": "No one was ready for _____ at The wedding reception."
+    },
+    {
+      "text": "No one was ready for _____ at The living room debate."
+    },
+    {
+      "text": "No one was ready for _____ at The prayer circle."
+    },
+    {
+      "text": "No one was ready for _____ at The after-dessert argument."
+    },
+    {
+      "text": "The family dinner got weird because of _____."
+    },
+    {
+      "text": "The holiday lunch got weird because of _____."
+    },
+    {
+      "text": "The reunion got weird because of _____."
+    },
+    {
+      "text": "The kids table got weird because of _____."
+    },
+    {
+      "text": "The inheritance talk got weird because of _____."
+    },
+    {
+      "text": "The backyard BBQ got weird because of _____."
+    },
+    {
+      "text": "The wedding reception got weird because of _____."
+    },
+    {
+      "text": "The living room debate got weird because of _____."
+    },
+    {
+      "text": "The prayer circle got weird because of _____."
+    },
+    {
+      "text": "The after-dessert argument got weird because of _____."
+    },
+    {
+      "text": "The big surprise at The family dinner? _____"
+    },
+    {
+      "text": "The big surprise at The holiday lunch? _____"
+    },
+    {
+      "text": "The big surprise at The reunion? _____"
+    },
+    {
+      "text": "The big surprise at The kids table? _____"
+    },
+    {
+      "text": "The big surprise at The inheritance talk? _____"
+    },
+    {
+      "text": "The big surprise at The backyard BBQ? _____"
+    },
+    {
+      "text": "The big surprise at The wedding reception? _____"
+    },
+    {
+      "text": "The big surprise at The living room debate? _____"
+    },
+    {
+      "text": "The big surprise at The prayer circle? _____"
+    },
+    {
+      "text": "The big surprise at The after-dessert argument? _____"
+    },
+    {
+      "text": "The family dinner could only be explained by _____."
+    },
+    {
+      "text": "The holiday lunch could only be explained by _____."
+    },
+    {
+      "text": "The reunion could only be explained by _____."
+    },
+    {
+      "text": "The kids table could only be explained by _____."
+    },
+    {
+      "text": "The inheritance talk could only be explained by _____."
+    },
+    {
+      "text": "The backyard BBQ could only be explained by _____."
+    },
+    {
+      "text": "The wedding reception could only be explained by _____."
+    },
+    {
+      "text": "The living room debate could only be explained by _____."
+    },
+    {
+      "text": "The prayer circle could only be explained by _____."
+    },
+    {
+      "text": "The after-dessert argument could only be explained by _____."
+    },
+    {
+      "text": "What made The family dinner such a disaster? _____"
+    },
+    {
+      "text": "What made The holiday lunch such a disaster? _____"
+    },
+    {
+      "text": "What made The reunion such a disaster? _____"
+    },
+    {
+      "text": "What made The kids table such a disaster? _____"
+    },
+    {
+      "text": "What made The inheritance talk such a disaster? _____"
+    },
+    {
+      "text": "What made The backyard BBQ such a disaster? _____"
+    },
+    {
+      "text": "What made The wedding reception such a disaster? _____"
+    },
+    {
+      "text": "What made The living room debate such a disaster? _____"
+    },
+    {
+      "text": "What made The prayer circle such a disaster? _____"
+    },
+    {
+      "text": "What made The after-dessert argument such a disaster? _____"
+    },
+    {
+      "text": "The one thing The family dinner needed was _____."
+    },
+    {
+      "text": "The one thing The holiday lunch needed was _____."
+    },
+    {
+      "text": "The one thing The reunion needed was _____."
+    },
+    {
+      "text": "The one thing The kids table needed was _____."
+    },
+    {
+      "text": "The one thing The inheritance talk needed was _____."
+    },
+    {
+      "text": "The one thing The backyard BBQ needed was _____."
+    },
+    {
+      "text": "The one thing The wedding reception needed was _____."
+    },
+    {
+      "text": "The one thing The living room debate needed was _____."
+    },
+    {
+      "text": "The one thing The prayer circle needed was _____."
+    },
+    {
+      "text": "The one thing The after-dessert argument needed was _____."
+    }
+  ],
+  "whiteCards": [
+    "Bitter inheritance feud",
+    "The conspiracy uncle emotional blackmail",
+    "Cheap boxed wine",
+    "A screenshot of the divorced step-parent",
+    "Old family scandal",
+    "Inheritance feud",
+    "The conspiracy uncle",
+    "A cursed trend featuring backhanded compliment",
+    "Exhausted voice notes from the family group text",
+    "A deeply unserious plan involving an overcooked roast",
+    "The conspiracy uncle pretending this is normal",
+    "Combative kitchen screaming match in the holiday lunch table",
+    "The divorced step-parent doing public shaming",
+    "A suspicious will draft",
+    "A screenshot of your nosy aunt",
+    "Holiday guilt trip",
+    "Kitchen screaming match",
+    "The divorced step-parent",
+    "A cursed trend featuring inheritance feud",
+    "Nostalgic voice notes from Nan's lounge room",
+    "A deeply unserious plan involving cheap boxed wine",
+    "The divorced step-parent pretending this is normal",
+    "Exhausted old family scandal in the family group text",
+    "Your nosy aunt doing passive aggression",
+    "A cracked serving platter",
+    "A screenshot of the favourite cousin",
+    "Backhanded compliment",
+    "Your nosy aunt",
+    "A cursed trend featuring kitchen screaming match",
+    "Judgmental voice notes from the driveway argument",
+    "A deeply unserious plan involving a suspicious will draft",
+    "Your nosy aunt pretending this is normal",
+    "Nostalgic holiday guilt trip in Nan's lounge room",
+    "The favourite cousin doing historical revision",
+    "An ancient photo album",
+    "A screenshot of the drunk family friend",
+    "The favourite cousin",
+    "A cursed trend featuring old family scandal",
+    "Bitter voice notes from the kids' table",
+    "A deeply unserious plan involving a cracked serving platter",
+    "The favourite cousin pretending this is normal",
+    "Judgmental backhanded compliment in the driveway argument",
+    "The drunk family friend doing forced forgiveness",
+    "An overcooked roast",
+    "A screenshot of the conspiracy uncle",
+    "The drunk family friend",
+    "A cursed trend featuring holiday guilt trip",
+    "Combative voice notes from the holiday lunch table",
+    "A deeply unserious plan involving an ancient photo album",
+    "The drunk family friend pretending this is normal",
+    "A drunk text drafted in Notes",
+    "A \"totally fine\" emotional spiral",
+    "A voice note nobody asked for",
+    "An apology with no accountability",
+    "A soft launch gone violently wrong",
+    "A situationship exit interview",
+    "A cursed meme",
+    "A panic delete that made it worse",
+    "A mirror selfie and false confidence",
+    "A dramatic unfollow campaign"
+  ]
+}

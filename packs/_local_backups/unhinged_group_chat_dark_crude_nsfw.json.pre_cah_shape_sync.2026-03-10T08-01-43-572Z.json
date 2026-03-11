@@ -1,0 +1,367 @@
+{
+  "name": "Unhinged Group Chat",
+  "blackCards": [
+    {
+      "text": "What ruined The group chat? _____"
+    },
+    {
+      "text": "What ruined The meme thread? _____"
+    },
+    {
+      "text": "What ruined The 2am voice notes? _____"
+    },
+    {
+      "text": "What ruined The friendship group? _____"
+    },
+    {
+      "text": "What ruined The drunk text spiral? _____"
+    },
+    {
+      "text": "What ruined The birthday chat? _____"
+    },
+    {
+      "text": "What ruined The class chat? _____"
+    },
+    {
+      "text": "What ruined The work chat? _____"
+    },
+    {
+      "text": "What ruined The family chat? _____"
+    },
+    {
+      "text": "What ruined The leaked screenshots? _____"
+    },
+    {
+      "text": "Who brought _____ to The group chat?"
+    },
+    {
+      "text": "Who brought _____ to The meme thread?"
+    },
+    {
+      "text": "Who brought _____ to The 2am voice notes?"
+    },
+    {
+      "text": "Who brought _____ to The friendship group?"
+    },
+    {
+      "text": "Who brought _____ to The drunk text spiral?"
+    },
+    {
+      "text": "Who brought _____ to The birthday chat?"
+    },
+    {
+      "text": "Who brought _____ to The class chat?"
+    },
+    {
+      "text": "Who brought _____ to The work chat?"
+    },
+    {
+      "text": "Who brought _____ to The family chat?"
+    },
+    {
+      "text": "Who brought _____ to The leaked screenshots?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The group chat?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The meme thread?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The 2am voice notes?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The friendship group?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The drunk text spiral?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The birthday chat?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The class chat?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The work chat?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The family chat?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The leaked screenshots?"
+    },
+    {
+      "text": "The worst part of The group chat was _____."
+    },
+    {
+      "text": "The worst part of The meme thread was _____."
+    },
+    {
+      "text": "The worst part of The 2am voice notes was _____."
+    },
+    {
+      "text": "The worst part of The friendship group was _____."
+    },
+    {
+      "text": "The worst part of The drunk text spiral was _____."
+    },
+    {
+      "text": "The worst part of The birthday chat was _____."
+    },
+    {
+      "text": "The worst part of The class chat was _____."
+    },
+    {
+      "text": "The worst part of The work chat was _____."
+    },
+    {
+      "text": "The worst part of The family chat was _____."
+    },
+    {
+      "text": "The worst part of The leaked screenshots was _____."
+    },
+    {
+      "text": "No one was ready for _____ at The group chat."
+    },
+    {
+      "text": "No one was ready for _____ at The meme thread."
+    },
+    {
+      "text": "No one was ready for _____ at The 2am voice notes."
+    },
+    {
+      "text": "No one was ready for _____ at The friendship group."
+    },
+    {
+      "text": "No one was ready for _____ at The drunk text spiral."
+    },
+    {
+      "text": "No one was ready for _____ at The birthday chat."
+    },
+    {
+      "text": "No one was ready for _____ at The class chat."
+    },
+    {
+      "text": "No one was ready for _____ at The work chat."
+    },
+    {
+      "text": "No one was ready for _____ at The family chat."
+    },
+    {
+      "text": "No one was ready for _____ at The leaked screenshots."
+    },
+    {
+      "text": "The group chat got weird because of _____."
+    },
+    {
+      "text": "The meme thread got weird because of _____."
+    },
+    {
+      "text": "The 2am voice notes got weird because of _____."
+    },
+    {
+      "text": "The friendship group got weird because of _____."
+    },
+    {
+      "text": "The drunk text spiral got weird because of _____."
+    },
+    {
+      "text": "The birthday chat got weird because of _____."
+    },
+    {
+      "text": "The class chat got weird because of _____."
+    },
+    {
+      "text": "The work chat got weird because of _____."
+    },
+    {
+      "text": "The family chat got weird because of _____."
+    },
+    {
+      "text": "The leaked screenshots got weird because of _____."
+    },
+    {
+      "text": "The big surprise at The group chat? _____"
+    },
+    {
+      "text": "The big surprise at The meme thread? _____"
+    },
+    {
+      "text": "The big surprise at The 2am voice notes? _____"
+    },
+    {
+      "text": "The big surprise at The friendship group? _____"
+    },
+    {
+      "text": "The big surprise at The drunk text spiral? _____"
+    },
+    {
+      "text": "The big surprise at The birthday chat? _____"
+    },
+    {
+      "text": "The big surprise at The class chat? _____"
+    },
+    {
+      "text": "The big surprise at The work chat? _____"
+    },
+    {
+      "text": "The big surprise at The family chat? _____"
+    },
+    {
+      "text": "The big surprise at The leaked screenshots? _____"
+    },
+    {
+      "text": "The group chat could only be explained by _____."
+    },
+    {
+      "text": "The meme thread could only be explained by _____."
+    },
+    {
+      "text": "The 2am voice notes could only be explained by _____."
+    },
+    {
+      "text": "The friendship group could only be explained by _____."
+    },
+    {
+      "text": "The drunk text spiral could only be explained by _____."
+    },
+    {
+      "text": "The birthday chat could only be explained by _____."
+    },
+    {
+      "text": "The class chat could only be explained by _____."
+    },
+    {
+      "text": "The work chat could only be explained by _____."
+    },
+    {
+      "text": "The family chat could only be explained by _____."
+    },
+    {
+      "text": "The leaked screenshots could only be explained by _____."
+    },
+    {
+      "text": "What made The group chat such a disaster? _____"
+    },
+    {
+      "text": "What made The meme thread such a disaster? _____"
+    },
+    {
+      "text": "What made The 2am voice notes such a disaster? _____"
+    },
+    {
+      "text": "What made The friendship group such a disaster? _____"
+    },
+    {
+      "text": "What made The drunk text spiral such a disaster? _____"
+    },
+    {
+      "text": "What made The birthday chat such a disaster? _____"
+    },
+    {
+      "text": "What made The class chat such a disaster? _____"
+    },
+    {
+      "text": "What made The work chat such a disaster? _____"
+    },
+    {
+      "text": "What made The family chat such a disaster? _____"
+    },
+    {
+      "text": "What made The leaked screenshots such a disaster? _____"
+    },
+    {
+      "text": "The one thing The group chat needed was _____."
+    },
+    {
+      "text": "The one thing The meme thread needed was _____."
+    },
+    {
+      "text": "The one thing The 2am voice notes needed was _____."
+    },
+    {
+      "text": "The one thing The friendship group needed was _____."
+    },
+    {
+      "text": "The one thing The drunk text spiral needed was _____."
+    },
+    {
+      "text": "The one thing The birthday chat needed was _____."
+    },
+    {
+      "text": "The one thing The class chat needed was _____."
+    },
+    {
+      "text": "The one thing The work chat needed was _____."
+    },
+    {
+      "text": "The one thing The family chat needed was _____."
+    },
+    {
+      "text": "The one thing The leaked screenshots needed was _____."
+    }
+  ],
+  "whiteCards": [
+    "Feral meme warfare in the group chat",
+    "The lurker who suddenly speaks doing reply-all disaster",
+    "An accidental selfie",
+    "A screenshot of the reaction emoji tyrant",
+    "Petty screenshot drop",
+    "Meme warfare",
+    "The lurker who suddenly speaks",
+    "A cursed trend featuring drunk text avalanche",
+    "Paranoid voice notes from the muted notifications tab",
+    "A deeply unserious plan involving a blurry screenshot",
+    "The lurker who suddenly speaks pretending this is normal",
+    "Sleepy friendship civil war in the side chat",
+    "The reaction emoji tyrant doing message deletion",
+    "A passive-aggressive sticker",
+    "A screenshot of the chaos friend",
+    "Voice-note overshare",
+    "Friendship civil war",
+    "The reaction emoji tyrant",
+    "A cursed trend featuring meme warfare",
+    "Petty voice notes from the archived thread",
+    "A deeply unserious plan involving an accidental selfie",
+    "The reaction emoji tyrant pretending this is normal",
+    "Paranoid petty screenshot drop in the muted notifications tab",
+    "The chaos friend doing oversharing",
+    "A cursed gif",
+    "A screenshot of the typo king",
+    "Drunk text avalanche",
+    "The chaos friend blaming",
+    "A cursed trend featuring friendship civil war",
+    "Dramatic voice notes from a typo-ridden DM",
+    "A deeply unserious plan involving a passive-aggressive sticker",
+    "The chaos friend pretending this is normal",
+    "Petty voice-note overshare in the archived thread",
+    "The typo king doing subtweeting",
+    "A 4-minute voice note",
+    "A screenshot of the midnight texter",
+    "The typo king",
+    "A cursed trend featuring petty screenshot drop",
+    "Feral voice notes from the group chat",
+    "A deeply unserious plan involving a cursed gif",
+    "The typo king pretending this is normal",
+    "Dramatic drunk text avalanche in a typo-ridden DM",
+    "The midnight texter doing social self-sabotage",
+    "A blurry screenshot",
+    "A screenshot of the lurker who suddenly speaks",
+    "The midnight texter",
+    "A cursed trend featuring voice-note overshare",
+    "Sleepy voice notes from the side chat",
+    "A deeply unserious plan involving a 4-minute voice note",
+    "The midnight texter pretending this is normal",
+    "A drunk text drafted in Notes",
+    "A \"totally fine\" emotional spiral",
+    "A voice note nobody asked for",
+    "An apology with no accountability",
+    "A soft launch gone violently wrong",
+    "A situationship exit interview",
+    "A cursed meme",
+    "A panic delete that made it worse",
+    "A mirror selfie and false confidence",
+    "A dramatic unfollow campaign"
+  ]
+}

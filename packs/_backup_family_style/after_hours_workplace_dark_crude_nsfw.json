@@ -1,0 +1,377 @@
+{
+  "name": "After-Hours Workplace",
+  "blackCards": [
+    {
+      "text": "At the the office party, someone blamed ___."
+    },
+    {
+      "text": "At the the all-hands meeting, someone blamed ___."
+    },
+    {
+      "text": "At the the break room, someone blamed ___."
+    },
+    {
+      "text": "At the the Friday standup, someone blamed ___."
+    },
+    {
+      "text": "At the the HR workshop, someone blamed ___."
+    },
+    {
+      "text": "At the the team retreat, someone blamed ___."
+    },
+    {
+      "text": "At the the quarterly review, someone blamed ___."
+    },
+    {
+      "text": "At the the elevator chat, someone blamed ___."
+    },
+    {
+      "text": "At the the late-night shift, someone blamed ___."
+    },
+    {
+      "text": "At the the executive floor, someone blamed ___."
+    },
+    {
+      "text": "During the office party, the group chat demanded ___."
+    },
+    {
+      "text": "During the all-hands meeting, the group chat demanded ___."
+    },
+    {
+      "text": "During the break room, the group chat demanded ___."
+    },
+    {
+      "text": "During the Friday standup, the group chat demanded ___."
+    },
+    {
+      "text": "During the HR workshop, the group chat demanded ___."
+    },
+    {
+      "text": "During the team retreat, the group chat demanded ___."
+    },
+    {
+      "text": "During the quarterly review, the group chat demanded ___."
+    },
+    {
+      "text": "During the elevator chat, the group chat demanded ___."
+    },
+    {
+      "text": "During the late-night shift, the group chat demanded ___."
+    },
+    {
+      "text": "During the executive floor, the group chat demanded ___."
+    },
+    {
+      "text": "Right after the office party, management quietly approved ___."
+    },
+    {
+      "text": "Right after the all-hands meeting, management quietly approved ___."
+    },
+    {
+      "text": "Right after the break room, management quietly approved ___."
+    },
+    {
+      "text": "Right after the Friday standup, management quietly approved ___."
+    },
+    {
+      "text": "Right after the HR workshop, management quietly approved ___."
+    },
+    {
+      "text": "Right after the team retreat, management quietly approved ___."
+    },
+    {
+      "text": "Right after the quarterly review, management quietly approved ___."
+    },
+    {
+      "text": "Right after the elevator chat, management quietly approved ___."
+    },
+    {
+      "text": "Right after the late-night shift, management quietly approved ___."
+    },
+    {
+      "text": "Right after the executive floor, management quietly approved ___."
+    },
+    {
+      "text": "Minutes before the office party, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the all-hands meeting, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the break room, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the Friday standup, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the HR workshop, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the team retreat, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the quarterly review, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the elevator chat, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the late-night shift, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the executive floor, security had to confiscate ___."
+    },
+    {
+      "text": "The only thing that saved the office party, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the all-hands meeting, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the break room, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the Friday standup, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the HR workshop, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the team retreat, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the quarterly review, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the elevator chat, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the late-night shift, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the executive floor, my only defense was ___."
+    },
+    {
+      "text": "The first sign of trouble at the office party, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the all-hands meeting, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the break room, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the Friday standup, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the HR workshop, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the team retreat, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the quarterly review, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the elevator chat, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the late-night shift, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the executive floor, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the office party, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the all-hands meeting, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the break room, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the Friday standup, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the HR workshop, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the team retreat, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the quarterly review, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the elevator chat, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the late-night shift, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the executive floor, the loudest person brought ___."
+    },
+    {
+      "text": "The official excuse at the office party, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the all-hands meeting, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the break room, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the Friday standup, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the HR workshop, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the team retreat, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the quarterly review, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the elevator chat, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the late-night shift, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the executive floor, the apology somehow included ___."
+    },
+    {
+      "text": "The rumor spreading through the office party, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the all-hands meeting, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the break room, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the Friday standup, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the HR workshop, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the team retreat, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the quarterly review, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the elevator chat, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the late-night shift, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the executive floor, the winner celebrated with ___."
+    },
+    {
+      "text": "The final straw at the office party, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the all-hands meeting, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the break room, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the Friday standup, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the HR workshop, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the team retreat, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the quarterly review, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the elevator chat, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the late-night shift, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the executive floor, the disaster was traced back to ___."
+    }
+  ],
+  "whiteCards": [
+    "unhinged HR memo in the break room",
+    "the overconfident intern doing career suicide with a \"confidential\" sticky note",
+    "an emergency stash of a mystery USB",
+    "a screenshot of your passive-aggressive boss at the open-plan floor",
+    "toxic team-building and a suspicious amount of an unread policy handbook",
+    "a fake smile hiding HR memo",
+    "the overconfident intern blaming \"a calendar issue\"",
+    "a midnight decision powered by a mystery USB",
+    "a cursed trend featuring office rumor spiral",
+    "fake-positive voice notes from the stairwell",
+    "a deeply unserious plan involving a cursed spreadsheet",
+    "the overconfident intern pretending this is normal",
+    "smug performance review meltdown in the parking lot",
+    "your passive-aggressive boss doing performative empathy with cold pizza from Q4",
+    "an emergency stash of an unread policy handbook",
+    "a screenshot of a burnt-out manager at the break room",
+    "expense fraud and a suspicious amount of a \"confidential\" sticky note",
+    "a fake smile hiding performance review meltdown",
+    "your passive-aggressive boss blaming \"market conditions\"",
+    "a midnight decision powered by an unread policy handbook",
+    "a cursed trend featuring HR memo",
+    "sleep-deprived voice notes from the conference room",
+    "a deeply unserious plan involving a mystery USB",
+    "your passive-aggressive boss pretending this is normal",
+    "fake-positive toxic team-building in the stairwell",
+    "a burnt-out manager doing damage control with a cursed spreadsheet",
+    "an emergency stash of a \"confidential\" sticky note",
+    "a screenshot of the fake wellness coach at the parking lot",
+    "office rumor spiral and a suspicious amount of cold pizza from Q4",
+    "a fake smile hiding toxic team-building",
+    "a burnt-out manager blaming \"miscommunication\"",
+    "a midnight decision powered by a \"confidential\" sticky note",
+    "a cursed trend featuring performance review meltdown",
+    "resentful voice notes from the open-plan floor",
+    "a deeply unserious plan involving an unread policy handbook",
+    "a burnt-out manager pretending this is normal",
+    "sleep-deprived expense fraud in the conference room",
+    "the fake wellness coach doing quiet sabotage with a mystery USB",
+    "an emergency stash of cold pizza from Q4",
+    "a screenshot of the payroll gremlin at the stairwell",
+    "HR memo and a suspicious amount of a cursed spreadsheet",
+    "a fake smile hiding expense fraud",
+    "the fake wellness coach blaming \"an alignment gap\"",
+    "a midnight decision powered by cold pizza from Q4",
+    "a cursed trend featuring toxic team-building",
+    "unhinged voice notes from the break room",
+    "a deeply unserious plan involving a \"confidential\" sticky note",
+    "the fake wellness coach pretending this is normal",
+    "resentful office rumor spiral in the open-plan floor",
+    "the payroll gremlin doing blame shifting with an unread policy handbook",
+    "an emergency stash of a cursed spreadsheet",
+    "a screenshot of the overconfident intern at the conference room",
+    "performance review meltdown and a suspicious amount of a mystery USB",
+    "a fake smile hiding office rumor spiral",
+    "the payroll gremlin blaming \"urgent synergies\"",
+    "a midnight decision powered by a cursed spreadsheet",
+    "a cursed trend featuring expense fraud",
+    "smug voice notes from the parking lot",
+    "a deeply unserious plan involving cold pizza from Q4",
+    "the payroll gremlin pretending this is normal",
+    "a drunk text drafted in Notes",
+    "a \"totally fine\" emotional spiral",
+    "a voice note nobody asked for",
+    "an apology with no accountability",
+    "a soft launch gone violently wrong",
+    "a situationship exit interview",
+    "a cursed meme at the worst time",
+    "a panic delete that made it worse",
+    "a mirror selfie and false confidence",
+    "a dramatic unfollow campaign"
+  ]
+}

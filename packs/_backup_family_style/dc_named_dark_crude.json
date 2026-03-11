@@ -1,0 +1,377 @@
+{
+  "name": "DC Comics (Dark & Crude, Named Characters)",
+  "blackCards": [
+    {
+      "text": "At the Gotham City, someone blamed ___."
+    },
+    {
+      "text": "At the the Watchtower, someone blamed ___."
+    },
+    {
+      "text": "At the Arkham visiting hours, someone blamed ___."
+    },
+    {
+      "text": "At the the Batcave group project, someone blamed ___."
+    },
+    {
+      "text": "At the the Justice League meeting, someone blamed ___."
+    },
+    {
+      "text": "At the the villain monologue, someone blamed ___."
+    },
+    {
+      "text": "At the the rooftop confrontation, someone blamed ___."
+    },
+    {
+      "text": "At the the sidekick orientation, someone blamed ___."
+    },
+    {
+      "text": "At the the crossover event, someone blamed ___."
+    },
+    {
+      "text": "At the the final battle briefing, someone blamed ___."
+    },
+    {
+      "text": "During Gotham City, the group chat demanded ___."
+    },
+    {
+      "text": "During the Watchtower, the group chat demanded ___."
+    },
+    {
+      "text": "During Arkham visiting hours, the group chat demanded ___."
+    },
+    {
+      "text": "During the Batcave group project, the group chat demanded ___."
+    },
+    {
+      "text": "During the Justice League meeting, the group chat demanded ___."
+    },
+    {
+      "text": "During the villain monologue, the group chat demanded ___."
+    },
+    {
+      "text": "During the rooftop confrontation, the group chat demanded ___."
+    },
+    {
+      "text": "During the sidekick orientation, the group chat demanded ___."
+    },
+    {
+      "text": "During the crossover event, the group chat demanded ___."
+    },
+    {
+      "text": "During the final battle briefing, the group chat demanded ___."
+    },
+    {
+      "text": "Right after Gotham City, management quietly approved ___."
+    },
+    {
+      "text": "Right after the Watchtower, management quietly approved ___."
+    },
+    {
+      "text": "Right after Arkham visiting hours, management quietly approved ___."
+    },
+    {
+      "text": "Right after the Batcave group project, management quietly approved ___."
+    },
+    {
+      "text": "Right after the Justice League meeting, management quietly approved ___."
+    },
+    {
+      "text": "Right after the villain monologue, management quietly approved ___."
+    },
+    {
+      "text": "Right after the rooftop confrontation, management quietly approved ___."
+    },
+    {
+      "text": "Right after the sidekick orientation, management quietly approved ___."
+    },
+    {
+      "text": "Right after the crossover event, management quietly approved ___."
+    },
+    {
+      "text": "Right after the final battle briefing, management quietly approved ___."
+    },
+    {
+      "text": "Minutes before Gotham City, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the Watchtower, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before Arkham visiting hours, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the Batcave group project, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the Justice League meeting, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the villain monologue, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the rooftop confrontation, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the sidekick orientation, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the crossover event, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the final battle briefing, security had to confiscate ___."
+    },
+    {
+      "text": "The only thing that saved Gotham City, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the Watchtower, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved Arkham visiting hours, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the Batcave group project, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the Justice League meeting, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the villain monologue, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the rooftop confrontation, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the sidekick orientation, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the crossover event, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the final battle briefing, my only defense was ___."
+    },
+    {
+      "text": "The first sign of trouble at Gotham City, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the Watchtower, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at Arkham visiting hours, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the Batcave group project, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the Justice League meeting, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the villain monologue, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the rooftop confrontation, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the sidekick orientation, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the crossover event, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the final battle briefing, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at Gotham City, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the Watchtower, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at Arkham visiting hours, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the Batcave group project, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the Justice League meeting, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the villain monologue, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the rooftop confrontation, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the sidekick orientation, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the crossover event, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the final battle briefing, the loudest person brought ___."
+    },
+    {
+      "text": "The official excuse at Gotham City, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the Watchtower, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at Arkham visiting hours, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the Batcave group project, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the Justice League meeting, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the villain monologue, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the rooftop confrontation, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the sidekick orientation, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the crossover event, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the final battle briefing, the apology somehow included ___."
+    },
+    {
+      "text": "The rumor spreading through Gotham City, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the Watchtower, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through Arkham visiting hours, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the Batcave group project, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the Justice League meeting, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the villain monologue, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the rooftop confrontation, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the sidekick orientation, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the crossover event, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the final battle briefing, the winner celebrated with ___."
+    },
+    {
+      "text": "The final straw at Gotham City, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the Watchtower, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at Arkham visiting hours, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the Batcave group project, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the Justice League meeting, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the villain monologue, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the rooftop confrontation, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the sidekick orientation, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the crossover event, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the final battle briefing, the disaster was traced back to ___."
+    }
+  ],
+  "whiteCards": [
+    "a cape soaked in rain and unresolved trauma",
+    "Alfred's disappointed sigh, weaponised",
+    "a utility belt full of receipts",
+    "a gargoyle with gossip",
+    "the Bat-Signal spelling 'HELP' and then 'LOL'",
+    "a Joker smile that lasts too long",
+    "Harley's glittery chaos manifesto",
+    "Bane's protein shake of doom",
+    "a coin flip that decides taxes",
+    "a riddle that ends in violence",
+    "Poison Ivy's aggressive composting",
+    "Catwoman's morally flexible Pilates",
+    "Superman's forced small talk with civilians",
+    "Lex Luthor's ego in a tailored suit",
+    "The Flash tripping over a single Lego",
+    "Wonder Woman's 'I am not asking' voice",
+    "Aquaman's fish-related diplomatic incident",
+    "a Justice League meeting that becomes therapy",
+    "a sidekick trying to invoice for emotional damage",
+    "Gotham's sewer system containing secrets and worse",
+    "a villain lair with terrible Wi-Fi",
+    "a dramatic rooftop monologue interrupted by birds",
+    "an interrogation lamp that overheats instantly",
+    "a batarang thrown with petty intent",
+    "the phrase 'I work alone' said in a crowded room",
+    "a clown car full of bad decisions",
+    "a hostage situation solved by sarcasm",
+    "a gadget labelled 'DO NOT PRESS' being pressed",
+    "a cape stuck in a revolving door",
+    "a crime scene with too many clues and not enough sense",
+    "a rooftop chase ruined by wet shoes",
+    "a kryptonite paperweight on a desk",
+    "a villain speech interrupted by a sneeze",
+    "an explosion timed for dramatic lighting",
+    "a secret identity saved by pure luck",
+    "a bat-themed credit card",
+    "a grappling hook that grabs feelings instead",
+    "a city that never sleeps because it can't",
+    "a clown laugh echoing through the vents",
+    "a handbook titled 'How To Be A Menace'",
+    "feral brand-safe disaster in the comments section",
+    "a chaos gremlin doing doomscrolling with a broken vape",
+    "an emergency stash of a stolen Wi-Fi password",
+    "a screenshot of an overconfident stranger at a family group chat",
+    "questionable life choice and a suspicious amount of an unread red flag",
+    "a fake smile hiding brand-safe disaster",
+    "a chaos gremlin blaming \"new phone who dis\"",
+    "a midnight decision powered by a stolen Wi-Fi password",
+    "a cursed trend featuring petty revenge",
+    "delusional voice notes from the afterparty",
+    "a deeply unserious plan involving a cursed selfie",
+    "a chaos gremlin pretending this is normal",
+    "sleep-deprived cringe meltdown in the office kitchen",
+    "an overconfident stranger doing ego collapse with expired takeout",
+    "an emergency stash of an unread red flag",
+    "a screenshot of an exhausted legend at the comments section",
+    "savage comeback and a suspicious amount of a broken vape",
+    "a fake smile hiding cringe meltdown",
+    "an overconfident stranger blaming \"long story\"",
+    "a midnight decision powered by an unread red flag",
+    "a cursed trend featuring brand-safe disaster",
+    "toxic voice notes from a cheap motel",
+    "a deeply unserious plan involving a stolen Wi-Fi password",
+    "an overconfident stranger pretending this is normal",
+    "delusional questionable life choice in the afterparty",
+    "an exhausted legend doing damage control with a cursed selfie",
+    "an emergency stash of a broken vape",
+    "a screenshot of your problematic friend at the office kitchen",
+    "petty revenge and a suspicious amount of expired takeout",
+    "a fake smile hiding questionable life choice"
+  ]
+}

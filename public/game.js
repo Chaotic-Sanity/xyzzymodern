@@ -7,6 +7,8 @@ function qs(id){ return document.getElementById(id); }
 const el = {
   phaseLabel: qs("phaseLabel"),
   timerPill: qs("timerPill"),
+  judgePill: qs("judgePill"),
+  leadPill: qs("leadPill"),
   roundMeta: qs("roundMeta"),
 
   playersMeta: qs("playersMeta"),
@@ -51,8 +53,12 @@ const state = {
   myName: "",
   myHand: [],
   submissionsList: [],
+  winnerId: null,
+  winnerName: "",
+  flipSubmissions: false,
   bots: { enabled:false, count:0 },
-  timerEndTs: 0
+  timerEndTs: 0,
+  pendingPickIndices: []
 };
 
 function safeStr(v, max=64){
@@ -80,8 +86,19 @@ function setPhaseLabel(){
   if (el.phaseLabel) el.phaseLabel.textContent = label;
 }
 
+function getBlackPickCount(){
+  const explicit = Number(state.currentBlack?.pick || 0);
+  if (Number.isFinite(explicit) && explicit > 0) return Math.max(1, Math.min(3, explicit));
+  const text = String(state.currentBlack?.text || "");
+  if (/same\s+card\s+again/i.test(text)) return 1;
+  const blanks = (text.match(/___/g) || []).length;
+  return Math.max(1, Math.min(3, blanks || 1));
+}
+
 function setRoundMeta(){
-  if (el.roundMeta) el.roundMeta.textContent = "Round " + (state.roundNum || 0);
+  if (!el.roundMeta) return;
+  const pick = getBlackPickCount();
+  el.roundMeta.textContent = "Round " + (state.roundNum || 0) + " • Pick " + pick;
 }
 
 function setTimerPill(){
@@ -89,9 +106,48 @@ function setTimerPill(){
   el.timerPill.textContent = fmtTimeLeft(state.timerEndTs);
 }
 
+function setRolePills(){
+  if (el.judgePill) {
+    const judge = (state.players || []).find((p) => p.id === state.judgeId);
+    el.judgePill.textContent = "Judge: " + (judge?.name || "--");
+  }
+
+  if (el.leadPill) {
+    const leaderIds = new Set(state.leaders || []);
+    const names = (state.players || [])
+      .filter((p) => leaderIds.has(p.id))
+      .map((p) => safeStr(p.name || "Player", 24));
+
+    let leadText = "--";
+    if (names.length === 1) leadText = names[0];
+    if (names.length > 1) leadText = names[0] + " +" + (names.length - 1);
+
+    el.leadPill.textContent = "Lead: " + leadText;
+  }
+}
+
+function applyAdaptiveBlackCardSize(){
+  if (!el.blackCard) return;
+
+  const card = el.blackCard;
+  card.classList.remove("blackCard--grow1", "blackCard--grow2");
+
+  // Step up the black card only when content overflows.
+  const overflows = () => card.scrollHeight > (card.clientHeight + 1) || card.scrollWidth > (card.clientWidth + 1);
+
+  if (!overflows()) return;
+  card.classList.add("blackCard--grow1");
+
+  if (!overflows()) return;
+  card.classList.add("blackCard--grow2");
+}
+
 function renderBlackCard(){
   if (!el.blackCard) return;
+  const pickCount = getBlackPickCount();
   el.blackCard.textContent = state.currentBlack?.text ? state.currentBlack.text : "Waiting for round…";
+  el.blackCard.setAttribute("data-pick", "Pick " + pickCount);
+  requestAnimationFrame(applyAdaptiveBlackCardSize);
 }
 
 function clearNode(n){
@@ -115,6 +171,8 @@ function renderPlayers(){
 
   const leaders = new Set(state.leaders || []);
   const judgeId = state.judgeId;
+  const hostId = state.hostId;
+  const inPlay = state.phase === "play";
 
   for (const p of players) {
     const row = document.createElement("div");
@@ -130,29 +188,41 @@ function renderPlayers(){
     const badges = document.createElement("div");
     badges.className = "playerBadges";
 
-    // CZAR badge = current judge
-    if (judgeId && p.id === judgeId) {
-      badges.appendChild(badge("CZAR", "czar"));
+    if (hostId && p.id === hostId) badges.appendChild(badge("HOST", "host"));
+    if (judgeId && p.id === judgeId) badges.appendChild(badge("JUDGE", "judge"));
+
+    if (inPlay && p.connected !== false && p.id !== judgeId && !p.submitted) {
+      badges.appendChild(badge("SELECTING", "selecting"));
     }
 
-    // crown = leader(s)
-    if (leaders.has(p.id)) {
-      badges.appendChild(badge("👑 LEAD", "crown"));
-    }
-
+    if (leaders.has(p.id)) badges.appendChild(badge("LEAD", "crown"));
     if (p.isBot) badges.appendChild(badge("BOT", "bot"));
     if (p.connected === false) badges.appendChild(badge("OFF", ""));
 
     left.appendChild(name);
     left.appendChild(badges);
 
+    const right = document.createElement("div");
+    right.className = "playerRight";
+
     const score = document.createElement("div");
     score.className = "playerScore";
     score.textContent = String(p.score ?? 0);
+    right.appendChild(score);
+
+    if (state.isAdmin && p.id !== state.myId && (!hostId || p.id !== hostId)) {
+      const kickBtn = document.createElement("button");
+      kickBtn.className = "btn ghost kickBtn";
+      kickBtn.textContent = "Kick";
+      kickBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        socket.emit("admin_kick", { playerId: p.id });
+      });
+      right.appendChild(kickBtn);
+    }
 
     row.appendChild(left);
-    row.appendChild(score);
-
+    row.appendChild(right);
     el.playersList.appendChild(row);
   }
 }
@@ -161,52 +231,196 @@ function renderHand(){
   if (!el.handList) return;
   clearNode(el.handList);
 
-  const hand = state.myHand || [];
-  if (el.handMeta) el.handMeta.textContent = String(hand.length);
+  const rawHand = state.myHand || [];
+  const hand = rawHand
+    .map((card) => (typeof card === "string" ? card : (card && card.text ? card.text : "")))
+    .filter(Boolean);
 
+  const pickCount = getBlackPickCount();
   const isJudge = state.myId && state.judgeId && state.myId === state.judgeId;
   const canPlay = state.phase === "play" && !isJudge;
 
-  for (const txt of hand) {
-    const c = document.createElement("div");
-    c.className = "cardWhite" + (canPlay ? "" : " disabled");
-    c.textContent = txt;
+  state.pendingPickIndices = (state.pendingPickIndices || [])
+    .filter((i) => Number.isInteger(i) && i >= 0 && i < hand.length)
+    .slice(0, pickCount);
 
-    c.addEventListener("click", () => {
+  if (el.handMeta) {
+    const selected = state.pendingPickIndices.length;
+    const pickLabel = "Pick " + pickCount;
+    el.handMeta.textContent = String(hand.length) + " • " + pickLabel + (pickCount > 1 ? (" (" + selected + "/" + pickCount + ")") : "");
+  }
+
+  for (let i = 0; i < hand.length; i++) {
+    const txt = hand[i];
+    const selected = state.pendingPickIndices.includes(i);
+
+    const d = document.createElement("div");
+    d.className = "tpCard tpCard--white cardWhite" + (canPlay ? "" : " disabled") + (selected ? " selected" : "");
+    d.textContent = txt;
+
+    d.addEventListener("click", () => {
       if (!canPlay) return;
-      socket.emit("submit_card", { text: txt });
+
+      if (pickCount <= 1) {
+        socket.emit("submit_card", { text: txt });
+        state.pendingPickIndices = [];
+        return;
+      }
+
+      const next = (state.pendingPickIndices || []).slice();
+      const at = next.indexOf(i);
+      if (at >= 0) {
+        next.splice(at, 1);
+      } else if (next.length < pickCount) {
+        next.push(i);
+      }
+      state.pendingPickIndices = next;
+      renderHand();
+
+      if (state.pendingPickIndices.length === pickCount) {
+        const texts = state.pendingPickIndices.map((idx) => hand[idx]).filter(Boolean);
+        socket.emit("submit_card", { texts });
+        state.pendingPickIndices = [];
+      }
     });
 
-    el.handList.appendChild(c);
+    el.handList.appendChild(d);
   }
 }
 
 function renderSubmissions(){
   if (!el.submissionsWrap || !el.submissionsList) return;
 
-  const show = state.phase === "judge";
+  const list = state.submissionsList || [];
+  const inPlay = state.phase === "play";
+  const revealMode = (state.phase === "judge" || state.phase === "results") && list.length > 0;
+  const faceDownMode = inPlay && (state.submissionsCount || 0) > 0;
+  const show = revealMode || faceDownMode;
+
   el.submissionsWrap.style.display = show ? "" : "none";
   if (!show) return;
 
-  const list = state.submissionsList || [];
-  if (el.subMeta) el.subMeta.textContent = String(list.length);
+  if (el.subMeta) {
+    el.subMeta.textContent = faceDownMode ? (String(state.submissionsCount) + " face down") : String(list.length);
+  }
 
   clearNode(el.submissionsList);
 
-  const isJudge = state.myId && state.judgeId && state.myId === state.judgeId;
+  if (faceDownMode) {
+    for (let i = 0; i < state.submissionsCount; i++) {
+      const d = document.createElement("div");
+      d.className = "tpCard tpCard--back subCard";
+      el.submissionsList.appendChild(d);
+    }
+    return;
+  }
 
-  for (const s of list) {
-    const d = document.createElement("div");
-    d.className = "subCard" + (isJudge ? "" : " disabled");
-    d.textContent = s.text;
+  const canJudgePick = state.phase === "judge" && state.myId && state.judgeId && state.myId === state.judgeId;
 
-    d.addEventListener("click", () => {
-      if (!isJudge) return;
-      socket.emit("judge_pick", { winnerId: s.id });
+  for (let i = 0; i < list.length; i++) {
+    const card = list[i] || {};
+    const cardTexts = Array.isArray(card.cardTexts) && card.cardTexts.length
+      ? card.cardTexts
+      : (card.text ? [card.text] : []);
+
+    const group = document.createElement("div");
+    group.className = "subGroup" + (canJudgePick ? "" : " disabled");
+
+    for (let k = 0; k < cardTexts.length; k++) {
+      const d = document.createElement("div");
+      d.className = "tpCard tpCard--white tpCard--submission subCard" + (canJudgePick ? "" : " disabled");
+      d.textContent = cardTexts[k] || "";
+
+      if (state.flipSubmissions) {
+        d.classList.add("is-flipping");
+        d.style.animationDelay = ((i * 70) + (k * 40)) + "ms";
+      }
+
+      group.appendChild(d);
+    }
+
+    if (state.phase === "results" && state.winnerId && card.id === state.winnerId) {
+      group.classList.add("winner");
+      const winnerTag = document.createElement("div");
+      winnerTag.className = "winnerTag";
+      winnerTag.textContent = "Winner: " + (state.winnerName || "Unknown");
+      group.appendChild(winnerTag);
+    }
+
+    group.addEventListener("click", () => {
+      if (!canJudgePick) return;
+      socket.emit("judge_pick", { winnerId: card.id });
     });
 
-    el.submissionsList.appendChild(d);
+    el.submissionsList.appendChild(group);
   }
+
+  state.flipSubmissions = false;
+}
+
+function showWinnerSplash(name){
+  const winner = safeStr(name || "Someone", 48) || "Someone";
+
+  const existing = document.querySelector('.winnerSplash');
+  if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
+
+  const wrap = document.createElement('div');
+  wrap.className = 'winnerSplash';
+
+  const card = document.createElement('div');
+  card.className = 'winnerSplashCard';
+
+  const label = document.createElement('div');
+  label.className = 'winnerSplashLabel';
+  label.textContent = 'Round Winner';
+
+  const title = document.createElement('div');
+  title.className = 'winnerSplashName';
+  title.textContent = winner;
+
+  const sub = document.createElement('div');
+  sub.className = 'winnerSplashSub';
+  sub.textContent = 'takes the point';
+
+  card.appendChild(label);
+  card.appendChild(title);
+  card.appendChild(sub);
+  wrap.appendChild(card);
+  document.body.appendChild(wrap);
+
+  setTimeout(() => {
+    if (wrap.parentNode) wrap.parentNode.removeChild(wrap);
+  }, 3050);
+}
+
+function showJoinSplash(name){
+  const joinedName = safeStr(name || "New player", 32) || "New player";
+
+  const existing = document.querySelector(".joinSplash");
+  if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
+
+  const wrap = document.createElement("div");
+  wrap.className = "joinSplash";
+
+  const card = document.createElement("div");
+  card.className = "joinSplashCard";
+
+  const label = document.createElement("div");
+  label.className = "joinSplashLabel";
+  label.textContent = "Player Joined";
+
+  const title = document.createElement("div");
+  title.className = "joinSplashName";
+  title.textContent = joinedName;
+
+  card.appendChild(label);
+  card.appendChild(title);
+  wrap.appendChild(card);
+  document.body.appendChild(wrap);
+
+  setTimeout(() => {
+    if (wrap.parentNode) wrap.parentNode.removeChild(wrap);
+  }, 2050);
 }
 
 function addChatLine(entry){
@@ -233,6 +447,22 @@ function addChatLine(entry){
 
   el.chatLog.appendChild(line);
   el.chatLog.scrollTop = el.chatLog.scrollHeight;
+}
+
+function renderPauseOverlay(){
+  let ov = document.getElementById("pauseOverlay");
+  if (state.phase !== "paused") {
+    if (ov && ov.parentNode) ov.parentNode.removeChild(ov);
+    return;
+  }
+
+  if (!ov) {
+    ov = document.createElement("div");
+    ov.id = "pauseOverlay";
+    ov.className = "pauseOverlay";
+    ov.innerHTML = '<div class="pauseOverlayCard"><div class="pauseTitle">Game Paused</div><div class="pauseSub">Waiting for host to resume…</div></div>';
+    document.body.appendChild(ov);
+  }
 }
 
 function setAdminUI(){
@@ -297,7 +527,7 @@ function wireUI(){
     el.saveIdentityBtn.addEventListener("click", () => {
       saveIdentityToStorage();
       sendIdentity();
-      if (el.identityHint) el.identityHint.textContent = "Saved. CZAR badge shows the judge.";
+      if (el.identityHint) el.identityHint.textContent = "Saved.";
     });
   }
 
@@ -339,15 +569,20 @@ socket.on("state", (s) => {
   state.roundNum = s.roundNum || 0;
   state.judgeId = s.judgeId || null;
   state.currentBlack = s.currentBlack || state.currentBlack;
+  if (state.phase !== "play") state.pendingPickIndices = [];
   state.leaders = Array.isArray(s.leaders) ? s.leaders : [];
+  state.hostId = s.hostId || null;
   state.players = Array.isArray(s.players) ? s.players : [];
   state.submissionsCount = s.submissionsCount || 0;
+  state.winnerId = s.winnerId || null;
+  if (!state.winnerId) state.winnerName = "";
   state.bots = s.bots || state.bots;
 
   setPhaseLabel();
   setRoundMeta();
   renderBlackCard();
   renderPlayers();
+  setRolePills();
   renderHand();
   renderSubmissions();
   setAdminUI();
@@ -355,23 +590,37 @@ socket.on("state", (s) => {
 
 socket.on("hand", ({ hand }) => {
   state.myHand = Array.isArray(hand) ? hand : [];
+  state.pendingPickIndices = [];
   renderHand();
 });
 
 socket.on("black_card", ({ card }) => {
   state.currentBlack = card || null;
+  state.pendingPickIndices = [];
+  setRoundMeta();
   renderBlackCard();
+  renderHand();
 });
 
 socket.on("submissions_reveal", ({ list }) => {
   state.submissionsList = Array.isArray(list) ? list : [];
+  state.winnerId = null;
+  state.winnerName = "";
+  state.flipSubmissions = true;
   renderSubmissions();
 });
 
 socket.on("round_result", (payload) => {
   const winnerName = payload?.winnerName || "Someone";
+  showWinnerSplash(winnerName);
   addChatLine({ type:"system", text: `${winnerName} won the round.` });
-  state.submissionsList = [];
+
+  state.phase = "results";
+  state.winnerId = payload?.winnerId || null;
+  state.winnerName = winnerName;
+  state.submissionsList = Array.isArray(payload?.submissions) ? payload.submissions : [];
+  state.flipSubmissions = false;
+
   renderSubmissions();
 });
 
@@ -384,6 +633,11 @@ socket.on("chat_history", ({ log }) => {
 
 socket.on("chat_update", ({ entry }) => {
   if (entry) addChatLine(entry);
+});
+
+socket.on("player_joined", ({ playerId, name }) => {
+  if (playerId && state.myId && playerId === state.myId) return;
+  showJoinSplash(name || "New player");
 });
 
 socket.on("error_msg", ({ msg }) => {
@@ -406,7 +660,16 @@ socket.on("kicked", ({ msg }) => {
     sendIdentity();
     socket.emit("request_state");
   });
-
   // timer refresh tick for pill
   setInterval(setTimerPill, 500);
+
+  window.addEventListener("resize", () => {
+    requestAnimationFrame(applyAdaptiveBlackCardSize);
+  });
 })();
+
+
+
+
+
+

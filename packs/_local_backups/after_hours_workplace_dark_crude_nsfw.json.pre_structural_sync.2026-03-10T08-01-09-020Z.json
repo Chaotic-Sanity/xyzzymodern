@@ -1,0 +1,367 @@
+{
+  "name": "After-Hours Workplace",
+  "blackCards": [
+    {
+      "text": "What ruined The office party? _____"
+    },
+    {
+      "text": "What ruined The all-hands meeting? _____"
+    },
+    {
+      "text": "What ruined The break room? _____"
+    },
+    {
+      "text": "What ruined Friday standup? _____"
+    },
+    {
+      "text": "What ruined HR workshop? _____"
+    },
+    {
+      "text": "What ruined The team retreat? _____"
+    },
+    {
+      "text": "What ruined The quarterly review? _____"
+    },
+    {
+      "text": "What ruined The elevator chat? _____"
+    },
+    {
+      "text": "What ruined The late-night shift? _____"
+    },
+    {
+      "text": "What ruined The executive floor? _____"
+    },
+    {
+      "text": "Who brought _____ to The office party?"
+    },
+    {
+      "text": "Who brought _____ to The all-hands meeting?"
+    },
+    {
+      "text": "Who brought _____ to The break room?"
+    },
+    {
+      "text": "Who brought _____ to Friday standup?"
+    },
+    {
+      "text": "Who brought _____ to HR workshop?"
+    },
+    {
+      "text": "Who brought _____ to The team retreat?"
+    },
+    {
+      "text": "Who brought _____ to The quarterly review?"
+    },
+    {
+      "text": "Who brought _____ to The elevator chat?"
+    },
+    {
+      "text": "Who brought _____ to The late-night shift?"
+    },
+    {
+      "text": "Who brought _____ to The executive floor?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The office party?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The all-hands meeting?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The break room?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at Friday standup?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at HR workshop?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The team retreat?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The quarterly review?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The elevator chat?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The late-night shift?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The executive floor?"
+    },
+    {
+      "text": "The worst part of The office party was _____."
+    },
+    {
+      "text": "The worst part of The all-hands meeting was _____."
+    },
+    {
+      "text": "The worst part of The break room was _____."
+    },
+    {
+      "text": "The worst part of Friday standup was _____."
+    },
+    {
+      "text": "The worst part of HR workshop was _____."
+    },
+    {
+      "text": "The worst part of The team retreat was _____."
+    },
+    {
+      "text": "The worst part of The quarterly review was _____."
+    },
+    {
+      "text": "The worst part of The elevator chat was _____."
+    },
+    {
+      "text": "The worst part of The late-night shift was _____."
+    },
+    {
+      "text": "The worst part of The executive floor was _____."
+    },
+    {
+      "text": "No one was ready for _____ at The office party."
+    },
+    {
+      "text": "No one was ready for _____ at The all-hands meeting."
+    },
+    {
+      "text": "No one was ready for _____ at The break room."
+    },
+    {
+      "text": "No one was ready for _____ at Friday standup."
+    },
+    {
+      "text": "No one was ready for _____ at HR workshop."
+    },
+    {
+      "text": "No one was ready for _____ at The team retreat."
+    },
+    {
+      "text": "No one was ready for _____ at The quarterly review."
+    },
+    {
+      "text": "No one was ready for _____ at The elevator chat."
+    },
+    {
+      "text": "No one was ready for _____ at The late-night shift."
+    },
+    {
+      "text": "No one was ready for _____ at The executive floor."
+    },
+    {
+      "text": "The office party got weird because of _____."
+    },
+    {
+      "text": "The all-hands meeting got weird because of _____."
+    },
+    {
+      "text": "The break room got weird because of _____."
+    },
+    {
+      "text": "Friday standup got weird because of _____."
+    },
+    {
+      "text": "HR workshop got weird because of _____."
+    },
+    {
+      "text": "The team retreat got weird because of _____."
+    },
+    {
+      "text": "The quarterly review got weird because of _____."
+    },
+    {
+      "text": "The elevator chat got weird because of _____."
+    },
+    {
+      "text": "The late-night shift got weird because of _____."
+    },
+    {
+      "text": "The executive floor got weird because of _____."
+    },
+    {
+      "text": "The big surprise at The office party? _____"
+    },
+    {
+      "text": "The big surprise at The all-hands meeting? _____"
+    },
+    {
+      "text": "The big surprise at The break room? _____"
+    },
+    {
+      "text": "The big surprise at Friday standup? _____"
+    },
+    {
+      "text": "The big surprise at HR workshop? _____"
+    },
+    {
+      "text": "The big surprise at The team retreat? _____"
+    },
+    {
+      "text": "The big surprise at The quarterly review? _____"
+    },
+    {
+      "text": "The big surprise at The elevator chat? _____"
+    },
+    {
+      "text": "The big surprise at The late-night shift? _____"
+    },
+    {
+      "text": "The big surprise at The executive floor? _____"
+    },
+    {
+      "text": "The office party could only be explained by _____."
+    },
+    {
+      "text": "The all-hands meeting could only be explained by _____."
+    },
+    {
+      "text": "The break room could only be explained by _____."
+    },
+    {
+      "text": "Friday standup could only be explained by _____."
+    },
+    {
+      "text": "HR workshop could only be explained by _____."
+    },
+    {
+      "text": "The team retreat could only be explained by _____."
+    },
+    {
+      "text": "The quarterly review could only be explained by _____."
+    },
+    {
+      "text": "The elevator chat could only be explained by _____."
+    },
+    {
+      "text": "The late-night shift could only be explained by _____."
+    },
+    {
+      "text": "The executive floor could only be explained by _____."
+    },
+    {
+      "text": "What made The office party such a disaster? _____"
+    },
+    {
+      "text": "What made The all-hands meeting such a disaster? _____"
+    },
+    {
+      "text": "What made The break room such a disaster? _____"
+    },
+    {
+      "text": "What made Friday standup such a disaster? _____"
+    },
+    {
+      "text": "What made HR workshop such a disaster? _____"
+    },
+    {
+      "text": "What made The team retreat such a disaster? _____"
+    },
+    {
+      "text": "What made The quarterly review such a disaster? _____"
+    },
+    {
+      "text": "What made The elevator chat such a disaster? _____"
+    },
+    {
+      "text": "What made The late-night shift such a disaster? _____"
+    },
+    {
+      "text": "What made The executive floor such a disaster? _____"
+    },
+    {
+      "text": "The one thing The office party needed was _____."
+    },
+    {
+      "text": "The one thing The all-hands meeting needed was _____."
+    },
+    {
+      "text": "The one thing The break room needed was _____."
+    },
+    {
+      "text": "The one thing Friday standup needed was _____."
+    },
+    {
+      "text": "The one thing HR workshop needed was _____."
+    },
+    {
+      "text": "The one thing The team retreat needed was _____."
+    },
+    {
+      "text": "The one thing The quarterly review needed was _____."
+    },
+    {
+      "text": "The one thing The elevator chat needed was _____."
+    },
+    {
+      "text": "The one thing The late-night shift needed was _____."
+    },
+    {
+      "text": "The one thing The executive floor needed was _____."
+    }
+  ],
+  "whiteCards": [
+    "Unhinged HR memo in the break room",
+    "The overconfident intern career suicide",
+    "A mystery USB",
+    "A screenshot of your passive-aggressive boss",
+    "Toxic team-building",
+    "HR memo",
+    "The overconfident intern",
+    "A cursed trend featuring office rumor spiral",
+    "Fake-positive voice notes from the stairwell",
+    "A deeply unserious plan involving a cursed spreadsheet",
+    "The overconfident intern pretending this is normal",
+    "Smug performance review meltdown in the parking lot",
+    "Your passive-aggressive boss doing performative empathy",
+    "An unread policy handbook",
+    "A screenshot of a burnt-out manager",
+    "Expense fraud",
+    "Performance review meltdown",
+    "Your passive-aggressive boss",
+    "A cursed trend featuring HR memo",
+    "Sleep-deprived voice notes from the conference room",
+    "A deeply unserious plan involving a mystery USB",
+    "Your passive-aggressive boss pretending this is normal",
+    "Fake-positive toxic team-building in the stairwell",
+    "A burnt-out manager doing damage control",
+    "A \"confidential\" sticky note",
+    "A screenshot of the fake wellness coach",
+    "Office rumor spiral",
+    "A burnt-out manager",
+    "A cursed trend featuring performance review meltdown",
+    "Resentful voice notes from the open-plan floor",
+    "A deeply unserious plan involving an unread policy handbook",
+    "A burnt-out manager pretending this is normal",
+    "Sleep-deprived expense fraud in the conference room",
+    "The fake wellness coach doing quiet sabotage",
+    "Cold pizza from Q4",
+    "A screenshot of the payroll gremlin",
+    "The fake wellness coach",
+    "A cursed trend featuring toxic team-building",
+    "Unhinged voice notes from the break room",
+    "A deeply unserious plan involving a \"confidential\" sticky note",
+    "The fake wellness coach pretending this is normal",
+    "Resentful office rumor spiral in the open-plan floor",
+    "The payroll gremlin doing blame shifting",
+    "A cursed spreadsheet",
+    "A screenshot of the overconfident intern",
+    "The payroll gremlin",
+    "A cursed trend featuring expense fraud",
+    "Smug voice notes from the parking lot",
+    "A deeply unserious plan involving cold pizza from Q4",
+    "The payroll gremlin pretending this is normal",
+    "A drunk text drafted in Notes",
+    "A \"totally fine\" emotional spiral",
+    "A voice note nobody asked for",
+    "An apology with no accountability",
+    "A soft launch gone violently wrong",
+    "A situationship exit interview",
+    "A cursed meme",
+    "A panic delete that made it worse",
+    "A mirror selfie and false confidence",
+    "A dramatic unfollow campaign"
+  ]
+}

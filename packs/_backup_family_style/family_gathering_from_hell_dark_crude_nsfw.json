@@ -1,0 +1,377 @@
+{
+  "name": "Family Gathering From Hell",
+  "blackCards": [
+    {
+      "text": "At the the family dinner, someone blamed ___."
+    },
+    {
+      "text": "At the the holiday lunch, someone blamed ___."
+    },
+    {
+      "text": "At the the reunion, someone blamed ___."
+    },
+    {
+      "text": "At the the kids table, someone blamed ___."
+    },
+    {
+      "text": "At the the inheritance talk, someone blamed ___."
+    },
+    {
+      "text": "At the the backyard BBQ, someone blamed ___."
+    },
+    {
+      "text": "At the the wedding reception, someone blamed ___."
+    },
+    {
+      "text": "At the the living room debate, someone blamed ___."
+    },
+    {
+      "text": "At the the prayer circle, someone blamed ___."
+    },
+    {
+      "text": "At the the after-dessert argument, someone blamed ___."
+    },
+    {
+      "text": "During the family dinner, the group chat demanded ___."
+    },
+    {
+      "text": "During the holiday lunch, the group chat demanded ___."
+    },
+    {
+      "text": "During the reunion, the group chat demanded ___."
+    },
+    {
+      "text": "During the kids table, the group chat demanded ___."
+    },
+    {
+      "text": "During the inheritance talk, the group chat demanded ___."
+    },
+    {
+      "text": "During the backyard BBQ, the group chat demanded ___."
+    },
+    {
+      "text": "During the wedding reception, the group chat demanded ___."
+    },
+    {
+      "text": "During the living room debate, the group chat demanded ___."
+    },
+    {
+      "text": "During the prayer circle, the group chat demanded ___."
+    },
+    {
+      "text": "During the after-dessert argument, the group chat demanded ___."
+    },
+    {
+      "text": "Right after the family dinner, management quietly approved ___."
+    },
+    {
+      "text": "Right after the holiday lunch, management quietly approved ___."
+    },
+    {
+      "text": "Right after the reunion, management quietly approved ___."
+    },
+    {
+      "text": "Right after the kids table, management quietly approved ___."
+    },
+    {
+      "text": "Right after the inheritance talk, management quietly approved ___."
+    },
+    {
+      "text": "Right after the backyard BBQ, management quietly approved ___."
+    },
+    {
+      "text": "Right after the wedding reception, management quietly approved ___."
+    },
+    {
+      "text": "Right after the living room debate, management quietly approved ___."
+    },
+    {
+      "text": "Right after the prayer circle, management quietly approved ___."
+    },
+    {
+      "text": "Right after the after-dessert argument, management quietly approved ___."
+    },
+    {
+      "text": "Minutes before the family dinner, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the holiday lunch, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the reunion, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the kids table, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the inheritance talk, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the backyard BBQ, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the wedding reception, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the living room debate, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the prayer circle, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the after-dessert argument, security had to confiscate ___."
+    },
+    {
+      "text": "The only thing that saved the family dinner, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the holiday lunch, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the reunion, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the kids table, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the inheritance talk, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the backyard BBQ, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the wedding reception, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the living room debate, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the prayer circle, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the after-dessert argument, my only defense was ___."
+    },
+    {
+      "text": "The first sign of trouble at the family dinner, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the holiday lunch, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the reunion, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the kids table, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the inheritance talk, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the backyard BBQ, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the wedding reception, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the living room debate, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the prayer circle, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the after-dessert argument, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the family dinner, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the holiday lunch, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the reunion, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the kids table, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the inheritance talk, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the backyard BBQ, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the wedding reception, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the living room debate, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the prayer circle, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the after-dessert argument, the loudest person brought ___."
+    },
+    {
+      "text": "The official excuse at the family dinner, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the holiday lunch, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the reunion, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the kids table, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the inheritance talk, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the backyard BBQ, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the wedding reception, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the living room debate, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the prayer circle, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the after-dessert argument, the apology somehow included ___."
+    },
+    {
+      "text": "The rumor spreading through the family dinner, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the holiday lunch, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the reunion, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the kids table, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the inheritance talk, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the backyard BBQ, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the wedding reception, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the living room debate, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the prayer circle, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the after-dessert argument, the winner celebrated with ___."
+    },
+    {
+      "text": "The final straw at the family dinner, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the holiday lunch, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the reunion, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the kids table, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the inheritance talk, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the backyard BBQ, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the wedding reception, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the living room debate, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the prayer circle, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the after-dessert argument, the disaster was traced back to ___."
+    }
+  ],
+  "whiteCards": [
+    "bitter inheritance feud in the kids' table",
+    "the conspiracy uncle doing emotional blackmail with a cracked serving platter",
+    "an emergency stash of cheap boxed wine",
+    "a screenshot of the divorced step-parent at the driveway argument",
+    "old family scandal and a suspicious amount of a suspicious will draft",
+    "a fake smile hiding inheritance feud",
+    "the conspiracy uncle blaming \"that's tradition\"",
+    "a midnight decision powered by cheap boxed wine",
+    "a cursed trend featuring backhanded compliment",
+    "exhausted voice notes from the family group text",
+    "a deeply unserious plan involving an overcooked roast",
+    "the conspiracy uncle pretending this is normal",
+    "combative kitchen screaming match in the holiday lunch table",
+    "the divorced step-parent doing public shaming with an ancient photo album",
+    "an emergency stash of a suspicious will draft",
+    "a screenshot of your nosy aunt at the kids' table",
+    "holiday guilt trip and a suspicious amount of a cracked serving platter",
+    "a fake smile hiding kitchen screaming match",
+    "the divorced step-parent blaming \"you're too sensitive\"",
+    "a midnight decision powered by a suspicious will draft",
+    "a cursed trend featuring inheritance feud",
+    "nostalgic voice notes from Nan's lounge room",
+    "a deeply unserious plan involving cheap boxed wine",
+    "the divorced step-parent pretending this is normal",
+    "exhausted old family scandal in the family group text",
+    "your nosy aunt doing passive aggression with an overcooked roast",
+    "an emergency stash of a cracked serving platter",
+    "a screenshot of the favourite cousin at the holiday lunch table",
+    "backhanded compliment and a suspicious amount of an ancient photo album",
+    "a fake smile hiding old family scandal",
+    "your nosy aunt blaming \"we're just joking\"",
+    "a midnight decision powered by a cracked serving platter",
+    "a cursed trend featuring kitchen screaming match",
+    "judgmental voice notes from the driveway argument",
+    "a deeply unserious plan involving a suspicious will draft",
+    "your nosy aunt pretending this is normal",
+    "nostalgic holiday guilt trip in Nan's lounge room",
+    "the favourite cousin doing historical revision with cheap boxed wine",
+    "an emergency stash of an ancient photo album",
+    "a screenshot of the drunk family friend at the family group text",
+    "inheritance feud and a suspicious amount of an overcooked roast",
+    "a fake smile hiding holiday guilt trip",
+    "the favourite cousin blaming \"family is family\"",
+    "a midnight decision powered by an ancient photo album",
+    "a cursed trend featuring old family scandal",
+    "bitter voice notes from the kids' table",
+    "a deeply unserious plan involving a cracked serving platter",
+    "the favourite cousin pretending this is normal",
+    "judgmental backhanded compliment in the driveway argument",
+    "the drunk family friend doing forced forgiveness with a suspicious will draft",
+    "an emergency stash of an overcooked roast",
+    "a screenshot of the conspiracy uncle at Nan's lounge room",
+    "kitchen screaming match and a suspicious amount of cheap boxed wine",
+    "a fake smile hiding backhanded compliment",
+    "the drunk family friend blaming \"it was years ago\"",
+    "a midnight decision powered by an overcooked roast",
+    "a cursed trend featuring holiday guilt trip",
+    "combative voice notes from the holiday lunch table",
+    "a deeply unserious plan involving an ancient photo album",
+    "the drunk family friend pretending this is normal",
+    "a drunk text drafted in Notes",
+    "a \"totally fine\" emotional spiral",
+    "a voice note nobody asked for",
+    "an apology with no accountability",
+    "a soft launch gone violently wrong",
+    "a situationship exit interview",
+    "a cursed meme at the worst time",
+    "a panic delete that made it worse",
+    "a mirror selfie and false confidence",
+    "a dramatic unfollow campaign"
+  ]
+}

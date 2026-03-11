@@ -1,0 +1,367 @@
+{
+  "name": "Internet Brainrot",
+  "blackCards": [
+    {
+      "text": "What ruined For You page? _____"
+    },
+    {
+      "text": "What ruined The comment section? _____"
+    },
+    {
+      "text": "What ruined The livestream? _____"
+    },
+    {
+      "text": "What ruined The influencer apology video? _____"
+    },
+    {
+      "text": "What ruined The group DM? _____"
+    },
+    {
+      "text": "What ruined The doomscroll session? _____"
+    },
+    {
+      "text": "What ruined The viral trend? _____"
+    },
+    {
+      "text": "What ruined The fandom war? _____"
+    },
+    {
+      "text": "What ruined The reaction thread? _____"
+    },
+    {
+      "text": "What ruined The parasocial meltdown? _____"
+    },
+    {
+      "text": "Who brought _____ to For You page?"
+    },
+    {
+      "text": "Who brought _____ to The comment section?"
+    },
+    {
+      "text": "Who brought _____ to The livestream?"
+    },
+    {
+      "text": "Who brought _____ to The influencer apology video?"
+    },
+    {
+      "text": "Who brought _____ to The group DM?"
+    },
+    {
+      "text": "Who brought _____ to The doomscroll session?"
+    },
+    {
+      "text": "Who brought _____ to The viral trend?"
+    },
+    {
+      "text": "Who brought _____ to The fandom war?"
+    },
+    {
+      "text": "Who brought _____ to The reaction thread?"
+    },
+    {
+      "text": "Who brought _____ to The parasocial meltdown?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at For You page?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The comment section?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The livestream?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The influencer apology video?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The group DM?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The doomscroll session?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The viral trend?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The fandom war?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The reaction thread?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The parasocial meltdown?"
+    },
+    {
+      "text": "The worst part of For You page was _____."
+    },
+    {
+      "text": "The worst part of The comment section was _____."
+    },
+    {
+      "text": "The worst part of The livestream was _____."
+    },
+    {
+      "text": "The worst part of The influencer apology video was _____."
+    },
+    {
+      "text": "The worst part of The group DM was _____."
+    },
+    {
+      "text": "The worst part of The doomscroll session was _____."
+    },
+    {
+      "text": "The worst part of The viral trend was _____."
+    },
+    {
+      "text": "The worst part of The fandom war was _____."
+    },
+    {
+      "text": "The worst part of The reaction thread was _____."
+    },
+    {
+      "text": "The worst part of The parasocial meltdown was _____."
+    },
+    {
+      "text": "No one was ready for _____ at For You page."
+    },
+    {
+      "text": "No one was ready for _____ at The comment section."
+    },
+    {
+      "text": "No one was ready for _____ at The livestream."
+    },
+    {
+      "text": "No one was ready for _____ at The influencer apology video."
+    },
+    {
+      "text": "No one was ready for _____ at The group DM."
+    },
+    {
+      "text": "No one was ready for _____ at The doomscroll session."
+    },
+    {
+      "text": "No one was ready for _____ at The viral trend."
+    },
+    {
+      "text": "No one was ready for _____ at The fandom war."
+    },
+    {
+      "text": "No one was ready for _____ at The reaction thread."
+    },
+    {
+      "text": "No one was ready for _____ at The parasocial meltdown."
+    },
+    {
+      "text": "For You page got weird because of _____."
+    },
+    {
+      "text": "The comment section got weird because of _____."
+    },
+    {
+      "text": "The livestream got weird because of _____."
+    },
+    {
+      "text": "The influencer apology video got weird because of _____."
+    },
+    {
+      "text": "The group DM got weird because of _____."
+    },
+    {
+      "text": "The doomscroll session got weird because of _____."
+    },
+    {
+      "text": "The viral trend got weird because of _____."
+    },
+    {
+      "text": "The fandom war got weird because of _____."
+    },
+    {
+      "text": "The reaction thread got weird because of _____."
+    },
+    {
+      "text": "The parasocial meltdown got weird because of _____."
+    },
+    {
+      "text": "The big surprise at For You page? _____"
+    },
+    {
+      "text": "The big surprise at The comment section? _____"
+    },
+    {
+      "text": "The big surprise at The livestream? _____"
+    },
+    {
+      "text": "The big surprise at The influencer apology video? _____"
+    },
+    {
+      "text": "The big surprise at The group DM? _____"
+    },
+    {
+      "text": "The big surprise at The doomscroll session? _____"
+    },
+    {
+      "text": "The big surprise at The viral trend? _____"
+    },
+    {
+      "text": "The big surprise at The fandom war? _____"
+    },
+    {
+      "text": "The big surprise at The reaction thread? _____"
+    },
+    {
+      "text": "The big surprise at The parasocial meltdown? _____"
+    },
+    {
+      "text": "For You page could only be explained by _____."
+    },
+    {
+      "text": "The comment section could only be explained by _____."
+    },
+    {
+      "text": "The livestream could only be explained by _____."
+    },
+    {
+      "text": "The influencer apology video could only be explained by _____."
+    },
+    {
+      "text": "The group DM could only be explained by _____."
+    },
+    {
+      "text": "The doomscroll session could only be explained by _____."
+    },
+    {
+      "text": "The viral trend could only be explained by _____."
+    },
+    {
+      "text": "The fandom war could only be explained by _____."
+    },
+    {
+      "text": "The reaction thread could only be explained by _____."
+    },
+    {
+      "text": "The parasocial meltdown could only be explained by _____."
+    },
+    {
+      "text": "What made For You page such a disaster? _____"
+    },
+    {
+      "text": "What made The comment section such a disaster? _____"
+    },
+    {
+      "text": "What made The livestream such a disaster? _____"
+    },
+    {
+      "text": "What made The influencer apology video such a disaster? _____"
+    },
+    {
+      "text": "What made The group DM such a disaster? _____"
+    },
+    {
+      "text": "What made The doomscroll session such a disaster? _____"
+    },
+    {
+      "text": "What made The viral trend such a disaster? _____"
+    },
+    {
+      "text": "What made The fandom war such a disaster? _____"
+    },
+    {
+      "text": "What made The reaction thread such a disaster? _____"
+    },
+    {
+      "text": "What made The parasocial meltdown such a disaster? _____"
+    },
+    {
+      "text": "The one thing For You page needed was _____."
+    },
+    {
+      "text": "The one thing The comment section needed was _____."
+    },
+    {
+      "text": "The one thing The livestream needed was _____."
+    },
+    {
+      "text": "The one thing The influencer apology video needed was _____."
+    },
+    {
+      "text": "The one thing The group DM needed was _____."
+    },
+    {
+      "text": "The one thing The doomscroll session needed was _____."
+    },
+    {
+      "text": "The one thing The viral trend needed was _____."
+    },
+    {
+      "text": "The one thing The fandom war needed was _____."
+    },
+    {
+      "text": "The one thing The reaction thread needed was _____."
+    },
+    {
+      "text": "The one thing The parasocial meltdown needed was _____."
+    }
+  ],
+  "whiteCards": [
+    "Terminally online doomscroll loop in the For You page",
+    "Your fake-deep mutual doing rage posting",
+    "A fake apology notes app post",
+    "A screenshot of the unverified expert",
+    "Comment-section warfare",
+    "Doomscroll loop",
+    "Your fake-deep mutual",
+    "A cursed trend featuring influencer cringe",
+    "Attention-starved voice notes from the trending feed",
+    "A deeply unserious plan involving an affiliate link",
+    "Your fake-deep mutual pretending this is normal",
+    "Depressed algorithm worship in the replies tab",
+    "The unverified expert doing content theft",
+    "A sponsored detox tea",
+    "A screenshot of a clout goblin",
+    "Parasocial breakdown",
+    "Algorithm worship",
+    "The unverified expert",
+    "A cursed trend featuring doomscroll loop",
+    "Smug voice notes from a cursed livestream",
+    "A deeply unserious plan involving a fake apology notes app post",
+    "The unverified expert pretending this is normal",
+    "Attention-starved comment-section warfare in the trending feed",
+    "A clout goblin doing engagement farming",
+    "A blue check screenshot",
+    "A screenshot of a micro-influencer guru",
+    "Influencer cringe",
+    "A clout goblin blaming",
+    "A cursed trend featuring algorithm worship",
+    "Performative voice notes from a late-night rabbit hole",
+    "A deeply unserious plan involving a sponsored detox tea",
+    "A clout goblin pretending this is normal",
+    "Smug parasocial breakdown in a cursed livestream",
+    "A micro-influencer guru doing ratio chasing",
+    "A ring light shrine",
+    "A screenshot of a serial quote-tweeter",
+    "A micro-influencer guru",
+    "A cursed trend featuring comment-section warfare",
+    "Terminally online voice notes from the For You page",
+    "A deeply unserious plan involving a blue check screenshot",
+    "A micro-influencer guru pretending this is normal",
+    "Performative influencer cringe in a late-night rabbit hole",
+    "A serial quote-tweeter doing identity cosplay",
+    "An affiliate link",
+    "A screenshot of your fake-deep mutual",
+    "A serial quote-tweeter",
+    "A cursed trend featuring parasocial breakdown",
+    "Depressed voice notes from the replies tab",
+    "A deeply unserious plan involving a ring light shrine",
+    "A serial quote-tweeter pretending this is normal",
+    "A drunk text drafted in Notes",
+    "A \"totally fine\" emotional spiral",
+    "A voice note nobody asked for",
+    "An apology with no accountability",
+    "A soft launch gone violently wrong",
+    "A situationship exit interview",
+    "A cursed meme",
+    "A panic delete that made it worse",
+    "A mirror selfie and false confidence",
+    "A dramatic unfollow campaign"
+  ]
+}

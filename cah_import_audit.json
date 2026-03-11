@@ -1,0 +1,316 @@
+{
+  "rebuilt": [
+    {
+      "sourceFile": "HorriblePack_Cards_Against_Horror.txt",
+      "packFile": "cah_import_horriblepack_cards_against_horror.json",
+      "sourceBlack": 2,
+      "sourceWhite": 7,
+      "finalBlack": 2,
+      "finalWhite": 7
+    },
+    {
+      "sourceFile": "A Few Extra Nasty Cards For You Peo.txt",
+      "packFile": "cah_import_a_few_extra_nasty_cards_for_you_peo.json",
+      "sourceBlack": 0,
+      "sourceWhite": 10,
+      "finalBlack": 0,
+      "finalWhite": 10
+    },
+    {
+      "sourceFile": "A Few More Cards For You Nerds.txt",
+      "packFile": "cah_import_a_few_more_cards_for_you_nerds.json",
+      "sourceBlack": 1,
+      "sourceWhite": 9,
+      "finalBlack": 1,
+      "finalWhite": 9
+    },
+    {
+      "sourceFile": "CAH Retail Product Black Cards List.txt",
+      "packFile": "cah_import_cah_retail_product_black_cards_list.json",
+      "sourceBlack": 1,
+      "sourceWhite": 19,
+      "finalBlack": 1,
+      "finalWhite": 19
+    },
+    {
+      "sourceFile": "100th Anniversary Edition white Car.txt",
+      "packFile": "cah_import_100th_anniversary_edition_white_car.json",
+      "sourceBlack": 0,
+      "sourceWhite": 29,
+      "finalBlack": 0,
+      "finalWhite": 29
+    },
+    {
+      "sourceFile": "Pussy Pack Card List.txt",
+      "packFile": "cah_import_pussy_pack_card_list.json",
+      "sourceBlack": 0,
+      "sourceWhite": 29,
+      "finalBlack": 0,
+      "finalWhite": 29
+    },
+    {
+      "sourceFile": "School Sucks Pack Black Cards List.txt",
+      "packFile": "cah_import_school_sucks_pack_black_cards_list.json",
+      "sourceBlack": 5,
+      "sourceWhite": 24,
+      "finalBlack": 5,
+      "finalWhite": 24
+    },
+    {
+      "sourceFile": "Weed Pack Black Cards List.txt",
+      "packFile": "cah_import_weed_pack_black_cards_list.json",
+      "sourceBlack": 4,
+      "sourceWhite": 25,
+      "finalBlack": 4,
+      "finalWhite": 25
+    },
+    {
+      "sourceFile": "2000s Nostalgia Pack Black Cards Li.txt",
+      "packFile": "cah_import_2000s_nostalgia_pack_black_cards_li.json",
+      "sourceBlack": 5,
+      "sourceWhite": 25,
+      "finalBlack": 5,
+      "finalWhite": 25
+    },
+    {
+      "sourceFile": "90s Nostalgia Pack Black Cards List.txt",
+      "packFile": "cah_import_90s_nostalgia_pack_black_cards_list.json",
+      "sourceBlack": 9,
+      "sourceWhite": 21,
+      "finalBlack": 9,
+      "finalWhite": 21
+    },
+    {
+      "sourceFile": "A.I. Pack White Cards List.txt",
+      "packFile": "cah_import_a_i_pack_white_cards_list.json",
+      "sourceBlack": 0,
+      "sourceWhite": 30,
+      "finalBlack": 0,
+      "finalWhite": 30
+    },
+    {
+      "sourceFile": "Ass Pack Black Cards List.txt",
+      "packFile": "cah_import_ass_pack_black_cards_list.json",
+      "sourceBlack": 3,
+      "sourceWhite": 27,
+      "finalBlack": 3,
+      "finalWhite": 27
+    },
+    {
+      "sourceFile": "Clam-O-Naise Black Cards List.txt",
+      "packFile": "cah_import_clam_o_naise_black_cards_list.json",
+      "sourceBlack": 3,
+      "sourceWhite": 27,
+      "finalBlack": 3,
+      "finalWhite": 27
+    },
+    {
+      "sourceFile": "Climate Catastrophe Pack Black Card.txt",
+      "packFile": "cah_import_climate_catastrophe_pack_black_card.json",
+      "sourceBlack": 5,
+      "sourceWhite": 25,
+      "finalBlack": 5,
+      "finalWhite": 25
+    },
+    {
+      "sourceFile": "College Pack Black Cards List.txt",
+      "packFile": "cah_import_college_pack_black_cards_list.json",
+      "sourceBlack": 6,
+      "sourceWhite": 24,
+      "finalBlack": 6,
+      "finalWhite": 24
+    },
+    {
+      "sourceFile": "Culture Wars Pack Black Cards List.txt",
+      "packFile": "cah_import_culture_wars_pack_black_cards_list.json",
+      "sourceBlack": 3,
+      "sourceWhite": 27,
+      "finalBlack": 3,
+      "finalWhite": 27
+    },
+    {
+      "sourceFile": "Period Pack Black Cards List.txt",
+      "packFile": "cah_import_period_pack_black_cards_list.json",
+      "sourceBlack": 6,
+      "sourceWhite": 24,
+      "finalBlack": 6,
+      "finalWhite": 24
+    },
+    {
+      "sourceFile": "Picture Card Pack 3 Black Cards Lis.txt",
+      "packFile": "cah_import_picture_card_pack_3_black_cards_lis.json",
+      "sourceBlack": 8,
+      "sourceWhite": 22,
+      "finalBlack": 8,
+      "finalWhite": 22
+    },
+    {
+      "sourceFile": "Pride Pack Black Cards List.txt",
+      "packFile": "cah_import_pride_pack_black_cards_list.json",
+      "sourceBlack": 5,
+      "sourceWhite": 25,
+      "finalBlack": 5,
+      "finalWhite": 25
+    },
+    {
+      "sourceFile": "Science Pack 2 Black Cards List.txt",
+      "packFile": "cah_import_science_pack_2_black_cards_list.json",
+      "sourceBlack": 4,
+      "sourceWhite": 26,
+      "finalBlack": 4,
+      "finalWhite": 26
+    },
+    {
+      "sourceFile": "Smarty Pants Black Cards List.txt",
+      "packFile": "cah_import_smarty_pants_black_cards_list.json",
+      "sourceBlack": 5,
+      "sourceWhite": 25,
+      "finalBlack": 5,
+      "finalWhite": 25
+    },
+    {
+      "sourceFile": "The Dad Pack Black Cards List.txt",
+      "packFile": "cah_import_the_dad_pack_black_cards_list.json",
+      "sourceBlack": 5,
+      "sourceWhite": 25,
+      "finalBlack": 5,
+      "finalWhite": 25
+    },
+    {
+      "sourceFile": "The Food Pack Black Cards List.txt",
+      "packFile": "cah_import_the_food_pack_black_cards_list.json",
+      "sourceBlack": 6,
+      "sourceWhite": 24,
+      "finalBlack": 6,
+      "finalWhite": 24
+    },
+    {
+      "sourceFile": "The Geek Pack Black Cards List.txt",
+      "packFile": "cah_import_the_geek_pack_black_cards_list.json",
+      "sourceBlack": 6,
+      "sourceWhite": 24,
+      "finalBlack": 6,
+      "finalWhite": 24
+    },
+    {
+      "sourceFile": "The Movie Night Box Black Cards Lis.txt",
+      "packFile": "cah_import_the_movie_night_box_black_cards_lis.json",
+      "sourceBlack": 3,
+      "sourceWhite": 27,
+      "finalBlack": 3,
+      "finalWhite": 27
+    },
+    {
+      "sourceFile": "The Scary Pack Black Cards List.txt",
+      "packFile": "cah_import_the_scary_pack_black_cards_list.json",
+      "sourceBlack": 5,
+      "sourceWhite": 25,
+      "finalBlack": 5,
+      "finalWhite": 25
+    },
+    {
+      "sourceFile": "The Sci-Fi Pack Black Cards List.txt",
+      "packFile": "cah_import_the_sci_fi_pack_black_cards_list.json",
+      "sourceBlack": 7,
+      "sourceWhite": 23,
+      "finalBlack": 7,
+      "finalWhite": 23
+    },
+    {
+      "sourceFile": "Theatre Pack Black Cards List.txt",
+      "packFile": "cah_import_theatre_pack_black_cards_list.json",
+      "sourceBlack": 5,
+      "sourceWhite": 25,
+      "finalBlack": 5,
+      "finalWhite": 25
+    },
+    {
+      "sourceFile": "World Wide Web Pack Black Cards Lis.txt",
+      "packFile": "cah_import_world_wide_web_pack_black_cards_lis.json",
+      "sourceBlack": 8,
+      "sourceWhite": 22,
+      "finalBlack": 8,
+      "finalWhite": 22
+    },
+    {
+      "sourceFile": "Written By Kids Pack Black Cards Li.txt",
+      "packFile": "cah_import_written_by_kids_pack_black_cards_li.json",
+      "sourceBlack": 4,
+      "sourceWhite": 26,
+      "finalBlack": 4,
+      "finalWhite": 26
+    },
+    {
+      "sourceFile": "Out Of Line White Cards List.txt",
+      "packFile": "cah_import_out_of_line_white_cards_list.json",
+      "sourceBlack": 0,
+      "sourceWhite": 150,
+      "finalBlack": 0,
+      "finalWhite": 150
+    },
+    {
+      "sourceFile": "More Cards Against Humanity Black C.txt",
+      "packFile": "cah_import_more_cards_against_humanity_black_c.json",
+      "sourceBlack": 4,
+      "sourceWhite": 234,
+      "finalBlack": 4,
+      "finalWhite": 234
+    },
+    {
+      "sourceFile": "The Blue Box Black Cards List.txt",
+      "packFile": "cah_import_the_blue_box_black_cards_list.json",
+      "sourceBlack": 78,
+      "sourceWhite": 220,
+      "finalBlack": 78,
+      "finalWhite": 219
+    },
+    {
+      "sourceFile": "The Green Box Black Cards List.txt",
+      "packFile": "cah_import_the_green_box_black_cards_list.json",
+      "sourceBlack": 55,
+      "sourceWhite": 243,
+      "finalBlack": 55,
+      "finalWhite": 243
+    },
+    {
+      "sourceFile": "The Hot Box Black Cards List.txt",
+      "packFile": "cah_import_the_hot_box_black_cards_list.json",
+      "sourceBlack": 40,
+      "sourceWhite": 259,
+      "finalBlack": 40,
+      "finalWhite": 256
+    },
+    {
+      "sourceFile": "The Red Box Black Cards List.txt",
+      "packFile": "cah_import_the_red_box_black_cards_list.json",
+      "sourceBlack": 71,
+      "sourceWhite": 228,
+      "finalBlack": 71,
+      "finalWhite": 228
+    },
+    {
+      "sourceFile": "The Everything Box.txt",
+      "packFile": "cah_import_the_everything_box.json",
+      "sourceBlack": 50,
+      "sourceWhite": 250,
+      "finalBlack": 50,
+      "finalWhite": 250
+    },
+    {
+      "sourceFile": "Absurd Box Black Cards List.txt",
+      "packFile": "cah_import_absurd_box_black_cards_list.json",
+      "sourceBlack": 56,
+      "sourceWhite": 257,
+      "finalBlack": 56,
+      "finalWhite": 256
+    },
+    {
+      "sourceFile": "CAH cards.txt",
+      "packFile": "cah_import_cah_cards.json",
+      "sourceBlack": 709,
+      "sourceWhite": 2545,
+      "finalBlack": 688,
+      "finalWhite": 1477
+    }
+  ]
+}

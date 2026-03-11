@@ -12,6 +12,8 @@ const { Server } = require("socket.io");
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || '0.0.0.0';
 const ADMIN_KEY = "kmadmin";
+const AUTO_TEST_BOTS = 2;
+const BOT_JUDGE_PICK_DELAY_MS = 10000;
 
 const SETTINGS_PATH = path.join(__dirname, "settings.json");
 const PACKS_DIR = path.join(__dirname, "packs");
@@ -28,7 +30,7 @@ const PHASES = {
 const DEFAULT_SETTINGS = {
   enabledPacks: [],
   scoreLimit: 7,
-  playSeconds: 35,
+  playSeconds: 60,
   judgeSeconds: 25,
   resultsSeconds: 10,
   handSize: 10
@@ -87,8 +89,22 @@ function randPick(arr) {
 function listPackFiles() {
   if (!fs.existsSync(PACKS_DIR)) return [];
   return fs.readdirSync(PACKS_DIR)
-    .filter(f => f.toLowerCase().endsWith(".json"))
+    .filter((f) => {
+      const lower = f.toLowerCase();
+      if (!lower.endsWith(".json")) return false;
+      // Ignore local backup snapshots so they do not appear as playable packs.
+      if (lower.includes(".backup.")) return false;
+      return true;
+    })
     .map(f => path.join(PACKS_DIR, f));
+}
+
+function blackPickCount(text) {
+  const t = safeStr(text, 220);
+  if (/same\s+card\s+again/i.test(t)) return 1;
+  const blanks = (t.match(/___/g) || []).length;
+  if (blanks <= 1) return 1;
+  return Math.min(3, blanks);
 }
 
 function loadAllPacks() {
@@ -105,8 +121,11 @@ function loadAllPacks() {
     const whiteCards = Array.isArray(data.whiteCards) ? data.whiteCards : [];
 
     const cleanedBlack = blackCards
-      .map(c => ({ text: safeStr(c?.text, 220), pick: 1 }))
-      .filter(c => c.text.length > 0);
+      .map((c) => (typeof c === "string" ? c : c?.text))
+      .map((text) => safeStr(text, 220))
+      .map((text) => text.replace(/\s+/g, " ").trim())
+      .filter((text) => text.length > 0 && (text.includes("___") || text.endsWith("?")))
+      .map((text) => ({ text, pick: blackPickCount(text) }));
 
     const cleanedWhite = whiteCards
       .map(t => safeStr(t, 220))
@@ -144,49 +163,168 @@ function saveSettings(settings) {
 // =====================================================
 // GAME STATE
 // =====================================================
-const playersById = new Map();      // playerId -> player
-const socketToPlayerId = new Map(); // socket.id -> playerId
-
-let packsCache = loadAllPacks();
-let settings = loadSettings();
-
-// decks
-let blackDeck = [];
-let whiteDeck = [];
-let usedBlack = [];
-let usedWhite = [];
-
-// round state
-let phase = PHASES.LOBBY;
-let phaseBeforePause = PHASES.LOBBY;
-
-let roundNum = 0;
-let judgeId = null;
-let currentBlack = null;
-let submissions = new Map(); // playerId -> { cardText, fromAuto }
-let winnerId = null;
-
-let phaseEndTs = 0;
-let phaseTimer = null;
-let tickTimer = null;
-
-// chat
 const CHAT_MAX = 200;
-const chatLog = [];
-
-// bots
 const BOT_PREFIX = "bot_";
 const BOT_NAMES = [
-  "Botman", "CardGoblin", "PunSplicer", "NeonLlama", "ChaosGremlin",
-  "MemeEngine", "TrashWizard", "SpookyCPU", "GigaGoose", "ByteBanshee",
-  "SnarkSprite", "DiceGobbo", "TinfoilOracle", "LagDragon", "WiredWitch"
+  "Alex", "Jordan", "Taylor", "Casey", "Morgan",
+  "Riley", "Avery", "Jamie", "Sam", "Quinn",
+  "Dylan", "Cameron", "Harper", "Parker", "Rowan"
 ];
 
-const botConfig = {
-  enabled: false,
-  count: 0
-};
+let packsCache = loadAllPacks();
+const baseSettings = loadSettings();
 
+const gamesById = new Map();
+let activeGameId = "main";
+
+let playersById;
+let socketToPlayerId;
+let settings;
+let blackDeck;
+let whiteDeck;
+let usedBlack;
+let usedWhite;
+let phase;
+let phaseBeforePause;
+let roundNum;
+let judgeId;
+let currentBlack;
+let submissions;
+let winnerId;
+let phaseEndTs;
+let phaseTimer;
+let tickTimer;
+let chatLog;
+let gameOwnerId;
+let botConfig;
+
+function makeGameState(id) {
+  return {
+    id,
+    playersById: new Map(),
+    socketToPlayerId: new Map(),
+    settings: { ...baseSettings },
+    blackDeck: [],
+    whiteDeck: [],
+    usedBlack: [],
+    usedWhite: [],
+    phase: PHASES.LOBBY,
+    phaseBeforePause: PHASES.LOBBY,
+    roundNum: 0,
+    judgeId: null,
+    currentBlack: null,
+    submissions: new Map(),
+    winnerId: null,
+    phaseEndTs: 0,
+    phaseTimer: null,
+    tickTimer: null,
+    chatLog: [],
+    ownerId: null,
+    botConfig: { enabled: false, count: 0 }
+  };
+}
+
+function getOrCreateGame(gameId) {
+  const id = safeStr(gameId || "main", 24).toLowerCase() || "main";
+  if (!gamesById.has(id)) gamesById.set(id, makeGameState(id));
+  return gamesById.get(id);
+}
+
+function bindGame(gameId) {
+  const g = getOrCreateGame(gameId);
+  activeGameId = g.id;
+  playersById = g.playersById;
+  socketToPlayerId = g.socketToPlayerId;
+  settings = g.settings;
+  blackDeck = g.blackDeck;
+  whiteDeck = g.whiteDeck;
+  usedBlack = g.usedBlack;
+  usedWhite = g.usedWhite;
+  phase = g.phase;
+  phaseBeforePause = g.phaseBeforePause;
+  roundNum = g.roundNum;
+  judgeId = g.judgeId;
+  currentBlack = g.currentBlack;
+  submissions = g.submissions;
+  winnerId = g.winnerId;
+  phaseEndTs = g.phaseEndTs;
+  phaseTimer = g.phaseTimer;
+  tickTimer = g.tickTimer;
+  chatLog = g.chatLog;
+  gameOwnerId = g.ownerId;
+  botConfig = g.botConfig;
+  return g;
+}
+
+function persistGame(gameId) {
+  const g = getOrCreateGame(gameId);
+  g.playersById = playersById;
+  g.socketToPlayerId = socketToPlayerId;
+  g.settings = settings;
+  g.blackDeck = blackDeck;
+  g.whiteDeck = whiteDeck;
+  g.usedBlack = usedBlack;
+  g.usedWhite = usedWhite;
+  g.phase = phase;
+  g.phaseBeforePause = phaseBeforePause;
+  g.roundNum = roundNum;
+  g.judgeId = judgeId;
+  g.currentBlack = currentBlack;
+  g.submissions = submissions;
+  g.winnerId = winnerId;
+  g.phaseEndTs = phaseEndTs;
+  g.phaseTimer = phaseTimer;
+  g.tickTimer = tickTimer;
+  g.chatLog = chatLog;
+  g.ownerId = gameOwnerId;
+  g.botConfig = botConfig;
+}
+
+function withGame(gameId, fn) {
+  const id = safeStr(gameId || "main", 24).toLowerCase() || "main";
+  bindGame(id);
+  try {
+    return fn(id);
+  } finally {
+    persistGame(id);
+  }
+}
+
+function roomOf(gameId) {
+  return "game:" + gameId;
+}
+
+function emitGame(gameId, event, payload) {
+  io.to(roomOf(gameId)).emit(event, payload);
+}
+
+function listGamesSummary() {
+  const out = [];
+  for (const [id, g] of gamesById.entries()) {
+    const connected = Array.from(g.playersById.values()).filter(p => p.connected === true).length;
+    out.push({
+      id,
+      phase: g.phase,
+      roundNum: g.roundNum,
+      players: connected,
+      hasOwner: !!g.ownerId
+    });
+  }
+  out.sort((a, b) => a.id.localeCompare(b.id));
+  return out;
+}
+
+function maybeCleanupGame(gameId) {
+  const id = safeStr(gameId || "", 24).toLowerCase();
+  if (!id || id === "main") return;
+  const g = gamesById.get(id);
+  if (!g) return;
+  const hasConnected = Array.from(g.playersById.values()).some(p => p.connected === true);
+  if (hasConnected) return;
+  if (g.phaseTimer) clearTimeout(g.phaseTimer);
+  if (g.tickTimer) clearInterval(g.tickTimer);
+  gamesById.delete(id);
+}
 // =====================================================
 // DECKS
 // =====================================================
@@ -202,10 +340,26 @@ function rebuildDecks() {
 
   const allBlack = [];
   const allWhite = [];
+  const seenBlack = new Set();
+  const seenWhite = new Set();
 
   for (const p of enabled) {
-    for (const b of p.blackCards) allBlack.push({ text: b.text, pick: 1, packId: p.id });
-    for (const w of p.whiteCards) allWhite.push({ text: w, packId: p.id });
+    for (const b of p.blackCards) {
+      const t = safeStr(b?.text, 220);
+      if (!t) continue;
+      const k = t.toLowerCase();
+      if (seenBlack.has(k)) continue;
+      seenBlack.add(k);
+      allBlack.push({ text: t, pick: b.pick || blackPickCount(t), packId: p.id });
+    }
+    for (const w of p.whiteCards) {
+      const t = safeStr(w, 220);
+      if (!t) continue;
+      const k = t.toLowerCase();
+      if (seenWhite.has(k)) continue;
+      seenWhite.add(k);
+      allWhite.push({ text: t, packId: p.id });
+    }
   }
 
   blackDeck = shuffle(allBlack.slice());
@@ -231,9 +385,7 @@ function drawWhite() {
     whiteDeck = shuffle(usedWhite.slice());
     usedWhite = [];
   }
-  const c = whiteDeck.pop();
-  usedWhite.push(c);
-  return c;
+  return whiteDeck.pop();
 }
 
 function topLeaders() {
@@ -258,6 +410,32 @@ function ensureHands() {
       p.hand.push(w.text);
     }
   }
+}
+function findWhitePackForText(text) {
+  const t = safeStr(text, 220);
+  if (!t) return { packId: "", packName: "Unknown pack" };
+
+  const enabled = getEnabledPacks(packsCache, settings.enabledPacks);
+  for (const p of enabled) {
+    if (Array.isArray(p.whiteCards) && p.whiteCards.includes(t)) {
+      return { packId: p.id, packName: p.name };
+    }
+  }
+
+  for (const p of packsCache) {
+    if (Array.isArray(p.whiteCards) && p.whiteCards.includes(t)) {
+      return { packId: p.id, packName: p.name };
+    }
+  }
+
+  return { packId: "", packName: "Unknown pack" };
+}
+
+function addWhiteToDiscard(text) {
+  const t = safeStr(text, 220);
+  if (!t) return;
+  const src = findWhitePackForText(t);
+  usedWhite.push({ text: t, packId: src.packId || "" });
 }
 
 function rotateJudge() {
@@ -287,13 +465,14 @@ function setPhase(newPhase, seconds) {
   clearTimers();
 
   if (seconds > 0) {
-    phaseTimer = setTimeout(() => onPhaseTimeout(newPhase), seconds * 1000);
+    const gameIdForTimer = activeGameId;
+    phaseTimer = setTimeout(() => withGame(gameIdForTimer, () => onPhaseTimeout(newPhase)), seconds * 1000);
     tickTimer = setInterval(() => {
-      io.emit("phase_timer", { phase, endTs: phaseEndTs });
+      emitGame(activeGameId, "phase_timer", { phase, endTs: phaseEndTs });
     }, 1000);
   }
 
-  io.emit("phase_timer", { phase, endTs: phaseEndTs });
+  emitGame(activeGameId, "phase_timer", { phase, endTs: phaseEndTs });
 }
 
 function broadcastState() {
@@ -303,19 +482,21 @@ function broadcastState() {
     score: p.score,
     connected: p.connected,
     isAdmin: p.isAdmin === true,
-    isBot: p.isBot === true
+    isBot: p.isBot === true,
+    submitted: submissions.has(p.id)
   }));
 
-  io.emit("state", {
+  emitGame(activeGameId, "state", {
     phase,
     roundNum,
     judgeId,
-    currentBlack: currentBlack ? { text: currentBlack.text, pick: 1 } : null,
+    currentBlack: currentBlack ? { text: currentBlack.text, pick: currentBlack.pick || blackPickCount(currentBlack.text) } : null,
     submissionsCount: submissions.size,
     winnerId,
     scoreLimit: settings.scoreLimit,
     leaders: topLeaders(),
     players,
+    hostId: gameOwnerId || null,
     bots: { enabled: botConfig.enabled, count: botConfig.count }
   });
 }
@@ -325,14 +506,18 @@ function broadcastHandsToEachPlayer() {
     if (!p.socketId) continue;
     const sock = io.sockets.sockets.get(p.socketId);
     if (!sock) continue;
-    sock.emit("hand", { hand: p.hand.slice() });
+    const hand = (p.hand || []).map((text) => {
+      const src = findWhitePackForText(text);
+      return { text, packId: src.packId, packName: src.packName };
+    });
+    sock.emit("hand", { hand });
   }
 }
 
 function addChat(entry) {
   chatLog.push(entry);
   while (chatLog.length > CHAT_MAX) chatLog.shift();
-  io.emit("chat_update", { entry });
+  emitGame(activeGameId, "chat_update", { entry });
 }
 
 function sendChatHistory(socket) {
@@ -347,8 +532,7 @@ function botId(i) {
 }
 
 function botName(i) {
-  const base = BOT_NAMES[i % BOT_NAMES.length];
-  return base + " #" + (i + 1);
+  return BOT_NAMES[i % BOT_NAMES.length];
 }
 
 function addBot(i) {
@@ -409,29 +593,76 @@ function setBotsEnabled(enabled, count) {
   broadcastState();
 }
 
+function pickCardsFromHand(hand, pickCount) {
+  const need = Math.max(1, Math.min(3, Number(pickCount) || 1));
+  const pool = Array.isArray(hand) ? hand.slice() : [];
+  const out = [];
+  while (out.length < need && pool.length > 0) {
+    const pick = randPick(pool);
+    if (!pick) break;
+    const idx = pool.indexOf(pick);
+    if (idx >= 0) pool.splice(idx, 1);
+    out.push(pick);
+  }
+  return out;
+}
+
 function botSubmitIfNeeded() {
   if (phase !== PHASES.PLAY) return;
   if (!botConfig.enabled || botConfig.count === 0) return;
+
+  const pickCount = currentBlack ? (currentBlack.pick || blackPickCount(currentBlack.text)) : 1;
 
   for (const p of playersById.values()) {
     if (!p.isBot) continue;
     if (p.id === judgeId) continue;
     if (submissions.has(p.id)) continue;
-    if (!p.hand || p.hand.length === 0) continue;
+    if (!p.hand || p.hand.length < pickCount) continue;
 
-    const pick = randPick(p.hand);
-    if (!pick) continue;
+    const picks = pickCardsFromHand(p.hand, pickCount);
+    if (picks.length !== pickCount) continue;
 
-    const idx = p.hand.indexOf(pick);
-    if (idx >= 0) p.hand.splice(idx, 1);
+    for (const pick of picks) {
+      const idx = p.hand.indexOf(pick);
+      if (idx >= 0) p.hand.splice(idx, 1);
+      addWhiteToDiscard(pick);
+    }
 
-    submissions.set(p.id, { cardText: pick, fromAuto: true });
+    const src = findWhitePackForText(picks[0]);
+    submissions.set(p.id, {
+      cardText: picks.join(" / "),
+      cardTexts: picks.slice(),
+      packId: src.packId,
+      packName: src.packName,
+      fromAuto: true
+    });
     addChat(systemMsg(`${p.name} submitted.`));
   }
 
   ensureHands();
   broadcastHandsToEachPlayer();
   broadcastState();
+
+  maybeAdvanceToJudging();
+}
+
+function requiredSubmitters() {
+  return Array.from(playersById.values()).filter((p) => {
+    if (!p) return false;
+    if (p.id === judgeId) return false;
+    if (p.connected === false) return false;
+    return true;
+  });
+}
+
+function maybeAdvanceToJudging() {
+  if (phase !== PHASES.PLAY) return false;
+  const required = requiredSubmitters();
+  if (required.length === 0) return false;
+  if (submissions.size < required.length) return false;
+  addChat(systemMsg("All submissions in. Moving to judging."));
+  finishPlayPhaseToJudging();
+  return true;
 }
 
 function botJudgePickIfNeeded() {
@@ -481,24 +712,29 @@ function startNewRound() {
   broadcastState();
   broadcastHandsToEachPlayer();
 
-  io.emit("black_card", { card: { text: currentBlack.text, pick: 1 } });
+  emitGame(activeGameId, "black_card", { card: { text: currentBlack.text, pick: currentBlack.pick || blackPickCount(currentBlack.text) } });
 
   // bots may insta-submit a little later
-  setTimeout(botSubmitIfNeeded, 600);
+  { const gid = activeGameId; setTimeout(() => withGame(gid, () => botSubmitIfNeeded()), 600); }
 }
 
 function finishPlayPhaseToJudging() {
   // auto-submit for any non-judge player missing
+  const pickCount = currentBlack ? (currentBlack.pick || blackPickCount(currentBlack.text)) : 1;
   for (const p of playersById.values()) {
     if (p.id === judgeId) continue;
-    if (!p.hand || p.hand.length === 0) continue;
+    if (!p.hand || p.hand.length < pickCount) continue;
     if (submissions.has(p.id)) continue;
 
-    const pick = randPick(p.hand);
-    if (pick) {
-      const idx = p.hand.indexOf(pick);
-      if (idx >= 0) p.hand.splice(idx, 1);
-      submissions.set(p.id, { cardText: pick, fromAuto: true });
+    const picks = pickCardsFromHand(p.hand, pickCount);
+    if (picks.length === pickCount) {
+      for (const pick of picks) {
+        const idx = p.hand.indexOf(pick);
+        if (idx >= 0) p.hand.splice(idx, 1);
+        addWhiteToDiscard(pick);
+      }
+      const src = findWhitePackForText(picks[0]);
+      submissions.set(p.id, { cardText: picks.join(" / "), cardTexts: picks.slice(), packId: src.packId, packName: src.packName, fromAuto: true });
       addChat(systemMsg(`${p.name} auto-submitted.`));
     }
   }
@@ -509,7 +745,7 @@ function finishPlayPhaseToJudging() {
     winnerId = null;
     broadcastState();
     broadcastHandsToEachPlayer();
-    io.emit("submissions_reveal", { list: [] });
+    emitGame(activeGameId, "submissions_reveal", { list: [] });
     return;
   }
 
@@ -518,13 +754,16 @@ function finishPlayPhaseToJudging() {
 
   const list = Array.from(submissions.entries()).map(([pid, s]) => ({
     id: pid,
-    text: s.cardText
+    text: s.cardText,
+    cardTexts: Array.isArray(s.cardTexts) ? s.cardTexts : [s.cardText],
+    packId: s.packId,
+    packName: s.packName
   }));
   shuffle(list);
-  io.emit("submissions_reveal", { list });
+  emitGame(activeGameId, "submissions_reveal", { list });
 
   // bot judge pick after a short delay
-  setTimeout(botJudgePickIfNeeded, 900);
+  { const gid = activeGameId; setTimeout(() => withGame(gid, () => botJudgePickIfNeeded()), BOT_JUDGE_PICK_DELAY_MS); }
 }
 
 function pickWinner(pid) {
@@ -542,10 +781,10 @@ function pickWinner(pid) {
     setPhase(PHASES.FINISHED, 0);
     broadcastState();
     broadcastHandsToEachPlayer();
-    io.emit("round_result", {
+    emitGame(activeGameId, "round_result", {
       winnerId,
       winnerName: winner.name,
-      submissions: Array.from(submissions.entries()).map(([id, s]) => ({ id, text: s.cardText })),
+      submissions: Array.from(submissions.entries()).map(([id, s]) => ({ id, text: s.cardText, cardTexts: Array.isArray(s.cardTexts) ? s.cardTexts : [s.cardText], packId: s.packId, packName: s.packName })), 
       black: currentBlack ? currentBlack.text : ""
     });
     return true;
@@ -555,10 +794,10 @@ function pickWinner(pid) {
   broadcastState();
   broadcastHandsToEachPlayer();
 
-  io.emit("round_result", {
+  emitGame(activeGameId, "round_result", {
     winnerId,
     winnerName: winner ? winner.name : "",
-    submissions: Array.from(submissions.entries()).map(([id, s]) => ({ id, text: s.cardText })),
+    submissions: Array.from(submissions.entries()).map(([id, s]) => ({ id, text: s.cardText, cardTexts: Array.isArray(s.cardTexts) ? s.cardTexts : [s.cardText], packId: s.packId, packName: s.packName })), 
     black: currentBlack ? currentBlack.text : ""
   });
 
@@ -602,11 +841,9 @@ function onPhaseTimeout(whichPhase) {
 // SERVER
 // =====================================================
 
-
-
-rebuildDecks();
-
 function emitPacksTo(socket) {
+  // Reload pack files so UI counts reflect latest edits without server restart.
+  packsCache = loadAllPacks();
   const packs = packsCache.map(p => ({
     id: p.id,
     name: p.name,
@@ -634,74 +871,202 @@ app.use(express.static(path.join(__dirname, "public")));
 // =====================================================
 const server = http.createServer(app);
 const io = new Server(server);
+
+function normalizeGameId(v) {
+  const id = safeStr(v || "", 24).toLowerCase().replace(/[^a-z0-9_-]/g, "");
+  return id || "main";
+}
+
+withGame("main", () => {
+  rebuildDecks();
+});
+
 io.on("connection", (socket) => {
+  socket.data.gameId = null;
+  socket.data.playerId = null;
+  socket.data.isAdmin = false;
+
   socket.emit("server_hello", {
-    phase,
-    roundNum,
-    settings: currentSettingsPublic(),
-    bots: { enabled: botConfig.enabled, count: botConfig.count }
+    phase: PHASES.LOBBY,
+    roundNum: 0,
+    settings: { ...baseSettings },
+    bots: { enabled: false, count: 0 }
   });
 
   emitPacksTo(socket);
-  sendChatHistory(socket);
-  broadcastState();
-  socket.emit("phase_timer", { phase, endTs: phaseEndTs });
+  socket.emit("games_list", { games: listGamesSummary() });
+
+  socket.on("games_list_request", () => {
+    socket.emit("games_list", { games: listGamesSummary() });
+  });
+
+  socket.on("game_create", (payload) => {
+    const requested = normalizeGameId(payload?.gameId || payload?.name || "");
+    const creatorPlayerId = safeStr(payload?.creatorPlayerId, 64);
+    const creatorName = safeStr(payload?.creatorName, 24);
+    if (gamesById.has(requested)) {
+      socket.emit("error_msg", { msg: "Game id already exists." });
+      return;
+    }
+
+    withGame(requested, () => {
+      rebuildDecks();
+      if (creatorPlayerId) {
+        gameOwnerId = creatorPlayerId;
+        addChat(systemMsg((creatorName || "Host") + " created this game and is reserved as host."));
+      }
+    });
+
+    socket.emit("game_created", { gameId: requested });
+    io.emit("games_list", { games: listGamesSummary() });
+  });
+
+  function runInSocketGame(fn) {
+    return (payload) => {
+      const gid = normalizeGameId(socket.data.gameId);
+      if (!socket.data.gameId) {
+        socket.emit("error_msg", { msg: "Join a game first." });
+        return;
+      }
+      withGame(gid, () => fn(payload, gid));
+      io.emit("games_list", { games: listGamesSummary() });
+    };
+  }
+
+  function leaveGame(gameId) {
+    const gid = normalizeGameId(gameId);
+    withGame(gid, () => {
+      const pid = socketToPlayerId.get(socket.id);
+      socketToPlayerId.delete(socket.id);
+      if (!pid) return;
+      const p = playersById.get(pid);
+      if (!p) return;
+      p.connected = false;
+      p.socketId = null;
+      addChat(systemMsg(`${p.name} left.`));
+      broadcastState();
+      maybeAdvanceToJudging();
+            if (gameOwnerId && pid === gameOwnerId) {
+        gameOwnerId = null;
+        p.isAdmin = false;
+
+        for (const pl of playersById.values()) pl.isAdmin = false;
+
+        const nextHost = Array.from(playersById.values()).find((pl) => !pl.isBot && pl.connected === true && pl.id !== pid);
+        if (nextHost) {
+          gameOwnerId = nextHost.id;
+          nextHost.isAdmin = true;
+          addChat(systemMsg(`${nextHost.name} is now host.`));
+
+          if (nextHost.socketId) {
+            const hostSocket = io.sockets.sockets.get(nextHost.socketId);
+            if (hostSocket) {
+              hostSocket.data.isAdmin = true;
+              hostSocket.emit("admin_status", { isAdmin: true });
+            }
+          }
+        } else {
+          addChat(systemMsg("Host left. No active host right now."));
+        }
+      }
+    });
+    socket.leave(roomOf(gid));
+    maybeCleanupGame(gid);
+  }
 
   socket.on("set_identity", (payload) => {
     const playerId = safeStr(payload?.playerId, 64);
     const name = safeStr(payload?.name, 24);
     const adminKey = safeStr(payload?.adminKey, 64);
+    const gameId = normalizeGameId(payload?.gameId);
 
     if (!playerId || !name) {
       socket.emit("error_msg", { msg: "Missing name or playerId." });
       return;
     }
 
-    // Prevent user from impersonating bot ids
     if (playerId.startsWith(BOT_PREFIX)) {
       socket.emit("error_msg", { msg: "Invalid playerId." });
       return;
     }
 
-    socketToPlayerId.set(socket.id, playerId);
-    socket.data.playerId = playerId;
-
-    let p = playersById.get(playerId);
-    if (!p) {
-      p = {
-        id: playerId,
-        name,
-        score: 0,
-        hand: [],
-        connected: true,
-        socketId: socket.id,
-        isAdmin: adminKey === ADMIN_KEY,
-        isBot: false
-      };
-      playersById.set(playerId, p);
-      addChat(systemMsg(`${p.name} joined.`));
-    } else {
-      const oldName = p.name;
-      p.name = name || p.name;
-      p.connected = true;
-      p.socketId = socket.id;
-      if (adminKey === ADMIN_KEY) p.isAdmin = true;
-      if (oldName !== p.name) addChat(systemMsg(`${oldName} is now ${p.name}.`));
-      else addChat(systemMsg(`${p.name} rejoined.`));
+    if (socket.data.gameId && socket.data.gameId !== gameId) {
+      leaveGame(socket.data.gameId);
+      socket.data.isAdmin = false;
     }
 
-    socket.data.isAdmin = p.isAdmin === true;
+    socket.join(roomOf(gameId));
+    socket.data.gameId = gameId;
 
-    socket.emit("admin_status", { isAdmin: socket.data.isAdmin === true });
-    socket.emit("settings", { settings: currentSettingsPublic(), bots: { enabled: botConfig.enabled, count: botConfig.count } });
-    socket.emit("hand", { hand: p.hand.slice() });
+    withGame(gameId, () => {
+      socketToPlayerId.set(socket.id, playerId);
+      socket.data.playerId = playerId;
 
-    ensureHands();
-    broadcastHandsToEachPlayer();
-    broadcastState();
+      let p = playersById.get(playerId);
+      if (!p) {
+        p = {
+          id: playerId,
+          name,
+          score: 0,
+          hand: [],
+          connected: true,
+          socketId: socket.id,
+          isAdmin: false,
+          isBot: false
+        };
+        playersById.set(playerId, p);
+        addChat(systemMsg(`${p.name} joined.`));
+        emitGame(gameId, "player_joined", { playerId: p.id, name: p.name });
+      } else {
+        const oldName = p.name;
+        p.name = name || p.name;
+        p.connected = true;
+        p.socketId = socket.id;
+        if (oldName !== p.name) addChat(systemMsg(`${oldName} is now ${p.name}.`));
+        else addChat(systemMsg(`${p.name} rejoined.`));
+      }
+
+      const hasAdminKey = adminKey === ADMIN_KEY;
+      if (hasAdminKey) {
+        if (gameOwnerId !== p.id) addChat(systemMsg(`${p.name} claimed host via admin key.`));
+        gameOwnerId = p.id;
+        for (const pl of playersById.values()) pl.isAdmin = false;
+      }
+
+      if (!gameOwnerId) {
+        gameOwnerId = p.id;
+        addChat(systemMsg(`${p.name} became game host.`));
+      }
+
+      p.isAdmin = !!gameOwnerId && p.id === gameOwnerId;
+      socket.data.isAdmin = p.isAdmin === true;
+
+      if ((botConfig.count || 0) === 0 && AUTO_TEST_BOTS > 0) {
+        setBotsEnabled(true, AUTO_TEST_BOTS);
+        addChat(systemMsg("Auto-test bots enabled (" + AUTO_TEST_BOTS + ")."));
+      }
+
+      sendChatHistory(socket);
+      socket.emit("admin_status", { isAdmin: socket.data.isAdmin === true });
+      socket.emit("settings", { settings: currentSettingsPublic(), bots: { enabled: botConfig.enabled, count: botConfig.count } });
+
+      ensureHands();
+      const hand = (p.hand || []).map((text) => {
+        const src = findWhitePackForText(text);
+        return { text, packId: src.packId, packName: src.packName };
+      });
+      socket.emit("hand", { hand });
+      socket.emit("identity_assigned", { playerId, gameId });
+      socket.emit("phase_timer", { phase, endTs: phaseEndTs });
+
+      broadcastHandsToEachPlayer();
+      broadcastState();
+    });
+
+    io.emit("games_list", { games: listGamesSummary() });
   });
 
-  socket.on("chat_send", (payload) => {
+  socket.on("chat_send", runInSocketGame((payload) => {
     const pid = socket.data.playerId;
     const p = pid ? playersById.get(pid) : null;
     if (!p) return;
@@ -710,65 +1075,47 @@ io.on("connection", (socket) => {
     if (!text) return;
 
     addChat(chatMsg(p.name, text));
-  });
+  }));
 
-  // -------------------------
-  // ADMIN SETTINGS
-  // -------------------------
-  socket.on("admin_set_settings", (payload) => {
+  socket.on("admin_set_settings", runInSocketGame((payload) => {
     if (!isAdminSocket(socket)) { socket.emit("error_msg", { msg: "Admin only." }); return; }
 
     const enabledPacks = Array.isArray(payload?.enabledPacks)
       ? payload.enabledPacks.map(x => safeStr(x, 64)).filter(Boolean)
       : settings.enabledPacks;
 
-    const scoreLimit = clampInt(payload?.scoreLimit, 1, 50, settings.scoreLimit);
-
-    const playSeconds = clampInt(payload?.playSeconds, 10, 120, settings.playSeconds);
-    const judgeSeconds = clampInt(payload?.judgeSeconds, 10, 120, settings.judgeSeconds);
-    const resultsSeconds = clampInt(payload?.resultsSeconds, 5, 60, settings.resultsSeconds);
-    const handSize = clampInt(payload?.handSize, 5, 15, settings.handSize);
-
     settings.enabledPacks = enabledPacks;
-    settings.scoreLimit = scoreLimit;
-    settings.playSeconds = playSeconds;
-    settings.judgeSeconds = judgeSeconds;
-    settings.resultsSeconds = resultsSeconds;
-    settings.handSize = handSize;
-
-    saveSettings(settings);
+    settings.scoreLimit = clampInt(payload?.scoreLimit, 1, 50, settings.scoreLimit);
+    settings.playSeconds = clampInt(payload?.playSeconds, 10, 120, settings.playSeconds);
+    settings.judgeSeconds = clampInt(payload?.judgeSeconds, 10, 120, settings.judgeSeconds);
+    settings.resultsSeconds = clampInt(payload?.resultsSeconds, 5, 60, settings.resultsSeconds);
+    settings.handSize = clampInt(payload?.handSize, 5, 15, settings.handSize);
 
     rebuildDecks();
     ensureHands();
     broadcastHandsToEachPlayer();
 
     addChat(systemMsg("Admin updated settings."));
-    io.emit("settings", { settings: currentSettingsPublic(), bots: { enabled: botConfig.enabled, count: botConfig.count } });
+    emitGame(activeGameId, "settings", { settings: currentSettingsPublic(), bots: { enabled: botConfig.enabled, count: botConfig.count } });
     broadcastState();
-  });
+  }));
 
-  // BOTS TOGGLE
-  socket.on("admin_set_bots", (payload) => {
+  socket.on("admin_set_bots", runInSocketGame((payload) => {
     if (!isAdminSocket(socket)) { socket.emit("error_msg", { msg: "Admin only." }); return; }
-
-    const enabled = !!payload?.enabled;
-    const count = clampInt(payload?.count, 0, 12, 0);
-
-    setBotsEnabled(enabled, count);
-
+    setBotsEnabled(!!payload?.enabled, clampInt(payload?.count, 0, 12, 0));
     addChat(systemMsg(`Bots ${botConfig.enabled ? "enabled" : "disabled"} (${botConfig.count}).`));
-    io.emit("settings", { settings: currentSettingsPublic(), bots: { enabled: botConfig.enabled, count: botConfig.count } });
+    emitGame(activeGameId, "settings", { settings: currentSettingsPublic(), bots: { enabled: botConfig.enabled, count: botConfig.count } });
     broadcastState();
-  });
+  }));
 
-  socket.on("admin_clear_chat", () => {
+  socket.on("admin_clear_chat", runInSocketGame(() => {
     if (!isAdminSocket(socket)) { socket.emit("error_msg", { msg: "Admin only." }); return; }
     chatLog.length = 0;
-    io.emit("chat_history", { log: [] });
+    emitGame(activeGameId, "chat_history", { log: [] });
     addChat(systemMsg("Chat cleared by admin."));
-  });
+  }));
 
-  socket.on("admin_kick", (payload) => {
+  socket.on("admin_kick", runInSocketGame((payload) => {
     if (!isAdminSocket(socket)) { socket.emit("error_msg", { msg: "Admin only." }); return; }
 
     const targetId = safeStr(payload?.playerId, 64);
@@ -776,6 +1123,8 @@ io.on("connection", (socket) => {
 
     const p = playersById.get(targetId);
     if (!p) return;
+
+    if (gameOwnerId && targetId === gameOwnerId) gameOwnerId = null;
 
     if (p.isBot) {
       playersById.delete(targetId);
@@ -795,17 +1144,15 @@ io.on("connection", (socket) => {
     playersById.delete(targetId);
     addChat(systemMsg(`${p.name} was kicked by admin.`));
     broadcastState();
-  });
+  }));
 
-  socket.on("admin_reset_game", () => {
+  socket.on("admin_reset_game", runInSocketGame(() => {
     if (!isAdminSocket(socket)) { socket.emit("error_msg", { msg: "Admin only." }); return; }
 
     clearTimers();
-
     phase = PHASES.LOBBY;
     phaseBeforePause = PHASES.LOBBY;
     phaseEndTs = 0;
-
     roundNum = 0;
     judgeId = null;
     currentBlack = null;
@@ -823,14 +1170,13 @@ io.on("connection", (socket) => {
 
     addChat(systemMsg("Game reset by admin."));
     broadcastState();
-    io.emit("phase_timer", { phase, endTs: phaseEndTs });
-  });
+    emitGame(activeGameId, "phase_timer", { phase, endTs: phaseEndTs });
+  }));
 
-  socket.on("admin_pause_toggle", () => {
+  socket.on("admin_pause_toggle", runInSocketGame(() => {
     if (!isAdminSocket(socket)) { socket.emit("error_msg", { msg: "Admin only." }); return; }
 
     if (phase === PHASES.PAUSED) {
-      // resume with fresh full duration
       const back = phaseBeforePause;
       if (back === PHASES.PLAY) setPhase(PHASES.PLAY, settings.playSeconds);
       else if (back === PHASES.JUDGE) setPhase(PHASES.JUDGE, settings.judgeSeconds);
@@ -846,16 +1192,26 @@ io.on("connection", (socket) => {
     clearTimers();
     phase = PHASES.PAUSED;
     phaseEndTs = 0;
-    io.emit("phase_timer", { phase, endTs: 0 });
+    emitGame(activeGameId, "phase_timer", { phase, endTs: 0 });
     addChat(systemMsg("Game paused by admin."));
     broadcastState();
-  });
+  }));
 
-  // -------------------------
-  // GAME CONTROL (ADMIN ONLY)
-  // -------------------------
-  socket.on("admin_start_game", () => {
-    if (!isAdminSocket(socket)) { socket.emit("error_msg", { msg: "Admin only." }); return; }
+  socket.on("admin_start_game", runInSocketGame(() => {
+    const pid = socket.data.playerId;
+    const p = pid ? playersById.get(pid) : null;
+    if (!p) { socket.emit("error_msg", { msg: "Join first." }); return; }
+
+    if (!gameOwnerId) {
+      gameOwnerId = pid;
+      p.isAdmin = true;
+      socket.data.isAdmin = true;
+      addChat(systemMsg(`${p.name} became game host.`));
+      socket.emit("admin_status", { isAdmin: true });
+      broadcastState();
+    }
+
+    if (!isAdminSocket(socket)) { socket.emit("error_msg", { msg: "Only host can start." }); return; }
 
     if (phase !== PHASES.LOBBY && phase !== PHASES.FINISHED) {
       socket.emit("error_msg", { msg: "Game already running." });
@@ -866,38 +1222,58 @@ io.on("connection", (socket) => {
     ensureHands();
     broadcastHandsToEachPlayer();
 
-    addChat(systemMsg("Game started by admin."));
+    addChat(systemMsg("Game started by host."));
     startNewRound();
-  });
+  }));
 
-  socket.on("admin_next_round", () => {
+  socket.on("admin_next_round", runInSocketGame(() => {
     if (!isAdminSocket(socket)) { socket.emit("error_msg", { msg: "Admin only." }); return; }
     if (phase === PHASES.PAUSED) { socket.emit("error_msg", { msg: "Cannot next round while paused." }); return; }
-
     addChat(systemMsg("Admin forced next round."));
     startNewRound();
-  });
+  }));
 
-  // -------------------------
-  // PLAYER ACTIONS
-  // -------------------------
-  socket.on("submit_card", (payload) => {
+  socket.on("submit_card", runInSocketGame((payload) => {
     const pid = socket.data.playerId;
     const p = pid ? playersById.get(pid) : null;
     if (!p) return;
 
     if (phase !== PHASES.PLAY) { socket.emit("error_msg", { msg: "Not in play phase." }); return; }
     if (pid === judgeId) { socket.emit("error_msg", { msg: "Judge cannot submit." }); return; }
-
-    const text = safeStr(payload?.text, 220);
-    if (!text) return;
-
-    const idx = p.hand.indexOf(text);
-    if (idx < 0) { socket.emit("error_msg", { msg: "Card not in hand." }); return; }
     if (submissions.has(pid)) { socket.emit("error_msg", { msg: "Already submitted." }); return; }
 
-    p.hand.splice(idx, 1);
-    submissions.set(pid, { cardText: text, fromAuto: false });
+    const pickCount = currentBlack ? (currentBlack.pick || blackPickCount(currentBlack.text)) : 1;
+
+    let picks = [];
+    if (Array.isArray(payload?.texts)) {
+      picks = payload.texts.map((t) => safeStr(t, 220)).filter(Boolean);
+    } else {
+      const single = safeStr(payload?.text, 220);
+      if (single) picks = [single];
+    }
+
+    if (picks.length !== pickCount) {
+      socket.emit("error_msg", { msg: `This card needs ${pickCount} white card${pickCount > 1 ? "s" : ""}.` });
+      return;
+    }
+
+    const nextHand = Array.isArray(p.hand) ? p.hand.slice() : [];
+    for (const text of picks) {
+      const idx = nextHand.indexOf(text);
+      if (idx < 0) { socket.emit("error_msg", { msg: "Card not in hand." }); return; }
+      nextHand.splice(idx, 1);
+    }
+
+    p.hand = nextHand;
+    for (const text of picks) addWhiteToDiscard(text);
+    const src = findWhitePackForText(picks[0]);
+    submissions.set(pid, {
+      cardText: picks.join(" / "),
+      cardTexts: picks.slice(),
+      packId: src.packId,
+      packName: src.packName,
+      fromAuto: false
+    });
 
     addChat(systemMsg(`${p.name} submitted.`));
 
@@ -905,19 +1281,12 @@ io.on("connection", (socket) => {
     broadcastHandsToEachPlayer();
     broadcastState();
 
-    // bots will also submit if needed
-    setTimeout(botSubmitIfNeeded, 350);
+    { const gid = activeGameId; setTimeout(() => withGame(gid, () => botSubmitIfNeeded()), 350); }
 
-    // if all non-judge players submitted, advance
-    const nonJudge = Array.from(playersById.values()).filter(x => x.id !== judgeId);
-    const needed = nonJudge.length;
-    if (needed > 0 && submissions.size >= needed) {
-      addChat(systemMsg("All submissions in. Moving to judging."));
-      finishPlayPhaseToJudging();
-    }
-  });
+    maybeAdvanceToJudging();
+  }));
 
-  socket.on("judge_pick", (payload) => {
+  socket.on("judge_pick", runInSocketGame((payload) => {
     const pid = socket.data.playerId;
     const p = pid ? playersById.get(pid) : null;
     if (!p) return;
@@ -930,38 +1299,61 @@ io.on("connection", (socket) => {
 
     const ok = pickWinner(winnerPick);
     if (!ok) socket.emit("error_msg", { msg: "Invalid winner pick." });
-  });
+  }));
 
-  socket.on("request_state", () => {
+  socket.on("request_state", runInSocketGame(() => {
     broadcastState();
     socket.emit("settings", { settings: currentSettingsPublic(), bots: { enabled: botConfig.enabled, count: botConfig.count } });
     socket.emit("phase_timer", { phase, endTs: phaseEndTs });
 
     const pid = socket.data.playerId;
     const p = pid ? playersById.get(pid) : null;
-    if (p) socket.emit("hand", { hand: p.hand.slice() });
-  });
+    if (p) {
+      const hand = (p.hand || []).map((text) => {
+        const src = findWhitePackForText(text);
+        return { text, packId: src.packId, packName: src.packName };
+      });
+      socket.emit("hand", { hand });
+    }
+  }));
 
   socket.on("disconnect", () => {
-    const pid = socketToPlayerId.get(socket.id);
-    socketToPlayerId.delete(socket.id);
-
-    if (!pid) return;
-    const p = playersById.get(pid);
-    if (!p) return;
-
-    p.connected = false;
-    p.socketId = null;
-
-    addChat(systemMsg(`${p.name} left.`));
-    broadcastState();
+    if (!socket.data.gameId) return;
+    leaveGame(socket.data.gameId);
+    io.emit("games_list", { games: listGamesSummary() });
   });
 });
-
 // =====================================================
 // START
 // =====================================================
 server.listen(PORT, HOST, () => {
-  console.log('XyzzyModern running at http://' + HOST + ':' + PORT + '/');
+  console.log('Terrible People running at http://' + HOST + ':' + PORT + '/');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

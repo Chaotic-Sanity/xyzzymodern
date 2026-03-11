@@ -1,0 +1,367 @@
+{
+  "name": "Dating App Hell",
+  "blackCards": [
+    {
+      "text": "What ruined The first date? _____"
+    },
+    {
+      "text": "What ruined The dating app? _____"
+    },
+    {
+      "text": "What ruined The situationship? _____"
+    },
+    {
+      "text": "What ruined The late-night text thread? _____"
+    },
+    {
+      "text": "What ruined The coffee date? _____"
+    },
+    {
+      "text": "What ruined The hookup? _____"
+    },
+    {
+      "text": "What ruined The breakup call? _____"
+    },
+    {
+      "text": "What ruined The ghosting arc? _____"
+    },
+    {
+      "text": "What ruined The rebound phase? _____"
+    },
+    {
+      "text": "What ruined The red-flag parade? _____"
+    },
+    {
+      "text": "Who brought _____ to The first date?"
+    },
+    {
+      "text": "Who brought _____ to The dating app?"
+    },
+    {
+      "text": "Who brought _____ to The situationship?"
+    },
+    {
+      "text": "Who brought _____ to The late-night text thread?"
+    },
+    {
+      "text": "Who brought _____ to The coffee date?"
+    },
+    {
+      "text": "Who brought _____ to The hookup?"
+    },
+    {
+      "text": "Who brought _____ to The breakup call?"
+    },
+    {
+      "text": "Who brought _____ to The ghosting arc?"
+    },
+    {
+      "text": "Who brought _____ to The rebound phase?"
+    },
+    {
+      "text": "Who brought _____ to The red-flag parade?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The first date?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The dating app?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The situationship?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The late-night text thread?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The coffee date?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The hookup?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The breakup call?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The ghosting arc?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The rebound phase?"
+    },
+    {
+      "text": "Why is everyone talking about _____ at The red-flag parade?"
+    },
+    {
+      "text": "The worst part of The first date was _____."
+    },
+    {
+      "text": "The worst part of The dating app was _____."
+    },
+    {
+      "text": "The worst part of The situationship was _____."
+    },
+    {
+      "text": "The worst part of The late-night text thread was _____."
+    },
+    {
+      "text": "The worst part of The coffee date was _____."
+    },
+    {
+      "text": "The worst part of The hookup was _____."
+    },
+    {
+      "text": "The worst part of The breakup call was _____."
+    },
+    {
+      "text": "The worst part of The ghosting arc was _____."
+    },
+    {
+      "text": "The worst part of The rebound phase was _____."
+    },
+    {
+      "text": "The worst part of The red-flag parade was _____."
+    },
+    {
+      "text": "No one was ready for _____ at The first date."
+    },
+    {
+      "text": "No one was ready for _____ at The dating app."
+    },
+    {
+      "text": "No one was ready for _____ at The situationship."
+    },
+    {
+      "text": "No one was ready for _____ at The late-night text thread."
+    },
+    {
+      "text": "No one was ready for _____ at The coffee date."
+    },
+    {
+      "text": "No one was ready for _____ at The hookup."
+    },
+    {
+      "text": "No one was ready for _____ at The breakup call."
+    },
+    {
+      "text": "No one was ready for _____ at The ghosting arc."
+    },
+    {
+      "text": "No one was ready for _____ at The rebound phase."
+    },
+    {
+      "text": "No one was ready for _____ at The red-flag parade."
+    },
+    {
+      "text": "The first date got weird because of _____."
+    },
+    {
+      "text": "The dating app got weird because of _____."
+    },
+    {
+      "text": "The situationship got weird because of _____."
+    },
+    {
+      "text": "The late-night text thread got weird because of _____."
+    },
+    {
+      "text": "The coffee date got weird because of _____."
+    },
+    {
+      "text": "The hookup got weird because of _____."
+    },
+    {
+      "text": "The breakup call got weird because of _____."
+    },
+    {
+      "text": "The ghosting arc got weird because of _____."
+    },
+    {
+      "text": "The rebound phase got weird because of _____."
+    },
+    {
+      "text": "The red-flag parade got weird because of _____."
+    },
+    {
+      "text": "The big surprise at The first date? _____"
+    },
+    {
+      "text": "The big surprise at The dating app? _____"
+    },
+    {
+      "text": "The big surprise at The situationship? _____"
+    },
+    {
+      "text": "The big surprise at The late-night text thread? _____"
+    },
+    {
+      "text": "The big surprise at The coffee date? _____"
+    },
+    {
+      "text": "The big surprise at The hookup? _____"
+    },
+    {
+      "text": "The big surprise at The breakup call? _____"
+    },
+    {
+      "text": "The big surprise at The ghosting arc? _____"
+    },
+    {
+      "text": "The big surprise at The rebound phase? _____"
+    },
+    {
+      "text": "The big surprise at The red-flag parade? _____"
+    },
+    {
+      "text": "The first date could only be explained by _____."
+    },
+    {
+      "text": "The dating app could only be explained by _____."
+    },
+    {
+      "text": "The situationship could only be explained by _____."
+    },
+    {
+      "text": "The late-night text thread could only be explained by _____."
+    },
+    {
+      "text": "The coffee date could only be explained by _____."
+    },
+    {
+      "text": "The hookup could only be explained by _____."
+    },
+    {
+      "text": "The breakup call could only be explained by _____."
+    },
+    {
+      "text": "The ghosting arc could only be explained by _____."
+    },
+    {
+      "text": "The rebound phase could only be explained by _____."
+    },
+    {
+      "text": "The red-flag parade could only be explained by _____."
+    },
+    {
+      "text": "What made The first date such a disaster? _____"
+    },
+    {
+      "text": "What made The dating app such a disaster? _____"
+    },
+    {
+      "text": "What made The situationship such a disaster? _____"
+    },
+    {
+      "text": "What made The late-night text thread such a disaster? _____"
+    },
+    {
+      "text": "What made The coffee date such a disaster? _____"
+    },
+    {
+      "text": "What made The hookup such a disaster? _____"
+    },
+    {
+      "text": "What made The breakup call such a disaster? _____"
+    },
+    {
+      "text": "What made The ghosting arc such a disaster? _____"
+    },
+    {
+      "text": "What made The rebound phase such a disaster? _____"
+    },
+    {
+      "text": "What made The red-flag parade such a disaster? _____"
+    },
+    {
+      "text": "The one thing The first date needed was _____."
+    },
+    {
+      "text": "The one thing The dating app needed was _____."
+    },
+    {
+      "text": "The one thing The situationship needed was _____."
+    },
+    {
+      "text": "The one thing The late-night text thread needed was _____."
+    },
+    {
+      "text": "The one thing The coffee date needed was _____."
+    },
+    {
+      "text": "The one thing The hookup needed was _____."
+    },
+    {
+      "text": "The one thing The breakup call needed was _____."
+    },
+    {
+      "text": "The one thing The ghosting arc needed was _____."
+    },
+    {
+      "text": "The one thing The rebound phase needed was _____."
+    },
+    {
+      "text": "The one thing The red-flag parade needed was _____."
+    }
+  ],
+  "whiteCards": [
+    "Clingy ghosting ritual",
+    "Your emotionally unavailable crush future-faking",
+    "A suspicious second phone",
+    "A screenshot of the \"still healing\" ex",
+    "Ego spiral",
+    "Ghosting ritual",
+    "Your emotionally unavailable crush",
+    "A cursed trend featuring catfish confession",
+    "Defensive voice notes from a chaotic first date",
+    "A deeply unserious plan involving a half-read self-help book",
+    "Your emotionally unavailable crush pretending this is normal",
+    "Delusional love-bombing crash in a cheap wine bar",
+    "The \"still healing\" ex doing rage swiping",
+    "A typo-filled apology text",
+    "A screenshot of a shirtless philosopher",
+    "Red flag parade",
+    "Love-bombing crash",
+    "The \"still healing\" ex",
+    "A cursed trend featuring ghosting ritual",
+    "Reckless voice notes from their ex's suburb",
+    "A deeply unserious plan involving a suspicious second phone",
+    "The \"still healing\" ex pretending this is normal",
+    "Defensive ego spiral in a chaotic first date",
+    "A shirtless philosopher doing breadcrumbing",
+    "A ring light selfie",
+    "A screenshot of a walking red flag",
+    "Catfish confession",
+    "A shirtless philosopher blaming \"I'm bad",
+    "A cursed trend featuring love-bombing crash",
+    "Horny voice notes from the Uber home",
+    "A deeply unserious plan involving a typo-filled apology text",
+    "A shirtless philosopher pretending this is normal",
+    "Reckless red flag parade in their ex's suburb",
+    "A walking red flag doing panic flirting",
+    "A playlist called",
+    "A screenshot of a commitment-phobic DJ",
+    "A walking red flag",
+    "A cursed trend featuring ego spiral",
+    "Clingy voice notes from a rooftop bar",
+    "A deeply unserious plan involving a ring light selfie",
+    "A walking red flag pretending this is normal",
+    "Horny catfish confession in the Uber home",
+    "A commitment-phobic DJ doing attention farming",
+    "A half-read self-help book",
+    "A screenshot of your emotionally unavailable crush",
+    "A commitment-phobic DJ",
+    "A cursed trend featuring red flag parade",
+    "Delusional voice notes from a cheap wine bar",
+    "A deeply unserious plan involving a playlist called",
+    "A commitment-phobic DJ pretending this is normal",
+    "A drunk text drafted in Notes",
+    "A \"totally fine\" emotional spiral",
+    "A voice note nobody asked for",
+    "An apology with no accountability",
+    "A soft launch gone violently wrong",
+    "A situationship exit interview",
+    "A cursed meme",
+    "A panic delete that made it worse",
+    "A mirror selfie and false confidence",
+    "A dramatic unfollow campaign"
+  ]
+}

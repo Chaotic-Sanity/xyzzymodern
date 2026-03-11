@@ -3,71 +3,153 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>XyzzyModern - Lobby</title>
+  <title>Terrible People - Lobby</title>
   <link rel="stylesheet" href="/game.css" />
 </head>
-<body class="theme">
-  <header class="topbar">
-    <div class="brand">
-      <div class="logo">XM</div>
-      <div class="titles">
-        <div class="h1">XyzzyModern</div>
-        <div class="h2">Lobby</div>
-      </div>
-    </div>
-    <div class="right">
-      <a class="link" href="/">Full UI</a>
-      <span class="dot">•</span>
-      <a class="link" href="/game.html">Minimal UI</a>
-      <span class="dot">•</span>
-      <a class="link" href="/packs.html">Packs</a>
-    </div>
-  </header>
-
+<body class="theme lobbyPage">
   <main class="lobbyWrap">
-    <section class="card">
-      <div class="cardTitle">Join Game</div>
+    <section class="card lobbyCard lobbyCardBack">
+      <div class="lobbyCardInner">
 
-      <label class="label">Name</label>
-      <input class="input" id="nameInput" maxlength="24" placeholder="e.g., Kyle" />
+        <label class="label">Name</label>
+        <input class="input" id="nameInput" maxlength="24" placeholder="e.g., kiki" />
 
-      <label class="label">Admin key (optional)</label>
-      <input class="input" id="adminKeyInput" maxlength="64" placeholder="kmadmin" />
+        <label class="label">Pick a game</label>
+        <select class="input" id="gameSelect"></select>
 
-      <div class="rowGap">
-        <button class="btn" id="joinFullBtn">Join Full UI</button>
-        <button class="btn ghost" id="joinMinBtn">Join Minimal UI</button>
+        <div class="rowGap createRow">
+          <input class="input" id="newGameInput" maxlength="24" placeholder="new game id (e.g. table-2)" />
+          <button class="btn ghost lobbyBtn" id="createGameBtn">Create</button>
+        </div>
+
+        <div class="rowGap lobbyActions">
+          <button class="btn lobbyBtn" id="joinFullBtn">Join</button>
+          <button class="btn ghost lobbyBtn iconBtn" id="openSettingsBtn" aria-label="Settings" title="Settings">⚙</button>
+          <button class="btn lobbyBtn" id="quickTestBtn">Quick Test Room</button>
+        </div>
+
+        <div class="smallHint" id="hint">Create a room and you will become the host/admin for that game.</div>
       </div>
-
-      <div class="smallHint" id="hint">Tip: the Card CZAR is the judge (CZAR badge). Leader gets the crown.</div>
     </section>
   </main>
 
+  <script src="/socket.io/socket.io.js"></script>
   <script>
     (function(){
+      const socket = io();
       const nameInput = document.getElementById("nameInput");
-      const adminKeyInput = document.getElementById("adminKeyInput");
+      const gameSelect = document.getElementById("gameSelect");
+      const newGameInput = document.getElementById("newGameInput");
+      const hint = document.getElementById("hint");
+      let quickJoinGameId = "";
 
-      const savedName = localStorage.getItem("xm_name") || "";
-      const savedKey = localStorage.getItem("xm_admin_key") || "";
-      nameInput.value = savedName;
-      adminKeyInput.value = savedKey;
+      const presetGame = (new URLSearchParams(window.location.search).get("game") || "").trim().toLowerCase();
+      if (presetGame) localStorage.setItem("xm_game_id", presetGame);
 
-      function save(){
-        localStorage.setItem("xm_name", (nameInput.value || "").trim().slice(0,24));
-        localStorage.setItem("xm_admin_key", (adminKeyInput.value || "").trim().slice(0,64));
+      nameInput.value = localStorage.getItem("xm_name") || "";
+
+      function getOrCreatePlayerId(){
+        let playerId = localStorage.getItem("xm_player_id");
+        if (!playerId) {
+          playerId = "p_" + Math.random().toString(16).slice(2) + "_" + Math.random().toString(16).slice(2);
+          localStorage.setItem("xm_player_id", playerId);
+        }
+        return playerId;
       }
 
-      document.getElementById("joinFullBtn").addEventListener("click", () => {
-        save();
-        location.href = "/";
+      function saveIdentity(){
+        const name = (nameInput.value || "").trim().slice(0,24);
+        if (!name) return false;
+        localStorage.setItem("xm_name", name);
+        getOrCreatePlayerId();
+        return true;
+      }
+
+      function selectedGame(){
+        const id = (gameSelect.value || "").trim().toLowerCase();
+        return id || "main";
+      }
+
+      function join(path){
+        if (!saveIdentity()) { hint.textContent = "Enter a name first."; return; }
+        localStorage.setItem("xm_game_id", selectedGame());
+        window.location.href = path;
+      }
+
+      function createGame(gameId){
+        if (!saveIdentity()) { hint.textContent = "Enter a name first."; return false; }
+        const desired = (gameId || newGameInput.value || "").trim().toLowerCase();
+        socket.emit("game_create", {
+          gameId: desired,
+          creatorPlayerId: getOrCreatePlayerId(),
+          creatorName: localStorage.getItem("xm_name") || "Player"
+        });
+        return true;
+      }
+
+      function renderGames(games){
+        const prev = presetGame || localStorage.getItem("xm_game_id") || "main";
+        gameSelect.innerHTML = "";
+
+        const list = Array.isArray(games) && games.length ? games : [{ id:"main", players:0, phase:"lobby", roundNum:0 }];
+        for (const g of list) {
+          const opt = document.createElement("option");
+          const p = Number(g.players || 0);
+          opt.value = g.id;
+          opt.textContent = `${g.id}  (${p} players, ${g.phase || "lobby"})`;
+          gameSelect.appendChild(opt);
+        }
+
+        const hasPrev = list.some(g => g.id === prev);
+        gameSelect.value = hasPrev ? prev : list[0].id;
+      }
+
+      document.getElementById("createGameBtn").addEventListener("click", () => {
+        createGame();
       });
 
-      document.getElementById("joinMinBtn").addEventListener("click", () => {
-        save();
-        location.href = "/game.html";
+      document.getElementById("joinFullBtn").addEventListener("click", () => join("/index.html"));
+
+      document.getElementById("openSettingsBtn").addEventListener("click", () => {
+        saveIdentity();
+        localStorage.setItem("xm_game_id", selectedGame());
+        window.location.href = "/packs.html";
       });
+      document.getElementById("quickTestBtn").addEventListener("click", () => {
+        const autoName = (nameInput.value || "").trim() || ("Tester-" + Math.floor(Math.random() * 900 + 100));
+        nameInput.value = autoName;
+        localStorage.setItem("xm_name", autoName.slice(0,24));
+        getOrCreatePlayerId();
+
+        const gid = ("test-" + Math.random().toString(36).slice(2, 8)).toLowerCase();
+        quickJoinGameId = gid;
+        localStorage.setItem("xm_game_id", gid);
+        createGame(gid);
+      });
+
+      socket.on("games_list", ({ games }) => {
+        renderGames(games);
+      });
+
+      socket.on("game_created", ({ gameId }) => {
+        if (gameId) {
+          localStorage.setItem("xm_game_id", gameId);
+          newGameInput.value = gameId;
+          hint.textContent = `Created game: ${gameId}. You are the host for this room.`;
+          if (quickJoinGameId && gameId === quickJoinGameId) {
+            window.location.href = "/index.html";
+          }
+        }
+      });
+
+      socket.on("error_msg", ({ msg }) => {
+        hint.textContent = msg || "Unable to create game.";
+      });
+
+      socket.emit("games_list_request");
     })();
   </script>
 </body>
 </html>
+
+

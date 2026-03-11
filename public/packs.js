@@ -78,13 +78,16 @@ function setHint(text, bad){
 }
 
 function sendIdentityAdminOnly(){
-  const playerId = localStorage.getItem("xm_player_id") || ("p_" + Math.random().toString(16).slice(2));
+  let playerId = sessionStorage.getItem("xm_player_id") || localStorage.getItem("xm_player_id");
+  if (!playerId) playerId = "p_" + Math.random().toString(16).slice(2);
+  sessionStorage.setItem("xm_player_id", playerId);
   localStorage.setItem("xm_player_id", playerId);
 
   const name = (localStorage.getItem("xm_name") || "Admin").trim().slice(0,24);
   const adminKey = (localStorage.getItem("xm_admin_key") || "").trim().slice(0,64);
+  const gameId = (localStorage.getItem("xm_game_id") || "main").trim().toLowerCase();
 
-  socket.emit("set_identity", { playerId, name, adminKey });
+  socket.emit("set_identity", { gameId, playerId, name, adminKey });
 }
 
 function readBotsUI(){
@@ -165,3 +168,4 @@ socket.on("connect", () => {
   sendIdentityAdminOnly();
   socket.emit("request_state");
 });
+

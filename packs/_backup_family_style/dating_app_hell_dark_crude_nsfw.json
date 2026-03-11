@@ -1,0 +1,377 @@
+{
+  "name": "Dating App Hell",
+  "blackCards": [
+    {
+      "text": "At the the first date, someone blamed ___."
+    },
+    {
+      "text": "At the the dating app, someone blamed ___."
+    },
+    {
+      "text": "At the the situationship, someone blamed ___."
+    },
+    {
+      "text": "At the the late-night text thread, someone blamed ___."
+    },
+    {
+      "text": "At the the coffee date, someone blamed ___."
+    },
+    {
+      "text": "At the the hookup, someone blamed ___."
+    },
+    {
+      "text": "At the the breakup call, someone blamed ___."
+    },
+    {
+      "text": "At the the ghosting arc, someone blamed ___."
+    },
+    {
+      "text": "At the the rebound phase, someone blamed ___."
+    },
+    {
+      "text": "At the the red-flag parade, someone blamed ___."
+    },
+    {
+      "text": "During the first date, the group chat demanded ___."
+    },
+    {
+      "text": "During the dating app, the group chat demanded ___."
+    },
+    {
+      "text": "During the situationship, the group chat demanded ___."
+    },
+    {
+      "text": "During the late-night text thread, the group chat demanded ___."
+    },
+    {
+      "text": "During the coffee date, the group chat demanded ___."
+    },
+    {
+      "text": "During the hookup, the group chat demanded ___."
+    },
+    {
+      "text": "During the breakup call, the group chat demanded ___."
+    },
+    {
+      "text": "During the ghosting arc, the group chat demanded ___."
+    },
+    {
+      "text": "During the rebound phase, the group chat demanded ___."
+    },
+    {
+      "text": "During the red-flag parade, the group chat demanded ___."
+    },
+    {
+      "text": "Right after the first date, management quietly approved ___."
+    },
+    {
+      "text": "Right after the dating app, management quietly approved ___."
+    },
+    {
+      "text": "Right after the situationship, management quietly approved ___."
+    },
+    {
+      "text": "Right after the late-night text thread, management quietly approved ___."
+    },
+    {
+      "text": "Right after the coffee date, management quietly approved ___."
+    },
+    {
+      "text": "Right after the hookup, management quietly approved ___."
+    },
+    {
+      "text": "Right after the breakup call, management quietly approved ___."
+    },
+    {
+      "text": "Right after the ghosting arc, management quietly approved ___."
+    },
+    {
+      "text": "Right after the rebound phase, management quietly approved ___."
+    },
+    {
+      "text": "Right after the red-flag parade, management quietly approved ___."
+    },
+    {
+      "text": "Minutes before the first date, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the dating app, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the situationship, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the late-night text thread, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the coffee date, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the hookup, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the breakup call, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the ghosting arc, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the rebound phase, security had to confiscate ___."
+    },
+    {
+      "text": "Minutes before the red-flag parade, security had to confiscate ___."
+    },
+    {
+      "text": "The only thing that saved the first date, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the dating app, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the situationship, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the late-night text thread, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the coffee date, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the hookup, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the breakup call, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the ghosting arc, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the rebound phase, my only defense was ___."
+    },
+    {
+      "text": "The only thing that saved the red-flag parade, my only defense was ___."
+    },
+    {
+      "text": "The first sign of trouble at the first date, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the dating app, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the situationship, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the late-night text thread, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the coffee date, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the hookup, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the breakup call, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the ghosting arc, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the rebound phase, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "The first sign of trouble at the red-flag parade, HR called it \"a misunderstanding\" involving ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the first date, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the dating app, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the situationship, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the late-night text thread, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the coffee date, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the hookup, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the breakup call, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the ghosting arc, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the rebound phase, the loudest person brought ___."
+    },
+    {
+      "text": "Everyone pretended not to notice at the red-flag parade, the loudest person brought ___."
+    },
+    {
+      "text": "The official excuse at the first date, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the dating app, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the situationship, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the late-night text thread, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the coffee date, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the hookup, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the breakup call, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the ghosting arc, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the rebound phase, the apology somehow included ___."
+    },
+    {
+      "text": "The official excuse at the red-flag parade, the apology somehow included ___."
+    },
+    {
+      "text": "The rumor spreading through the first date, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the dating app, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the situationship, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the late-night text thread, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the coffee date, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the hookup, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the breakup call, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the ghosting arc, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the rebound phase, the winner celebrated with ___."
+    },
+    {
+      "text": "The rumor spreading through the red-flag parade, the winner celebrated with ___."
+    },
+    {
+      "text": "The final straw at the first date, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the dating app, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the situationship, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the late-night text thread, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the coffee date, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the hookup, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the breakup call, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the ghosting arc, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the rebound phase, the disaster was traced back to ___."
+    },
+    {
+      "text": "The final straw at the red-flag parade, the disaster was traced back to ___."
+    }
+  ],
+  "whiteCards": [
+    "clingy ghosting ritual in a rooftop bar",
+    "your emotionally unavailable crush doing future-faking with a ring light selfie",
+    "an emergency stash of a suspicious second phone",
+    "a screenshot of the \"still healing\" ex at the Uber home",
+    "ego spiral and a suspicious amount of a typo-filled apology text",
+    "a fake smile hiding ghosting ritual",
+    "your emotionally unavailable crush blaming \"my phone died\"",
+    "a midnight decision powered by a suspicious second phone",
+    "a cursed trend featuring catfish confession",
+    "defensive voice notes from a chaotic first date",
+    "a deeply unserious plan involving a half-read self-help book",
+    "your emotionally unavailable crush pretending this is normal",
+    "delusional love-bombing crash in a cheap wine bar",
+    "the \"still healing\" ex doing rage swiping with a playlist called \"situationship\"",
+    "an emergency stash of a typo-filled apology text",
+    "a screenshot of a shirtless philosopher at a rooftop bar",
+    "red flag parade and a suspicious amount of a ring light selfie",
+    "a fake smile hiding love-bombing crash",
+    "the \"still healing\" ex blaming \"I fell asleep\"",
+    "a midnight decision powered by a typo-filled apology text",
+    "a cursed trend featuring ghosting ritual",
+    "reckless voice notes from their ex's suburb",
+    "a deeply unserious plan involving a suspicious second phone",
+    "the \"still healing\" ex pretending this is normal",
+    "defensive ego spiral in a chaotic first date",
+    "a shirtless philosopher doing breadcrumbing with a half-read self-help book",
+    "an emergency stash of a ring light selfie",
+    "a screenshot of a walking red flag at a cheap wine bar",
+    "catfish confession and a suspicious amount of a playlist called \"situationship\"",
+    "a fake smile hiding ego spiral",
+    "a shirtless philosopher blaming \"I'm bad at texting\"",
+    "a midnight decision powered by a ring light selfie",
+    "a cursed trend featuring love-bombing crash",
+    "horny voice notes from the Uber home",
+    "a deeply unserious plan involving a typo-filled apology text",
+    "a shirtless philosopher pretending this is normal",
+    "reckless red flag parade in their ex's suburb",
+    "a walking red flag doing panic flirting with a suspicious second phone",
+    "an emergency stash of a playlist called \"situationship\"",
+    "a screenshot of a commitment-phobic DJ at a chaotic first date",
+    "ghosting ritual and a suspicious amount of a half-read self-help book",
+    "a fake smile hiding red flag parade",
+    "a walking red flag blaming \"work is crazy\"",
+    "a midnight decision powered by a playlist called \"situationship\"",
+    "a cursed trend featuring ego spiral",
+    "clingy voice notes from a rooftop bar",
+    "a deeply unserious plan involving a ring light selfie",
+    "a walking red flag pretending this is normal",
+    "horny catfish confession in the Uber home",
+    "a commitment-phobic DJ doing attention farming with a typo-filled apology text",
+    "an emergency stash of a half-read self-help book",
+    "a screenshot of your emotionally unavailable crush at their ex's suburb",
+    "love-bombing crash and a suspicious amount of a suspicious second phone",
+    "a fake smile hiding catfish confession",
+    "a commitment-phobic DJ blaming \"let's keep it casual\"",
+    "a midnight decision powered by a half-read self-help book",
+    "a cursed trend featuring red flag parade",
+    "delusional voice notes from a cheap wine bar",
+    "a deeply unserious plan involving a playlist called \"situationship\"",
+    "a commitment-phobic DJ pretending this is normal",
+    "a drunk text drafted in Notes",
+    "a \"totally fine\" emotional spiral",
+    "a voice note nobody asked for",
+    "an apology with no accountability",
+    "a soft launch gone violently wrong",
+    "a situationship exit interview",
+    "a cursed meme at the worst time",
+    "a panic delete that made it worse",
+    "a mirror selfie and false confidence",
+    "a dramatic unfollow campaign"
+  ]
+}

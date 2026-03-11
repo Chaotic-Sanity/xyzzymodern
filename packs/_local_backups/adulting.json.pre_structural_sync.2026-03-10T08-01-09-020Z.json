@@ -1,0 +1,380 @@
+{
+  "name": "Adulting",
+  "blackCards": [
+    {
+      "text": "The doctor looked at me and said, \"What the hell is ___?\""
+    },
+    {
+      "text": "My adult life peaked when I discovered ___."
+    },
+    {
+      "text": "Nothing says romance like ___ at 2am."
+    },
+    {
+      "text": "The worst part of the walk of shame was ___."
+    },
+    {
+      "text": "My group chat went feral after I admitted to ___."
+    },
+    {
+      "text": "The only honest relationship status is ___."
+    },
+    {
+      "text": "The hotel charged us extra for ___."
+    },
+    {
+      "text": "The night was going fine until ___ showed up."
+    },
+    {
+      "text": "My toxic trait is pretending ___ is normal."
+    },
+    {
+      "text": "The most cursed text I sent was about ___."
+    },
+    {
+      "text": "I said \"trust me\" and then grabbed ___."
+    },
+    {
+      "text": "The date got weird as soon as ___ hit the table."
+    },
+    {
+      "text": "My landlord is still mad about ___."
+    },
+    {
+      "text": "I ruined brunch by bringing up ___."
+    },
+    {
+      "text": "The apology started with, \"Look, about ___...\""
+    },
+    {
+      "text": "The only thing louder than us was ___."
+    },
+    {
+      "text": "HR called me in to discuss ___."
+    },
+    {
+      "text": "My therapist paused for a full minute after I said ___."
+    },
+    {
+      "text": "The Uber driver heard everything about ___."
+    },
+    {
+      "text": "I tried to be sexy but ended up with ___."
+    },
+    {
+      "text": "The emergency contact was called because of ___."
+    },
+    {
+      "text": "My biggest red flag is how I handle ___."
+    },
+    {
+      "text": "The room smelled like ___ and regret."
+    },
+    {
+      "text": "The cops were surprisingly chill about ___."
+    },
+    {
+      "text": "I learned the hard way that ___ is not foreplay."
+    },
+    {
+      "text": "The safe word was replaced by ___."
+    },
+    {
+      "text": "My dating profile forgot to mention ___."
+    },
+    {
+      "text": "The vibe died the second someone said ___."
+    },
+    {
+      "text": "I said \"be gentle\" and they brought ___."
+    },
+    {
+      "text": "The afterparty ended when someone unveiled ___."
+    },
+    {
+      "text": "The kitchen disaster was somehow caused by ___."
+    },
+    {
+      "text": "The bachelor party got out of hand because of ___."
+    },
+    {
+      "text": "The only thing keeping this friendship alive is ___."
+    },
+    {
+      "text": "I woke up next to ___ and a bad decision."
+    },
+    {
+      "text": "The family group chat exploded over ___."
+    },
+    {
+      "text": "The boss asked for honesty, so I said ___."
+    },
+    {
+      "text": "I blacked out after mixing tequila with ___."
+    },
+    {
+      "text": "The classiest thing in my apartment is ___."
+    },
+    {
+      "text": "I can’t believe I paid money for ___."
+    },
+    {
+      "text": "The neighbors complained again about ___."
+    },
+    {
+      "text": "The first date checklist should include ___."
+    },
+    {
+      "text": "The final straw in this relationship was ___."
+    },
+    {
+      "text": "My phone’s search history is 70% ___."
+    },
+    {
+      "text": "The wedding almost got canceled because of ___."
+    },
+    {
+      "text": "The only thing I inherited was ___."
+    },
+    {
+      "text": "The hangover was mostly caused by ___."
+    },
+    {
+      "text": "I was banned from karaoke for singing about ___."
+    },
+    {
+      "text": "The vacation budget vanished thanks to ___."
+    },
+    {
+      "text": "The weirdest thing in my bag is ___."
+    },
+    {
+      "text": "The judge took one look and blamed ___."
+    },
+    {
+      "text": "The note on my door simply said, \"Stop ___\"."
+    },
+    {
+      "text": "My ex still talks shit about ___."
+    },
+    {
+      "text": "The tattoo idea sounded good until ___."
+    },
+    {
+      "text": "My coworker got promoted after surviving ___."
+    },
+    {
+      "text": "The weekend plan immediately became ___."
+    },
+    {
+      "text": "The dumbest way to spend $50 is ___."
+    },
+    {
+      "text": "I should’ve known it was doomed when they brought ___."
+    },
+    {
+      "text": "The post-coital snack was just ___."
+    },
+    {
+      "text": "The voicemail started with heavy breathing and ___."
+    },
+    {
+      "text": "The cursed bachelor pad came with ___."
+    },
+    {
+      "text": "The only thing I moan about now is ___."
+    },
+    {
+      "text": "The one-night stand included ___ and zero dignity."
+    },
+    {
+      "text": "The breakup speech somehow included ___."
+    },
+    {
+      "text": "I got ghosted right after sending ___."
+    },
+    {
+      "text": "The true villain of adulthood is ___."
+    },
+    {
+      "text": "My bank account keeps screaming about ___."
+    },
+    {
+      "text": "The most illegal-looking thing I own is ___."
+    },
+    {
+      "text": "The bartender cut me off after hearing about ___."
+    },
+    {
+      "text": "The chat leak exposed my love for ___."
+    },
+    {
+      "text": "The mood lighting couldn’t hide ___."
+    },
+    {
+      "text": "The air mattress gave up after ___."
+    },
+    {
+      "text": "The first sign of chaos was ___."
+    },
+    {
+      "text": "My bad decisions always start with ___."
+    },
+    {
+      "text": "The bedroom became a crime scene after ___."
+    },
+    {
+      "text": "The argument was technically about dishes, but really about ___."
+    },
+    {
+      "text": "The only thing getting screwed tonight is ___."
+    },
+    {
+      "text": "My dignity filed a complaint over ___."
+    },
+    {
+      "text": "The weird stain on the ceiling is from ___."
+    },
+    {
+      "text": "The romantic playlist was ruined by ___."
+    },
+    {
+      "text": "The pregame involved ___."
+    },
+    {
+      "text": "The birthday party got feral after ___."
+    },
+    {
+      "text": "The worst person to text at midnight is ___."
+    },
+    {
+      "text": "I told myself one drink, then met ___."
+    },
+    {
+      "text": "The entire group is pretending ___ never happened."
+    },
+    {
+      "text": "The morning-after headache was 10% alcohol, 90% ___."
+    },
+    {
+      "text": "The bathroom mirror witnessed ___."
+    },
+    {
+      "text": "The final warning from management was about ___."
+    },
+    {
+      "text": "The internet keeps recommending ___."
+    },
+    {
+      "text": "The only thing more unstable than me is ___."
+    },
+    {
+      "text": "The closet contains ___. and emotional damage."
+    },
+    {
+      "text": "The most erotic phrase in adulthood is \"___ paid off\"."
+    },
+    {
+      "text": "The bouncer denied entry because of ___."
+    },
+    {
+      "text": "The hookup ended with a lecture about ___."
+    },
+    {
+      "text": "I showed up overdressed for ___."
+    },
+    {
+      "text": "The confession began: \"I did ___ for fun.\""
+    },
+    {
+      "text": "The party favor nobody asked for was ___."
+    },
+    {
+      "text": "The shadiest thing in the room was ___."
+    },
+    {
+      "text": "I thought it was lube, but it was actually ___."
+    },
+    {
+      "text": "The love language I never wanted is ___."
+    },
+    {
+      "text": "The midnight craving was satisfied with ___."
+    },
+    {
+      "text": "\"___\" \"Stop calling it that,\" said the gynecologist."
+    }
+  ],
+  "whiteCards": [
+    "a cheap-ass toy with evil batteries",
+    "an apology text typed with shaking hands",
+    "a crusty towel and mutual disappointment",
+    "a suspicious bruise and a fake story",
+    "a hotel Bible used as a coaster",
+    "a broken bedframe and loud bad choices",
+    "a playlist called Raw Regrets",
+    "a half-eaten kebab on the nightstand",
+    "a condom applied with pure optimism",
+    "a drunk voice note nobody should hear",
+    "a mirror selfie that should stay private",
+    "a gas station bouquet and a bad lie",
+    "a panic-Google at 3:14am",
+    "a fake moan and real back pain",
+    "a mystery stain and zero accountability",
+    "a ring light and no self-respect",
+    "a questionable rash and worse timing",
+    "a cursed pair of satin handcuffs",
+    "a shower curtain that knows too much",
+    "a cheap wig and expensive regret",
+    "a vibrating mystery object with no off switch",
+    "a loud neighbor with perfect timing",
+    "a sticky remote and zero eye contact",
+    "a walk-of-shame jacket in broad daylight",
+    "a burnt pizza and sexual tension",
+    "a fake accent that made things worse",
+    "a spare key and poor boundaries",
+    "a thirsty DM sent to the wrong person",
+    "a wet floor sign and bad intentions",
+    "a goodbye kiss that felt like a lawsuit",
+    "a group chat named \"Do Not Leak\"",
+    "a cursed bottle opener in bed",
+    "a tiny violin for my huge mistake",
+    "a sex playlist interrupted by funeral insurance ads",
+    "a bag of ice and wounded pride",
+    "a tactical silence in the Uber",
+    "a fake orgasm and real boredom",
+    "a set of lashes on the pillow",
+    "a kitchen chair that gave up",
+    "a bottle of lube and no game plan",
+    "a horny text followed by instant shame",
+    "a toe cramp during a bold move",
+    "a bedroom wall thin as paper",
+    "a motel key with emotional baggage",
+    "a budget candle and premium chaos",
+    "a scream that sounded expensive",
+    "a little black dress and no exit strategy",
+    "a random sock with dark history",
+    "a bruised ego and a sprained wrist",
+    "a fake name and a very real problem",
+    "a cracked phone full of cursed nudes",
+    "a spicy scene ruined by leg cramps",
+    "a dry-ass text that killed the mood",
+    "a smug grin and no skills",
+    "a fuckboy apology template",
+    "a family-size pack of bad judgment",
+    "a bedroom fan blowing lies",
+    "a tattoo of someone’s red flag",
+    "a party trick that ended in urgent care",
+    "a panic shower and zero closure",
+    "a pair of jeans that saw everything",
+    "a toxic situationship starter kit",
+    "a moan that sounded medically concerning",
+    "a romantic speech copied from TikTok",
+    "a ring-shaped tan line from poor choices",
+    "a scarlet lipstick print on the wrong collar",
+    "a full bottle of tequila and unfinished business",
+    "a face like \"what the hell did we do\"",
+    "a clean sheet that lasted three minutes",
+    "a post-hookup pep talk to myself"
+  ]
+}
