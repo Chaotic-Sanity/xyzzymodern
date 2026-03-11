@@ -1137,3 +1137,196 @@ textarea{
     grid-template-columns: 1fr;
   }
 }
+/* Phone polish */
+@media (max-width: 820px){
+  :root{
+    --tp-card-width: clamp(132px, 42vw, 188px);
+    --tp-card-pad: 12px;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .topbar{
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .brand{
+    gap: 10px;
+  }
+
+  .logo{
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+  }
+
+  .titles .h1{
+    font-size: 20px;
+    line-height: 1.05;
+  }
+
+  .titles .h2{
+    font-size: 11px;
+    letter-spacing: 0.12em;
+  }
+
+  .card{
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .cardHead,
+  .handHead,
+  .subHead{
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cardTitle{
+    font-size: 11px;
+    letter-spacing: 0.12em;
+  }
+
+  .cardMeta{
+    font-size: 11px;
+  }
+
+  .pill{
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .statusCenter{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pill.rolePill{
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .boardRow{
+    gap: 12px;
+  }
+
+  .blackCard{
+    min-height: 190px;
+    font-size: clamp(18px, 5vw, 22px);
+    line-height: 1.18;
+  }
+
+  .handWrap{
+    margin-top: 14px;
+  }
+
+  .handList,
+  .subList{
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tpCard{
+    min-height: 176px;
+    font-size: 15px;
+    line-height: 1.24;
+  }
+
+  .subGroup{
+    gap: 10px;
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  .navDropMenu,
+  .chatMenu{
+    border-radius: 18px;
+    padding: 12px;
+  }
+
+  .chatLog,
+  .chatMenu .chatLog{
+    height: min(38vh, 280px);
+    max-height: min(38vh, 280px);
+  }
+
+  .chatSend .btn,
+  .chatSend .input{
+    width: 100%;
+  }
+
+  .lobbyWrap{
+    padding: 10px 10px 18px;
+  }
+
+  .lobbyCard{
+    min-height: calc(100dvh - 20px);
+    border-radius: 24px;
+  }
+
+  .lobbyCardInner{
+    gap: 12px;
+    padding: 24px 16px 22px;
+  }
+
+  .label{
+    margin-top: 6px;
+  }
+
+  .smallHint{
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 560px){
+  .theme{
+    padding-top: calc(10px + var(--safe-top));
+    padding-right: calc(10px + var(--safe-right));
+    padding-bottom: calc(14px + var(--safe-bottom));
+    padding-left: calc(10px + var(--safe-left));
+  }
+
+  .topbar,
+  .card{
+    border-radius: 18px;
+  }
+
+  .titles .h1{
+    font-size: 18px;
+  }
+
+  .right{
+    gap: 6px;
+  }
+
+  .handList,
+  .subList{
+    grid-template-columns: 1fr;
+  }
+
+  .tpCard{
+    min-height: 158px;
+    font-size: 16px;
+  }
+
+  .blackCard{
+    min-height: 176px;
+    font-size: clamp(17px, 5.4vw, 20px);
+  }
+
+  .lobbyCardInner{
+    padding: 22px 14px 18px;
+  }
+
+  .lobbyBtn,
+  .btn,
+  .input,
+  .navDropBtn{
+    min-height: 48px;
+  }
+}
