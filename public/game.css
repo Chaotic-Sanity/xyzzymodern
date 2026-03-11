@@ -17,6 +17,10 @@
   --tp-card-width: clamp(98px, 13vw, 160px);
   --tp-card-radius: 14px;
   --tp-card-pad: clamp(8px, 1vw, 12px);
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
 }
 
 *{ box-sizing:border-box; }
@@ -979,3 +983,157 @@ html,body{
 
 
 
+
+html{
+  background: var(--bg0);
+}
+
+body{
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.theme{
+  padding-top: calc(16px + var(--safe-top));
+  padding-right: calc(16px + var(--safe-right));
+  padding-bottom: calc(16px + var(--safe-bottom));
+  padding-left: calc(16px + var(--safe-left));
+}
+
+.lobbyPage{
+  padding-top: var(--safe-top);
+  padding-right: var(--safe-right);
+  padding-bottom: var(--safe-bottom);
+  padding-left: var(--safe-left);
+}
+
+input,
+button,
+select,
+textarea{
+  font: inherit;
+}
+
+.btn,
+.input,
+.navDropBtn,
+.link,
+.pill{
+  min-height: 44px;
+}
+
+@media (max-width: 820px){
+  .theme{
+    padding-top: calc(12px + var(--safe-top));
+    padding-right: calc(12px + var(--safe-right));
+    padding-bottom: calc(16px + var(--safe-bottom));
+    padding-left: calc(12px + var(--safe-left));
+  }
+
+  .topbar{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .brand,
+  .right,
+  .statusCenter{
+    width: 100%;
+  }
+
+  .right{
+    justify-content: flex-start;
+  }
+
+  .statusCenter{
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .navDrop,
+  .navDropBtn,
+  .right .link,
+  .right > .pill{
+    width: 100%;
+  }
+
+  .navDropBtn,
+  .right .link,
+  .right > .pill{
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navDropMenu,
+  .chatMenu{
+    position: static;
+    width: 100%;
+    max-height: none;
+    margin-top: 8px;
+  }
+
+  .chatLog,
+  .chatMenu .chatLog{
+    height: min(42vh, 320px);
+    max-height: min(42vh, 320px);
+  }
+
+  .chatSend{
+    flex-direction: column;
+  }
+
+  .handList,
+  .subList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    align-items: stretch;
+  }
+
+  .tpCard,
+  .blackCard{
+    width: 100%;
+    max-width: none;
+  }
+
+  .subGroup{
+    flex-wrap: wrap;
+  }
+
+  .lobbyWrap{
+    width: 100%;
+    min-height: 100dvh;
+    height: auto;
+    padding: 12px 12px 20px;
+    align-items: stretch;
+  }
+
+  .lobbyCard{
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    min-height: min(760px, calc(100dvh - 24px));
+    aspect-ratio: auto;
+  }
+
+  .lobbyCardInner{
+    padding: 28px 18px 28px;
+  }
+
+  .createRow,
+  .lobbyActions,
+  .adminRow,
+  .rowGap{
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .createRow .lobbyBtn{
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .packsWrap{
+    grid-template-columns: 1fr;
+  }
+}

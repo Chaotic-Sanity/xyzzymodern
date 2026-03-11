@@ -1,0 +1,19 @@
+{
+  "name": "Terrible People",
+  "short_name": "Terrible People",
+  "description": "A phone-friendly party card game built from the Terrible People web app.",
+  "start_url": "/lobby.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#06060a",
+  "theme_color": "#06060a",
+  "icons": [
+    {
+      "src": "/images/Terrible_Peolpe_Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

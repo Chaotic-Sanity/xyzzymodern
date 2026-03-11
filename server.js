@@ -11,7 +11,7 @@ const { Server } = require("socket.io");
 // =====================================================
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || '0.0.0.0';
-const ADMIN_KEY = "kmadmin";
+const ADMIN_KEY = process.env.ADMIN_KEY || "kmadmin";
 const AUTO_TEST_BOTS = 2;
 const BOT_JUDGE_PICK_DELAY_MS = 10000;
 
@@ -27,13 +27,25 @@ const PHASES = {
   FINISHED: "finished"
 };
 
+function envInt(name, fallback, min, max) {
+  const raw = Number(process.env[name]);
+  if (!Number.isFinite(raw)) return fallback;
+  return Math.min(max, Math.max(min, Math.floor(raw)));
+}
+
+function envList(name) {
+  const raw = String(process.env[name] || "").trim();
+  if (!raw) return [];
+  return raw.split(",").map((v) => safeStr(v, 64).toLowerCase()).filter(Boolean);
+}
+
 const DEFAULT_SETTINGS = {
-  enabledPacks: [],
-  scoreLimit: 7,
-  playSeconds: 60,
-  judgeSeconds: 25,
-  resultsSeconds: 10,
-  handSize: 10
+  enabledPacks: envList("ENABLED_PACKS"),
+  scoreLimit: envInt("SCORE_LIMIT", 7, 1, 50),
+  playSeconds: envInt("PLAY_SECONDS", 60, 10, 120),
+  judgeSeconds: envInt("JUDGE_SECONDS", 25, 10, 120),
+  resultsSeconds: envInt("RESULTS_SECONDS", 10, 5, 60),
+  handSize: envInt("HAND_SIZE", 10, 5, 15)
 };
 
 // =====================================================
@@ -866,6 +878,9 @@ function currentSettingsPublic() {
 
 const app = express();
 app.use(express.static(path.join(__dirname, "public")));
+app.get("/healthz", (_req, res) => {
+  res.status(200).json({ ok: true, uptime: process.uptime() });
+});
 // =====================================================
 // SOCKETS
 // =====================================================

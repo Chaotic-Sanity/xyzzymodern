@@ -4,7 +4,7 @@
     "appName": "Terrible People",
     "server":  {
                    "cleartext":  false,
-                   "url":  "https://terriblepeople-production.up.railway.app"
+                   "url":  "https://terrible-people.onrender.com"
                },
     "bundledWebRuntime":  false
 }

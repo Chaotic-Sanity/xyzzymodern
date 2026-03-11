@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: terrible-people
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: ADMIN_KEY
+        sync: false
+      - key: SCORE_LIMIT
+        value: 7
+      - key: PLAY_SECONDS
+        value: 60
+      - key: JUDGE_SECONDS
+        value: 25
+      - key: RESULTS_SECONDS
+        value: 10
+      - key: HAND_SIZE
+        value: 10
+      - key: ENABLED_PACKS
+        value: ""
