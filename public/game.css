@@ -624,7 +624,8 @@ html,body{
   cursor: pointer;
   display:inline-flex;
   align-items:center;
-  gap:6px;
+  justify-content:space-between;
+  gap:10px;
   padding:6px 10px;
   border-radius: 999px;
   border:1px solid var(--stroke);
@@ -635,6 +636,14 @@ html,body{
 }
 
 .navDropBtn::-webkit-details-marker{ display:none; }
+
+.navMeta{
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(233,236,255,0.58);
+}
 
 .pill.mini{
   padding: 2px 7px;
@@ -1284,6 +1293,10 @@ textarea{
 }
 
 @media (max-width: 560px){
+  .navDropBtn{
+    justify-content: center;
+  }
+
   .theme{
     padding-top: calc(10px + var(--safe-top));
     padding-right: calc(10px + var(--safe-right));
