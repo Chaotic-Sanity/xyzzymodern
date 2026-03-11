@@ -40,11 +40,11 @@
     </section>
   </main>
 
-  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://terrible-people.onrender.com/socket.io/socket.io.js"></script>
   <script src="/app-init.js"></script>
   <script>
     (function(){
-      const socket = io();
+      const socket = window.tpCreateSocket();
       const nameInput = document.getElementById("nameInput");
       const gameSelect = document.getElementById("gameSelect");
       const newGameInput = document.getElementById("newGameInput");

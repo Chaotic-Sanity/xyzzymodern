@@ -1,5 +1,5 @@
 "use strict";
-const socket = io();
+const socket = window.tpCreateSocket();
 function qs(id){ return document.getElementById(id); }
 
 const els = {

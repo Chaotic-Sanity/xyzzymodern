@@ -2,9 +2,5 @@
     "appId":  "au.com.chaoticsanity.terriblepeople",
     "webDir":  "public",
     "appName": "Terrible People",
-    "server":  {
-                   "cleartext":  false,
-                   "url":  "https://terrible-people.onrender.com"
-               },
     "bundledWebRuntime":  false
 }
