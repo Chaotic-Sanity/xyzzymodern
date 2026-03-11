@@ -1294,6 +1294,45 @@ textarea{
 
 @media (max-width: 560px){
   .navDropBtn{
+    justify-content: space-between;
+  }
+
+  .topbar{
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .brand{
+    width: 100%;
+  }
+
+  .statusCenter{
+    grid-template-columns: 1fr;
+  }
+
+  .right{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 8px;
+  }
+
+  .right .link,
+  .navDrop,
+  .right > .pill{
+    width: 100%;
+  }
+
+  .right .link,
+  .navDropBtn,
+  .right > .pill{
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  #timerPill{
+    grid-column: 1 / -1;
+    text-align: center;
     justify-content: center;
   }
 
